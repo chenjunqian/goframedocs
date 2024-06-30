@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { siteConfig } from "../config/site";
 import { HeaderNav } from "./site-header-nav";
-import Image from "next/image";
 import { Button } from "./ui/button";
+import { Github } from "lucide-react";
 
 export function SiteHeader() {
 
@@ -12,7 +12,7 @@ export function SiteHeader() {
                 <HeaderNav items={siteConfig.mainNav} />
                 <Link className="flex items-center space-x-2" href="https://github.com/gogf/gf" target="_blank">
                     <Button size={"icon"}>
-                        <Image src="/github.svg" alt="github logo" width={30} height={30} />
+                        <Github />
                     </Button>
                 </Link>
             </div>

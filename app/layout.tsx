@@ -30,7 +30,7 @@ export default function RootLayout({
         <html lang="en">
             <head></head>
             <body className={cn("min-h-screen bg-background font-sans antialiased", fontSans)}>
-                <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+                <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
                     <div className="relative flex min-h-screen flex-col">
                         <SiteHeader />
                         <div className="flex-1">{children}</div>

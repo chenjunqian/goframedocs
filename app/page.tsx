@@ -8,6 +8,11 @@ export default function Home() {
         <div className="min-h-screen w-full">
             <div className="w-full flex justify-center mt-20">
                 <div className="text-4xl w-1/2 flex justify-center">
+                    <Image src={"/gf-logo.png"} alt={"logo"} width={256} height={256} />
+                </div>
+            </div>
+            <div className="w-full flex justify-center mt-20">
+                <div className="text-4xl w-1/2 flex justify-center">
                     Goframe Web Framework
                 </div>
             </div>
@@ -24,7 +29,7 @@ export default function Home() {
                 </Link>
                 <Link href="https://github.com/gogf/gf" target="_blank">
                     <Button className="text-xl ml-4">
-                        Github <Image src="/github.svg" alt="github logo" width={24} height={24} className="ml-2" />
+                        Github <Github className="ml-2" />
                     </Button>
                 </Link>
             </div>

@@ -18,7 +18,7 @@ export default function Home() {
             </div>
             <div className="w-full flex justify-center mt-6">
                 <div className="text-base text-center w-1/3 flex justify-center">
-                    GoFrame is a modular, high-performance web framework and toolkit for Go that extends the standard library with a rich set of components
+                    Goframe is a modular, high-performance web framework and toolkit for Go that extends the standard library with a rich set of components
                 </div>
             </div>
             <div className="w-full flex justify-center mt-4">

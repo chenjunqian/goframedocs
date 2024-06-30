@@ -12,12 +12,12 @@ export default function Home() {
                 </div>
             </div>
             <div className="w-full flex justify-center mt-20">
-                <div className="text-4xl font-bold md:w-1/2 w-full flex justify-center text-center">
+                <div className="md:text-4xl text-2xl font-bold md:w-1/2 w-full flex justify-center text-center">
                     Goframe Web Framework
                 </div>
             </div>
             <div className="w-full flex justify-center mt-6">
-                <div className="text-base text-center md:w-1/3 w-full flex justify-center">
+                <div className="text-base text-center md:w-1/3 w-full flex justify-center p-4">
                     Goframe s a modular, powerful, high-performance and enterprise-class application development framework of Golang.
                 </div>
             </div>
@@ -35,7 +35,7 @@ export default function Home() {
             </div>
 
             <div className="w-full flex justify-center mt-20">
-                <div className="text-4xl font-bold md:w-1/2 w-full flex justify-center text-center">
+                <div className="md:text-4xl text-2xl font-bold md:w-1/2 w-full flex justify-center text-center">
                     What is it?
                 </div>
             </div>

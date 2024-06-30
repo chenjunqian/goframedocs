@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import { Github, SquareArrowRight } from "lucide-react";
+import { Boxes, Component, Github, SquareArrowRight, Unplug } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -12,7 +12,7 @@ export default function Home() {
                 </div>
             </div>
             <div className="w-full flex justify-center mt-20">
-                <div className="text-4xl md:w-1/2 w-full flex justify-center">
+                <div className="text-4xl md:w-1/2 w-full flex justify-center text-center">
                     Goframe Web Framework
                 </div>
             </div>
@@ -35,20 +35,32 @@ export default function Home() {
             </div>
 
             <div className="w-full flex justify-center mt-36">
-                <div className="w-full flex md:w-2/3 justify-center">
-                    <div className="columns-3 gap-8">
-                        <div>
-                            Modular
+                <div className="columns-3 gap-8">
+                    <div className="w-full">
+                        <div className="flex justify-center text-2xl items-center">
+                            <Boxes className="mr-4" /> Modular
                         </div>
-                        <div>
-                           Rich Component 
+                        <div className="text-base text-center">
+                            Modular, loosely coupled design.
                         </div>
-                        <div>
-                            Interface-based, highly extensible design
+                    </div>
+                    <div className="w-full">
+                        <div className="flex justify-center text-2xl items-center">
+                            <Component className="mr-4" /> Rich Component
+                        </div>
+                        <div className="text-base text-center">
+                            Rich components, ready-to-use out of the box.
+                        </div>
+                    </div>
+                    <div className="w-full">
+                        <div className="flex justify-center text-2xl items-center">
+                            <Unplug className="mr-4" /> Interface-based
+                        </div>
+                        <div className="text-base text-center">
+                            Interface-oriented, highly extensible design.
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     );

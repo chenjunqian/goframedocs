@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { Github, SquareArrowRight } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
@@ -23,7 +24,7 @@ export default function Home() {
                 </Link>
                 <Link href="https://github.com/gogf/gf" target="_blank">
                     <Button className="text-xl ml-4">
-                        Github <Github className="ml-2" />
+                        Github <Image src="/github.svg" alt="github logo" width={24} height={24} className="ml-2" />
                     </Button>
                 </Link>
             </div>

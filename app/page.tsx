@@ -96,12 +96,15 @@ export default function Home() {
                             <BookOpenText className="mr-4" /> OpenAPIV3 documentation generating, automatically
                         </div>
                     </div>
-                    <div className="w-full min-h-8 mt-4">
-                        <div className="flex justify-start items-center">
-                            <ListCollapse className="mr-4" /> Much, much more...ready to explore?
-                        </div>
-                    </div>
                 </div>
+            </div>
+
+            <div className="w-full flex justify-center mt-4">
+                <Link href="/docs">
+                    <Button className="text-xl">
+                        <ListCollapse className="mr-4" /> Explore more now !
+                    </Button>
+                </Link>
             </div>
         </div>
     );

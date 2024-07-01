@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button"
 import { BicepsFlexed, Bird, BookOpenText, Boxes, BugOff, Code, Component, DatabaseZap, FileTerminal, Github, ListCollapse, MessageSquareCode, Rocket, SquareArrowRight, Telescope, Unplug } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { siteConfig } from "../config/site";
 
 export default function Home() {
     return (
@@ -27,7 +28,7 @@ export default function Home() {
                         Get Started <SquareArrowRight className="ml-2" />
                     </Button>
                 </Link>
-                <Link href="https://github.com/gogf/gf" target="_blank">
+                <Link href={siteConfig.links.github} target="_blank">
                     <Button className="text-xl ml-4">
                         Github <Github className="ml-2" />
                     </Button>

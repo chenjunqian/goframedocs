@@ -14,7 +14,7 @@ export default function Home() {
             </div>
             <div className="w-full flex justify-center mt-20">
                 <div className="md:text-4xl text-2xl font-bold md:w-1/2 w-full flex justify-center text-center">
-                    Goframe Web Framework
+                    Goframe Application Framework
                 </div>
             </div>
             <div className="w-full flex justify-center mt-6">
@@ -98,14 +98,6 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <div className="w-full flex justify-center mt-4">
-                <Link href="/docs">
-                    <Button className="text-xl">
-                        <ListCollapse className="mr-4" /> Explore more now !
-                    </Button>
-                </Link>
             </div>
         </div>
     );

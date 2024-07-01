@@ -5,6 +5,7 @@ import { cn } from "../lib/utils";
 import { fontSans } from "../lib/fonts";
 import { ThemeProvider } from "../components/theme-provide";
 import { SiteHeader } from "../components/site-header";
+import SiteFooter from "../components/site-footer";
 
 export const metadata: Metadata = {
     title: siteConfig.name,
@@ -34,6 +35,7 @@ export default function RootLayout({
                     <div className="relative flex min-h-screen flex-col">
                         <SiteHeader />
                         <div className="flex-1">{children}</div>
+                        <SiteFooter />
                     </div>
                 </ThemeProvider>
             </body>

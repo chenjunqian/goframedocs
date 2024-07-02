@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button"
 import { BicepsFlexed, Bird, BookOpenText, Boxes, BugOff, Code, Component, DatabaseZap, FileTerminal, Github, ListCollapse, MessageSquareCode, Rocket, SquareArrowRight, Telescope, Unplug } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -24,14 +23,14 @@ export default function Home() {
             </div>
             <div className="w-full flex justify-center mt-4">
                 <Link href="/docs">
-                    <Button className="text-xl">
+                    <button className="text-xl btn btn-primary">
                         Get Started <SquareArrowRight className="ml-2" />
-                    </Button>
+                    </button>
                 </Link>
                 <Link href={siteConfig.links.github} target="_blank">
-                    <Button className="text-xl ml-4">
+                    <button className="text-xl ml-4 btn btn-primary">
                         Github <Github className="ml-2" />
-                    </Button>
+                    </button>
                 </Link>
             </div>
 

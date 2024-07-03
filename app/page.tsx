@@ -7,7 +7,7 @@ import SiteFooter from "../components/site-footer";
 export default function Home() {
     return (
         <div className="min-h-screen w-full">
-            <div className="w-full flex justify-center mt-20">
+            <div className="w-full flex justify-center mt-28">
                 <div className="text-4xl md:w-1/2 w-full flex justify-center">
                     <Image src={"/gf-logo.png"} alt={"logo"} width={256} height={256} />
                 </div>
@@ -40,7 +40,7 @@ export default function Home() {
                     What is it?
                 </div>
             </div>
-            <div className="w-full flex justify-center md:text-2xl text-sm md:p-6 p-4">
+            <div className="w-full flex justify-center md:text-2xl text-sm md:p-6 p-4 mb-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="w-full min-h-8 mt-4">
                         <div className="flex justify-start items-center">

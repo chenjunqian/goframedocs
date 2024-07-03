@@ -18,7 +18,7 @@ export function SiteHeader() {
                     <ul className="px-1 flex items-center">
                         <li className="mr-4">
                             <Link href="/docs">
-                                <button className="btn btn-sm btn-ghost text-lg">Document</button>
+                                <button className="btn btn-sm btn-ghost text-base">Document</button>
                             </Link>
                         </li>
                         <li className="mr-4">

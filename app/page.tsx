@@ -2,6 +2,7 @@ import { BicepsFlexed, Bird, BookOpenText, Boxes, BugOff, Code, Component, Datab
 import Image from "next/image";
 import Link from "next/link";
 import { siteConfig } from "../config/site";
+import SiteFooter from "../components/site-footer";
 
 export default function Home() {
     return (
@@ -98,6 +99,7 @@ export default function Home() {
                     </div>
                 </div>
             </div>
+            <SiteFooter />
         </div>
     );
 }

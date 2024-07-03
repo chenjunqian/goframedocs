@@ -1,10 +1,13 @@
+import { DocsDrawer } from "../../components/docs-drawer";
 
 
 
 export default function Page() {
     return (
-        <div>
-            <h1>Pages</h1>
+        <div className="w-full">
+            <DocsDrawer>
+
+            </DocsDrawer>
         </div>
     )
 }

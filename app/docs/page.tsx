@@ -6,6 +6,7 @@ import { DocsDrawer } from "../../components/docs-drawer";
 export default function Page() {
     return (
         <DocsDrawer>
+
             <div className="w-full pl-16 pr-16 mt-9">
                 <div className="w-full flex justify-start">
                     <h1 className="text-3xl font-bold">Introduction</h1>

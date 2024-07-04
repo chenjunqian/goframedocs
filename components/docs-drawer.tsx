@@ -35,6 +35,7 @@ export function DocsDrawer({ children }: Readonly<{ children: React.ReactNode }>
                         </label>
                     </div>
                 </div>
+                <div className={`w-full lg:hidden h-10 ${isFixed ? 'block' : 'hidden'}`}></div>
                 <div className="w-full">{children}</div>
             </div>
             <div className="drawer-side z-40">

@@ -6,7 +6,7 @@ import { Github } from "lucide-react";
 export function SiteHeader() {
 
     return (
-        <header className="z-40 sticky w-full lg:fixed">
+        <header className="z-40 w-full lg:fixed lg:top-0">
             <div className="navbar bg-base-200">
                 <div className="navbar-start">
                     <Image src="/gf-logo.png" alt="logo" width={32} height={32} className="ml-6" />

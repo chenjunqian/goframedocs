@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { siteConfig } from "../config/site";
-import { SiteHeader } from "../components/site-header";
 
 export const metadata: Metadata = {
     title: siteConfig.name,
@@ -24,7 +23,6 @@ export default function RootLayout({
             <head></head>
             <body className="">
                 <div className="relative flex min-h-screen flex-col">
-                    <SiteHeader />
                     <div className="flex-1">{children}</div>
                 </div>
             </body>

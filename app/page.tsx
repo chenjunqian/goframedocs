@@ -3,10 +3,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { siteConfig } from "../config/site";
 import SiteFooter from "../components/site-footer";
+import { SiteHeader } from "../components/site-header";
 
 export default function Home() {
     return (
         <div className="min-h-screen w-full">
+            <SiteHeader />
             <div className="w-full flex justify-center mt-28">
                 <div className="text-4xl md:w-1/2 w-full flex justify-center">
                     <Image src={"/gf-logo.png"} alt={"logo"} width={256} height={256} />

@@ -2,8 +2,8 @@
 
 import { Clipboard, ClipboardCopy } from 'lucide-react';
 import React, { useState } from 'react';
-import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { atomDark } from 'react-syntax-highlighter/dist/cjs/styles/prism';
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { oneDark } from 'react-syntax-highlighter/dist/cjs/styles/prism';
 
 function CodeBlock({ language, code }: { language: string, code: string }) {
     const [copied, setCopied] = useState(false);
@@ -18,7 +18,7 @@ function CodeBlock({ language, code }: { language: string, code: string }) {
 
     return (
         <div className="relative">
-            <SyntaxHighlighter language={language} style={atomDark}>
+            <SyntaxHighlighter language={language} style={oneDark}>
                 {code}
             </SyntaxHighlighter>
             <button className="absolute top-0 right-0 px-2 py-1 btn btn-ghost btn-sm" onClick={handleCopy}>

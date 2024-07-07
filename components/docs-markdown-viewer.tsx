@@ -2,6 +2,7 @@
 
 import Markdown from "react-markdown";
 import CodeBlock from "./code-block";
+import Link from "next/link";
 
 
 export function DocsMarkdownViewer({ children }: { children: string }) {
@@ -62,9 +63,9 @@ const Heading = ({ level, children }: HeadingResolverProps) => {
     // Utility
     const container = (children: React.ReactNode) => {
         return (
-            <a id={anchor} href={`#${anchor}`} style={{textDecoration: 'none'}}>
+            <Link id={anchor} href={`#${anchor}`} style={{textDecoration: 'none'}} scroll={false}>
                 <span>{children}</span>
-            </a>
+            </Link>
         )
     }
 

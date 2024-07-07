@@ -18,9 +18,7 @@ function CodeBlock({ language, code }: { language: string, code: string }) {
 
     return (
         <div className="relative">
-            <SyntaxHighlighter language={language} style={oneDark}>
-                {code}
-            </SyntaxHighlighter>
+            <SyntaxHighlighter language={language} style={oneDark} children={code} />
             <button className="absolute top-0 right-0 px-2 py-1 btn btn-ghost btn-sm" onClick={handleCopy}>
                 {
                     copied ? <ClipboardCopy className="w-5 h-5" /> : <Clipboard className="w-5 h-5" />

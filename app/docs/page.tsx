@@ -1,18 +1,20 @@
-import CodeBlock from "../../components/code-block";
+import {promises as fs} from "fs";
 import { DocsDrawer } from "../../components/docs-drawer";
+import { DocsMarkdownViewer } from "../../components/docs-markdown-viewer";
 
 
+export default async function Page() {
 
-export default function Page() {
+    const introductionMD = await fs.readFile(process.cwd() + "/docs/quick-start/introduction.md", "utf-8");
+
     return (
         <DocsDrawer>
-
             <div className="w-full pl-16 pr-16 mt-9">
                 <div className="w-full flex justify-start">
-                    <h1 className="text-3xl font-bold">Introduction</h1>
+                    <h1 className="lg:text-4xl text-lg font-bold">Introduction</h1>
                 </div>
                 <div className="w-full flex justify-start mt-4">
-                    <div role="alert" className="alert lg:w-3/5 w-4/5">
+                    <div role="alert" className="alert lg:w-3/5 w-4/5 text-sm">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
@@ -30,41 +32,7 @@ export default function Page() {
                 <div className="flex w-full flex-col mt-6 mb-6">
                     <div className="divider"></div>
                 </div>
-
-                <div className="w-full flex justify-start">
-                    <h1 className="text-3xl font-bold">What is Goframe?</h1>
-                </div>
-                <div className="flex justify-start mt-4 lg:w-3/5 w-4/5">
-                    <div>
-                        <p className="indent-8">
-                            Goframe is a modular, high-performance, enterprise-level Go development framework.
-                            It is a versatile foundational framework that serves as an enhanced extension of the Golang standard library, including a set of universal core development components.
-                            Goframe can be used for developing complete engineering projects, and due to its decoupled modular design, it can also be utilized as a toolkit.
-                        </p>
-                        <p className="indent-8 mt-4">
-                            If you are looking to develop a enterprise-level project or small project with Golang, Goframe is your best choice. If you aim to create a Golang component library, Goframe's ready-to-use, robust foundational component library can also greatly enhance your workflow and make your work more efficient.
-                        </p>
-                    </div>
-                </div>
-                <div className="flex justify-start mt-4 lg:w-3/5 w-4/5">
-                    <div className="w-full">
-                        <p>Here is a minimal example:</p>
-                        <CodeBlock language="go" code={`
-package main
-
-import (
-    _ "github.com/gogf/gf/contrib/drivers/mysql/v2"
-    _ "github.com/gogf/gf-demo-user/v2/internal/logic"
-    "github.com/gogf/gf/v2/os/gctx"
-    "github.com/gogf/gf-demo-user/v2/internal/cmd"
-)
-
-func main() {
-    cmd.Main.Run(gctx.New())
-}
-                        `} />
-                    </div>
-                </div>
+                <DocsMarkdownViewer children={introductionMD} />
             </div>
         </DocsDrawer>
     )

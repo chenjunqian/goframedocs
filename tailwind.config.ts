@@ -8,7 +8,7 @@ const config = {
     './src/**/*.{ts,tsx}',
 	],
   prefix: "",
-  plugins: [require("tailwindcss-animate"), require("daisyui")],
+  plugins: [require("tailwindcss-animate"), require("@tailwindcss/typography"), require("daisyui")],
 } satisfies Config
 
 export default config

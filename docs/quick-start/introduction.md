@@ -1,4 +1,6 @@
-# What is Goframe
+#
+
+## What is Goframe
 
 Goframe is a modular, high-performance, enterprise-level Go development framework. It is a versatile foundational framework that serves as an enhanced extension of the Golang standard library, including a set of universal core development components. Goframe can be used for developing complete engineering projects, and due to its decoupled modular design, it can also be utilized as a toolkit.
 
@@ -11,10 +13,19 @@ package main
 
 import (
     "github.com/gogf/gf/v2/frame/g"
+    "github.com/gogf/gf/v2/net/ghttp"
 )
 
 func main() {
+    s := g.Server()
+    s.Group("/", func(group *ghttp.RouterGroup) {
+        group.Middleware(ghttp.MiddlewareHandlerResponse)
+        group.GET("/", func(r *ghttp.Request) {
+            r.Response.Write("Hello World!")
+        })
+    })
 
+    s.Run()
 }
 
 ```

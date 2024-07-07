@@ -1,11 +1,11 @@
+import { DocsDrawer } from "@/components/docs-drawer";
+import { DocsMarkdownViewer } from "@/components/docs-markdown-viewer";
 import { promises as fs } from "fs";
-import { DocsDrawer } from "../../components/docs-drawer";
-import { DocsMarkdownViewer } from "../../components/docs-markdown-viewer";
 
 
 export default async function Page() {
 
-    const introductionMD = await fs.readFile(process.cwd() + "/docs/quick-start/introduction.md", "utf-8");
+    const introductionMD = await fs.readFile(process.cwd() + "/docs/introduction.md", "utf-8");
 
     return (
         <DocsDrawer>

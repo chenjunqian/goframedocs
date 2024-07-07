@@ -1,4 +1,4 @@
-import {promises as fs} from "fs";
+import { promises as fs } from "fs";
 import { DocsDrawer } from "../../components/docs-drawer";
 import { DocsMarkdownViewer } from "../../components/docs-markdown-viewer";
 

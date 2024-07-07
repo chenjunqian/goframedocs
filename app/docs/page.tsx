@@ -14,7 +14,7 @@ export default async function Page() {
                     <h1 className="lg:text-4xl text-lg font-bold">Introduction</h1>
                 </div>
                 <div className="w-full flex justify-start mt-4">
-                    <div role="alert" className="alert lg:w-3/5 w-4/5 text-sm">
+                    <div role="alert" className="alert lg:max-w-3xl text-sm">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
@@ -29,7 +29,7 @@ export default async function Page() {
                         <span>The document you are reading is for Goframe V2!</span>
                     </div>
                 </div>
-                <div className="flex w-full flex-col mt-6 mb-6">
+                <div className="flex w-full lg:max-w-3xl flex-col mt-6 mb-6">
                     <div className="divider"></div>
                 </div>
                 <DocsMarkdownViewer children={introductionMD} />

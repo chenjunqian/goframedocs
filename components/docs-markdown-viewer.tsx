@@ -9,7 +9,7 @@ export function DocsMarkdownViewer({ children }: { children: string }) {
 
     return (
         <Markdown
-            className="lg:prose prose-base"
+            className="lg:prose prose-base lg:max-w-3xl"
             children={children}
             components={{
                 code(props) {

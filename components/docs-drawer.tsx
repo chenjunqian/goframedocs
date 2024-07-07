@@ -48,7 +48,7 @@ export function DocsDrawer({ children }: Readonly<{ children: React.ReactNode }>
                     </div>
                     <li>
                         <details open>
-                            <summary><Link href="/docs/quick-start">Quick Start</Link></summary>
+                            <summary><Link href="/docs/">Quick Start</Link></summary>
                             <ul>
                                 <li><Link href="/docs/installation">Installation</Link></li>
                                 <li><Link href="/docs/create-application">Create Application</Link></li>

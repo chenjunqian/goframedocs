@@ -4,11 +4,14 @@ import { Menu } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 
 
 export function DocsDrawer({ children }: Readonly<{ children: React.ReactNode }>) {
 
     const [isFixed, setIsFixed] = useState(false);
+
+    const pathname = usePathname();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -48,11 +51,12 @@ export function DocsDrawer({ children }: Readonly<{ children: React.ReactNode }>
                     </div>
                     <li>
                         <details open>
-                            <summary><Link href="/docs/">Quick Start</Link></summary>
+                            <summary ><Link className="active" href="/docs/">Quick Start</Link></summary>
                             <ul>
-                                <li><Link href="/docs/installation">Installation</Link></li>
-                                <li><Link href="/docs/create-application">Create Application</Link></li>
-                                <li><Link href="/docs/example">Example</Link></li>
+                                {pathname === '/docs' ? <li><Link className="active" href="/docs/">Introduction</Link></li> : <li><Link href="/docs/">Introduction</Link></li>}
+                                {pathname === '/docs/installation' ? <li><Link className="active" href="/docs/installation">Installation</Link></li> : <li><Link href="/docs/installation">Installation</Link></li>}
+                                {pathname === '/docs/create-application' ? <li><Link className="active" href="/docs/create-application">Create Application</Link></li> : <li><Link href="/docs/create-application">Create Application</Link></li>}
+                                {pathname === '/docs/example' ? <li><Link className="active" href="/docs/example">Example</Link></li> : <li><Link href="/docs/example">Example</Link></li>}
                             </ul>
                         </details>
                     </li>

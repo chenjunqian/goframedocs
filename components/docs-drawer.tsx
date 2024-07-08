@@ -30,7 +30,7 @@ export function DocsDrawer({ children }: Readonly<{ children: React.ReactNode }>
             <input id="docs-drawer" type="checkbox" className="drawer-toggle" />
             <div className="drawer-content">
                 {/* Page content here */}
-                <div className={`w-full lg:hidden flex h-10 bg-base-200 mt-1 ${isFixed ? 'fixed top-0' : ''}`}>
+                <div className={`w-full lg:hidden flex h-10 bg-base-200 mt-1 ${isFixed ? 'fixed top-0 z-40' : ''}`}>
                     <div className="flex justify-start items-center">
                         <label htmlFor="docs-drawer" className="btn btn-sm btn-ghost drawer-button flex justify-start items-center ml-4">
                             <Menu className="w-5 h-5" />

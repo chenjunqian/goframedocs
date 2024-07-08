@@ -1,5 +1,6 @@
 import { DocsDrawer } from "@/components/docs-drawer";
 import { DocsMarkdownViewer } from "@/components/docs-markdown-viewer";
+import { DocsPreNextBtns } from "@/components/docs-pre-next-btns";
 import { promises as fs } from "fs";
 
 export default async function Page() {
@@ -10,6 +11,7 @@ export default async function Page() {
         <DocsDrawer>
             <div className="w-full pl-16 pr-16 mt-9">
                 <DocsMarkdownViewer children={installationMD} />
+                <DocsPreNextBtns preName="Installation" prePath="/docs/installation" nextName="Example" nextPath="/docs/example" />
             </div>
         </DocsDrawer>
     )

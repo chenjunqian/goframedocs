@@ -1,4 +1,4 @@
-# Instance Startup
+# Startup
 
 When you start your first project, you might feel confused by the numerous directories under the project. Don't worry, you can get to know the purpose of each directory through this section on [Project Directory Design](https://temperory.net). Next, we will introduce how the project is launched, which directories are involved in the startup of a program, to give everyone an understanding of the overall startup process of the program.
 

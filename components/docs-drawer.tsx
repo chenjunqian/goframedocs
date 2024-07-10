@@ -58,7 +58,7 @@ export function DocsDrawer({ children }: Readonly<{ children: React.ReactNode }>
                                 {pathname === '/docs' ? <li><Link className="active" href="/docs/">Introduction</Link></li> : <li><Link href="/docs/">Introduction</Link></li>}
                                 {pathname === '/docs/installation' ? <li><Link className="active" href="/docs/installation">Installation</Link></li> : <li><Link href="/docs/installation">Installation</Link></li>}
                                 {pathname === '/docs/create-application' ? <li><Link className="active" href="/docs/create-application">Create Application</Link></li> : <li><Link href="/docs/create-application">Create Application</Link></li>}
-                                {pathname === '/docs/instance-startup' ? <li><Link className="active" href="/docs/instance-startup">Instance Startup</Link></li> : <li><Link href="/docs/instance-startup">Instance Startup</Link></li>}
+                                {pathname === '/docs/startup' ? <li><Link className="active" href="/docs/startup">Startup</Link></li> : <li><Link href="/docs/startup">Startup</Link></li>}
                                 {pathname === '/docs/configuration' ? <li><Link className="active" href="/docs/configuration">Configuration</Link></li> : <li><Link href="/docs/configuration">Configuration</Link></li>}
                                 {pathname === '/docs/example' ? <li><Link className="active" href="/docs/example">Example</Link></li> : <li><Link href="/docs/example">Example</Link></li>}
                             </ul>

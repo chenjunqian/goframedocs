@@ -9,8 +9,10 @@ export function SiteHeader() {
         <header className="z-40 w-full lg:fixed lg:top-0">
             <div className="navbar bg-base-200">
                 <div className="navbar-start">
-                    <Image src="/gf-logo.png" alt="logo" width={32} height={32} className="ml-6" />
-                    <a className="btn btn-ghost text-xl" href="/">Goframe</a>
+                    <a className="btn btn-ghost text-xl" href="/">
+                        <Image src="/gf-logo.png" alt="logo" width={32} height={32} className="mr-2" />
+                        Goframe
+                    </a>
                 </div>
                 <div className="navbar-center flex">
                 </div>

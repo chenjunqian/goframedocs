@@ -46,8 +46,10 @@ export function DocsDrawer({ children }: Readonly<{ children: React.ReactNode }>
                 <ul className="menu bg-base-200 text-base-content min-h-full w-64 p-4">
                     {/* Sidebar content here */}
                     <div className="flex items-center mb-4">
-                        <Image src="/gf-logo.png" alt="logo" width={32} height={32} />
-                        <a className="btn btn-sm btn-ghost text-xl" href="/">Goframe V2</a>
+                        <a className="btn btn-ghost text-xl" href="/">
+                            <Image src="/gf-logo.png" alt="logo" width={32} height={32} />
+                            Goframe V2
+                        </a>
                     </div>
                     <li>
                         <details open>

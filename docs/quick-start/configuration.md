@@ -95,41 +95,60 @@ server:
     # graceful:            false              # Whether to enable graceful restart feature, an additional local TCP port of 10000 will be added for inter-process communication when enabled. Default is false
     # gracefulTimeout:     2                  # How many seconds the parent process exits after a graceful restart, default is 2 seconds. If the request time is greater than this value, it may cause the request to be interrupted
 
+# Log Configuration
+logger:
+  # path:                  ""                    # Log file path. Default is empty, indicating disabled, only output to the terminal
+  # file:                  "{Y-m-d}.log"         # Log file format. Default is "{Y-m-d}.log"
+  # prefix:                ""                    # Prefix for log output content. Default is empty
+  level:                 "all"                 # Log output level
+  # timeFormat:            "2006-01-02T15:04:05" # Custom log output time format, using Golang's standard datetime format
+  # ctxKeys:               []                    # Custom context variable names, automatically print context variables to the log. Default is empty
+  # header:                true                  # Whether to print the header information of the log. Default is true
+  stdout:                true                  # Whether logs are also output to the terminal. Default is true
+  # rotateSize:            0                     # Log file rolling split according to file size. Default is 0, indicating the rolling split feature is disabled
+  # rotateExpire:          0                     # Log file rolling split according to time interval. Default is 0, indicating the rolling split feature is disabled
+  # rotateBackupLimit:     0                     # Clean up rolled files based on the number of files when the rolling split feature is enabled. Default is 0, indicating no backup, delete after rolling
+  # rotateBackupExpire:    0                     # Clean up rolled files based on the expiration time when the rolling split feature is enabled. Default is 0, indicating no backup, delete after rolling
+  # rotateBackupCompress:  0                     # Compression ratio of rolled files (0-9). Default is 0, indicating no compression
+  # rotateCheckInterval:   "1h"                  # Time interval for checking log rolling split, generally no need to set. Default is 1 hour
+  # stdoutColorDisabled:   false                 # Disable color printing in the terminal. Default is enabled
+  # writerColorEnable:     false                 # Whether the log file should include color. Default is false, indicating no color
 
-   # Database Configuration
-   # database:
-     # default:
-     # - link: "mysql:root:12345678@tcp(127.0.0.1:3306)/test"
-     # database:
-     # [Group Name]:
-     # host: "Address"
-     # port: "Port"
-     # user: "Account"
-     # pass: "Password"
-     # name: "Database Name"
-     # type: "Database Type (e.g., mariadb/tidb/mysql/pgsql/mssql/sqlite/oracle/clickhouse/dm)"
-     # link: "(Optional) Custom database link information, when this field is set, the above link fields (Host,Port,User,Pass,Name) will be invalid, but type must have a value"
-     # extra: "(Optional) Additional feature configuration for different databases, defined by the underlying database driver"
-     # role: "(Optional) Database master-slave role (master/slave), set to master if not using the application layer's master-slave mechanism"
-     # debug: "(Optional) Enable debug mode"
-     # prefix: "(Optional) Table name prefix"
-     # dryRun: "(Optional) ORM dry run (read-only, no write)"
-     # charset: "(Optional) Database encoding (e.g., utf8/gbk/gb2312), generally set to utf8"
-     # protocol: "(Optional) Database connection protocol, default is TCP"
-     # weight: "(Optional) Load balancing weight, for load balancing control, leave blank if not using the application layer's load balancing mechanism"
-     # timezone: "(Optional) Timezone configuration, e.g., Local"
-     # namespace: "(Optional) To support the Catalog&Schema distinction issue of some database services, the original Schema represents the database name, and NameSpace represents the Schema of individual database services"
-     # maxIdle: "(Optional) Maximum number of idle connections in the connection pool (default 10)"
-     # maxOpen: "(Optional) Maximum number of open connections in the connection pool (default unlimited)"
-     # maxLifetime: "(Optional) The time length that the connection object can be reused (default 30 seconds)"
-     # queryTimeout: "(Optional) Query statement timeout duration (default unlimited, pay attention to the timeout setting of ctx)"
-     # execTimeout: "(Optional) Write statement timeout duration (default unlimited, pay attention to the timeout setting of ctx)"
-     # tranTimeout: "(Optional) Transaction processing timeout duration (default unlimited, pay attention to the timeout setting of ctx)"
-     # prepareTimeout: "(Optional) Prepared SQL statement execution timeout duration (default unlimited, pay attention to the timeout setting of ctx)"
-     # createdAt: "(Optional) Automatically create time field name"
-     # updatedAt: "(Optional) Automatically update time field name"
-     # deletedAt: "(Optional) Soft delete time field name"
-     # timeMaintainDisabled: "(Optional) Whether to completely disable the time update feature, when true, CreatedAt/UpdatedAt/DeletedAt will all be invalid"
+
+# Database Configuration
+# database:
+    # default:
+    # - link: "mysql:root:12345678@tcp(127.0.0.1:3306)/test"
+    # database:
+    # [Group Name]:
+    # host: "Address"
+    # port: "Port"
+    # user: "Account"
+    # pass: "Password"
+    # name: "Database Name"
+    # type: "Database Type (e.g., mariadb/tidb/mysql/pgsql/mssql/sqlite/oracle/clickhouse/dm)"
+    # link: "(Optional) Custom database link information, when this field is set, the above link fields (Host,Port,User,Pass,Name) will be invalid, but type must have a value"
+    # extra: "(Optional) Additional feature configuration for different databases, defined by the underlying database driver"
+    # role: "(Optional) Database master-slave role (master/slave), set to master if not using the application layer's master-slave mechanism"
+    # debug: "(Optional) Enable debug mode"
+    # prefix: "(Optional) Table name prefix"
+    # dryRun: "(Optional) ORM dry run (read-only, no write)"
+    # charset: "(Optional) Database encoding (e.g., utf8/gbk/gb2312), generally set to utf8"
+    # protocol: "(Optional) Database connection protocol, default is TCP"
+    # weight: "(Optional) Load balancing weight, for load balancing control, leave blank if not using the application layer's load balancing mechanism"
+    # timezone: "(Optional) Timezone configuration, e.g., Local"
+    # namespace: "(Optional) To support the Catalog&Schema distinction issue of some database services, the original Schema represents the database name, and NameSpace represents the Schema of individual database services"
+    # maxIdle: "(Optional) Maximum number of idle connections in the connection pool (default 10)"
+    # maxOpen: "(Optional) Maximum number of open connections in the connection pool (default unlimited)"
+    # maxLifetime: "(Optional) The time length that the connection object can be reused (default 30 seconds)"
+    # queryTimeout: "(Optional) Query statement timeout duration (default unlimited, pay attention to the timeout setting of ctx)"
+    # execTimeout: "(Optional) Write statement timeout duration (default unlimited, pay attention to the timeout setting of ctx)"
+    # tranTimeout: "(Optional) Transaction processing timeout duration (default unlimited, pay attention to the timeout setting of ctx)"
+    # prepareTimeout: "(Optional) Prepared SQL statement execution timeout duration (default unlimited, pay attention to the timeout setting of ctx)"
+    # createdAt: "(Optional) Automatically create time field name"
+    # updatedAt: "(Optional) Automatically update time field name"
+    # deletedAt: "(Optional) Soft delete time field name"
+    # timeMaintainDisabled: "(Optional) Whether to completely disable the time update feature, when true, CreatedAt/UpdatedAt/DeletedAt will all be invalid"
 ```
 
 ## Configuration Object

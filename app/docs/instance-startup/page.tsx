@@ -5,13 +5,13 @@ import { promises as fs } from "fs";
 
 export default async function Page() {
 
-    const installationMD = await fs.readFile(process.cwd() + "/docs/quick-start/create-application.md", "utf-8");
+    const installationMD = await fs.readFile(process.cwd() + "/docs/quick-start/instance-startup.md", "utf-8");
 
     return (
         <DocsDrawer>
             <div className="w-full pl-16 pr-16 mt-9">
                 <DocsMarkdownViewer children={installationMD} />
-                <DocsPreNextBtns preName="Installation" prePath="/docs/installation" nextName="Run Application" nextPath="/docs/run-application" />
+                <DocsPreNextBtns preName="Create Application" prePath="/docs/create-application" nextName="Configuration" nextPath="/docs/configuration" />
             </div>
         </DocsDrawer>
     )

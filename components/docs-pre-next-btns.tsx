@@ -32,7 +32,7 @@ export function DocsPreNextBtns({ preName, prePath, nextName, nextPath }: DocsPr
                             <div className="text-base-content/50 hidden text-xs font-normal md:block">next</div>
                             <div className="text-base">{nextName}</div>
                         </div>
-                        <ArrowRight className="w-5 h-5 mr-2" />
+                        <ArrowRight className="w-5 h-5 ml-2" />
                     </Link>
                 </div>
             </div>

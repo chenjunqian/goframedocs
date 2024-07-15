@@ -10,6 +10,8 @@ import { usePathname } from "next/navigation";
 export function DocsDrawer({ children }: Readonly<{ children: React.ReactNode }>) {
 
     const [isFixed, setIsFixed] = useState(false);
+    const [isQuickStartOpen, setIsQuickStartOpen] = useState(true);
+    const [isFrameworkDesignOpen, setIsFrameworkDesignOpen] = useState(false);
 
     const pathname = usePathname();
 
@@ -24,6 +26,13 @@ export function DocsDrawer({ children }: Readonly<{ children: React.ReactNode }>
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
+
+    useEffect(() => {
+        if (pathname.startsWith('/docs/framework-design')) {
+            setIsQuickStartOpen(false);
+            setIsFrameworkDesignOpen(true);
+        }
+    }, [pathname]);
 
     return (
         <div className="drawer lg:drawer-open">
@@ -52,8 +61,8 @@ export function DocsDrawer({ children }: Readonly<{ children: React.ReactNode }>
                         </a>
                     </div>
                     <li>
-                        <details open>
-                            <summary ><Link className="active" href="/docs/">Quick Start</Link></summary>
+                        <details open={isQuickStartOpen}>
+                            <summary ><Link className="" href="/docs/">Quick Start</Link></summary>
                             <ul>
                                 {pathname === '/docs' ? <li><Link className="active" href="/docs/">Introduction</Link></li> : <li><Link href="/docs/">Introduction</Link></li>}
                                 {pathname === '/docs/installation' ? <li><Link className="active" href="/docs/installation">Installation</Link></li> : <li><Link href="/docs/installation">Installation</Link></li>}
@@ -64,7 +73,14 @@ export function DocsDrawer({ children }: Readonly<{ children: React.ReactNode }>
                             </ul>
                         </details>
                     </li>
-                    <li><a>Sidebar Item 2</a></li>
+                    <li>
+                        <details open={isFrameworkDesignOpen}>
+                            <summary ><Link className="active" href="/docs/framework-design/module-design">Framework Design</Link></summary>
+                            <ul>
+                                {pathname === '/docs/framework-design/module-design' ? <li><Link className="active" href="/docs/framework-design/module-design">Module Design</Link></li> : <li><Link href="/docs/framework-design/module-design">Module Design</Link></li>}
+                            </ul>
+                        </details>
+                    </li>
                 </ul>
             </div>
         </div>

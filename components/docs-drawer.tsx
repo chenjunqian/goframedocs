@@ -52,7 +52,7 @@ export function DocsDrawer({ children }: Readonly<{ children: React.ReactNode }>
             </div>
             <div className="drawer-side z-40">
                 <label htmlFor="docs-drawer" aria-label="close sidebar" className="drawer-overlay"></label>
-                <ul className="menu bg-base-200 text-base-content min-h-full w-64 p-4">
+                <ul className="menu bg-base-200 text-base-content min-h-full w-72 p-4">
                     {/* Sidebar content here */}
                     <div className="flex items-center mb-4">
                         <a className="btn btn-ghost text-xl" href="/">
@@ -78,6 +78,7 @@ export function DocsDrawer({ children }: Readonly<{ children: React.ReactNode }>
                             <summary ><Link className="active" href="/docs/framework-design/module-design">Framework Design</Link></summary>
                             <ul>
                                 {pathname === '/docs/framework-design/module-design' ? <li><Link className="active" href="/docs/framework-design/module-design">Module Design</Link></li> : <li><Link href="/docs/framework-design/module-design">Module Design</Link></li>}
+                                {pathname === '/docs/framework-design/unified-framework-design' ? <li><Link className="active" href="/docs/framework-design/module-design">Unified Framework Design</Link></li> : <li><Link href="/docs/framework-design/unified-framework-design">Unified Framework Design</Link></li>}
                             </ul>
                         </details>
                     </li>

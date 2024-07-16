@@ -88,7 +88,7 @@ func (s *NetworkService) UnbindRoute(ctx context.Context, appId int64, vip strin
 
 - Automated generation of interface documentation possible and ensures that the interface structure definition and documentation are maintained in sync.
 
-**Structured Example**
+**Structured Example**:
 
 Structure Definition:
 

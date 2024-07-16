@@ -81,6 +81,7 @@ export function DocsDrawer({ children }: Readonly<{ children: React.ReactNode }>
                                 {pathname === '/docs/framework-design/unified-framework-design' ? <li><Link className="active" href="/docs/framework-design/module-design">Unified Framework Design</Link></li> : <li><Link href="/docs/framework-design/unified-framework-design">Unified Framework Design</Link></li>}
                                 {pathname === '/docs/framework-design/project-package-design' ? <li><Link className="active" href="/docs/framework-design/project-package-design">Project Package Design</Link></li> : <li><Link href="/docs/framework-design/project-package-design">Project Package Design</Link></li>}
                                 {pathname === '/docs/framework-design/dao-design' ? <li><Link className="active" href="/docs/framework-design/dao-design">DAO Design</Link></li> : <li><Link href="/docs/framework-design/dao-design">DAO Design</Link></li>}
+                                {pathname === '/docs/framework-design/constructure-design' ? <li><Link className="active" href="/docs/framework-design/constructure-design">Constructure Design</Link></li> : <li><Link href="/docs/framework-design/constructure-design">Constructure Design</Link></li>}
                             </ul>
                         </details>
                     </li>

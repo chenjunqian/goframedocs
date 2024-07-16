@@ -5,13 +5,13 @@ import { promises as fs } from "fs";
 
 export default async function Page() {
 
-    const installationMD = await fs.readFile(process.cwd() + "/docs/framework-design/dao-design.md", "utf-8");
+    const installationMD = await fs.readFile(process.cwd() + "/docs/framework-design/constructure-design.md", "utf-8");
 
     return (
         <DocsDrawer>
             <div className="w-full pl-16 pr-16 mt-9">
                 <DocsMarkdownViewer children={installationMD} />
-                <DocsPreNextBtns preName="Project Package Design" prePath="/docs/framework-design/project-package-design" nextName="Constructure Design" nextPath="/docs/framework-design/constructure-design" />
+                <DocsPreNextBtns preName="DAO Design" prePath="/docs/framework-design/dao-design" nextName="Data&BZ Model" nextPath="/docs/framework-design/data-bz-model" />
             </div>
         </DocsDrawer>
     )

@@ -75,7 +75,7 @@ func (s *Service) GetDoctorInfo(ctx context.Context, r *api.GetDoctorInfoReq) (r
 }
 ```
 
-## 2. Existing Paint Points
+## 2. Existing Pain Points
 
 ### 1. Tags Definition
 

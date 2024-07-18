@@ -6,7 +6,7 @@ Structured programming, in simple terms, involves using the definition of struct
 
 We recommend using structured definitions to manage inputs/outputs, especially the in the `controller` and `service` layers.
 
-## Paint Point
+## Pain Point
 
 ### 1. Controller
 

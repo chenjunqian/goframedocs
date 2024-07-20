@@ -57,4 +57,8 @@ type RegisterRes struct {
 
 ### **Business Input/Output Model**
 
-The business `input`/`output` model is used for method call interactions within services, particularly between `controllers` -> `services` or `services` -> `services`. This model is defined within the model layer. In the `Goframe`, these models' naming conventions like XxxInput and XxxOutput.
+The business `input`/`output` model is used for method call interactions within services, particularly between `controllers` -> `services` or `services` -> `services`. This model is defined within the model layer. In the `Goframe`, the naming conventions of these models like XxxInput and XxxOutput.
+
+## DO Model
+
+In `Goframe` there is a special model, `DO`. It is between the Business Model and the Data Model. Mainly used for the data access between `ORM` and `DAO`

@@ -83,6 +83,7 @@ export function DocsDrawer({ children }: Readonly<{ children: React.ReactNode }>
                                 {pathname === '/docs/framework-design/dao-design' ? <li><Link className="active" href="/docs/framework-design/dao-design">DAO Design</Link></li> : <li><Link href="/docs/framework-design/dao-design">DAO Design</Link></li>}
                                 {pathname === '/docs/framework-design/constructure-design' ? <li><Link className="active" href="/docs/framework-design/constructure-design">Constructure Design</Link></li> : <li><Link href="/docs/framework-design/constructure-design">Constructure Design</Link></li>}
                                 {pathname === '/docs/framework-design/data-bz-model' ? <li><Link className="active" href="/docs/framework-design/data-bz-model">Data&BZ Model</Link></li> : <li><Link href="/docs/framework-design/data-bz-model">Data&BZ Model</Link></li>}
+                                {pathname === '/docs/framework-design/microservice' ? <li><Link className="active" href="/docs/framework-design/microservice">Microservice</Link></li> : <li><Link href="/docs/framework-design/microservice">Microservice</Link></li>}
                             </ul>
                         </details>
                     </li>

@@ -86,6 +86,7 @@ export function DocsDrawer({ children }: Readonly<{ children: React.ReactNode }>
                                 {pathname === '/docs/framework-design/microservice' ? <li><Link className="active" href="/docs/framework-design/microservice">Microservice</Link></li> : <li><Link href="/docs/framework-design/microservice">Microservice</Link></li>}
                                 {pathname === '/docs/framework-design/tracing-design' ? <li><Link className="active" href="/docs/framework-design/tracing-design">Tracing Design</Link></li> : <li><Link href="/docs/framework-design/tracing-design">Tracing Design</Link></li>}
                                 {pathname === '/docs/framework-design/error-design' ? <li><Link className="active" href="/docs/framework-design/error-design">Error Design</Link></li> : <li><Link href="/docs/framework-design/error-design">Error Design</Link></li>}
+                                {pathname === '/docs/framework-design/interface-generic-design' ? <li><Link className="active" href="/docs/framework-design/interface-generic-design">Interface&Generic</Link></li> : <li><Link href="/docs/framework-design/interface-generic-design">Interface&Generic</Link></li>}
                             </ul>
                         </details>
                     </li>

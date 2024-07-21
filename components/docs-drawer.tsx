@@ -89,6 +89,7 @@ export function DocsDrawer({ children }: Readonly<{ children: React.ReactNode }>
                                 {pathname === '/docs/framework-design/interface-generic-design' ? <li><Link className="active" href="/docs/framework-design/interface-generic-design">Interface&Generic</Link></li> : <li><Link href="/docs/framework-design/interface-generic-design">Interface&Generic</Link></li>}
                                 {pathname === '/docs/framework-design/implict-explicit-init' ? <li><Link className="active" href="/docs/framework-design/implict-explicit-init">Implict&Explicit Init</Link></li> : <li><Link href="/docs/framework-design/implict-explicit-init">Implict&Explicit Init</Link></li>}
                                 {pathname === '/docs/framework-design/context-design' ? <li><Link className="active" href="/docs/framework-design/context-design">Context Design</Link></li> : <li><Link href="/docs/framework-design/context-design">Context Design</Link></li>}
+                                {pathname === '/docs/framework-design/enum-management' ? <li><Link className="active" href="/docs/framework-design/enum-management">Enum Management</Link></li> : <li><Link href="/docs/framework-design/enum-management">Enum Management</Link></li>}
                             </ul>
                         </details>
                     </li>

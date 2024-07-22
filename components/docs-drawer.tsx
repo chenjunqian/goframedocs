@@ -14,6 +14,7 @@ export function DocsDrawer({ children }: Readonly<{ children: React.ReactNode }>
     const [isFrameworkDesignOpen, setIsFrameworkDesignOpen] = useState(false);
     const [isDevelopmentOpen, setIsDevelopmentOpen] = useState(false);
     const [isCoreComponentsOpen, setIsCoreComponentsOpen] = useState(false);
+    const [isCliManagementOpen, setIsCliManagementOpen] = useState(false);
 
     const pathname = usePathname();
 
@@ -34,12 +35,16 @@ export function DocsDrawer({ children }: Readonly<{ children: React.ReactNode }>
         setIsDevelopmentOpen(false);
         setIsFrameworkDesignOpen(false);
         setIsCoreComponentsOpen(false);
+        setIsCliManagementOpen(false);
         if (pathname.startsWith('/docs/framework-design')) {
             setIsFrameworkDesignOpen(true);
         } else if (pathname.startsWith('/docs/development')) {
             setIsDevelopmentOpen(true);
         } else if (pathname.startsWith('/docs/core-component')) {
             setIsCoreComponentsOpen(true);
+            if (pathname.startsWith('/docs/core-component/command-line')) {
+                setIsCliManagementOpen(true);
+            }
         } else {
             setIsQuickStartOpen(true);
         }
@@ -100,6 +105,14 @@ export function DocsDrawer({ children }: Readonly<{ children: React.ReactNode }>
                             </ul>
                             <ul>
                                 <li><Link className={pathname === '/docs/core-component/debug-mode' ? 'active' : ''} href="/docs/core-component/debug-mode">Debug Mode</Link></li>
+                                <li>
+                                    <details open={isCoreComponentsOpen}>
+                                        <summary ><Link className="active" href="/docs/core-component/cli-management">CLI Management</Link></summary>
+                                        <ul>
+                                            <li><Link className={pathname === '/docs/core-component/cli-management/basic-concept' ? 'active' : ''} href="/docs/core-component/cli-management/basic-concept">Basic Concept</Link></li>
+                                        </ul>
+                                    </details>
+                                </li>
                             </ul>
                         </details>
                     </li>

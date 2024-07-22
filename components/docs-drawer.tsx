@@ -12,6 +12,7 @@ export function DocsDrawer({ children }: Readonly<{ children: React.ReactNode }>
     const [isFixed, setIsFixed] = useState(false);
     const [isQuickStartOpen, setIsQuickStartOpen] = useState(true);
     const [isFrameworkDesignOpen, setIsFrameworkDesignOpen] = useState(false);
+    const [isDevelopmentOpen, setIsDevelopmentOpen] = useState(false);
 
     const pathname = usePathname();
 
@@ -30,7 +31,10 @@ export function DocsDrawer({ children }: Readonly<{ children: React.ReactNode }>
     useEffect(() => {
         if (pathname.startsWith('/docs/framework-design')) {
             setIsQuickStartOpen(false);
+            setIsDevelopmentOpen(false);
             setIsFrameworkDesignOpen(true);
+        } else if (pathname.startsWith('/docs/development')) {
+            setIsDevelopmentOpen(true);
         }
     }, [pathname]);
 
@@ -64,12 +68,20 @@ export function DocsDrawer({ children }: Readonly<{ children: React.ReactNode }>
                         <details open={isQuickStartOpen}>
                             <summary ><Link className="" href="/docs/">Quick Start</Link></summary>
                             <ul>
-                                {pathname === '/docs' ? <li><Link className="active" href="/docs/">Introduction</Link></li> : <li><Link href="/docs/">Introduction</Link></li>}
-                                {pathname === '/docs/installation' ? <li><Link className="active" href="/docs/installation">Installation</Link></li> : <li><Link href="/docs/installation">Installation</Link></li>}
-                                {pathname === '/docs/create-application' ? <li><Link className="active" href="/docs/create-application">Create Application</Link></li> : <li><Link href="/docs/create-application">Create Application</Link></li>}
-                                {pathname === '/docs/startup' ? <li><Link className="active" href="/docs/startup">Startup</Link></li> : <li><Link href="/docs/startup">Startup</Link></li>}
-                                {pathname === '/docs/configuration' ? <li><Link className="active" href="/docs/configuration">Configuration</Link></li> : <li><Link href="/docs/configuration">Configuration</Link></li>}
-                                {pathname === '/docs/example' ? <li><Link className="active" href="/docs/example">Example</Link></li> : <li><Link href="/docs/example">Example</Link></li>}
+                                <li><Link className={pathname === '/docs/' ? 'active' : ''} href="/docs/">Introduction</Link></li>
+                                <li><Link className={pathname === '/docs/installation' ? 'active' : ''} href="/docs/installation">Installation</Link></li> 
+                                <li><Link className={pathname === '/docs/create-application' ? 'active' : ''} href="/docs/create-application">Create Application</Link></li>
+                                <li><Link className={pathname === '/docs/startup' ? 'active' : ''} href="/docs/startup">Startup</Link></li>
+                                <li><Link className={pathname === '/docs/configuration' ? 'active' : ''} href="/docs/configuration">Configuration</Link></li>
+                                <li><Link className={pathname === '/docs/example' ? 'active' : ''} href="/docs/example">Example</Link></li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li>
+                        <details open={isDevelopmentOpen}>
+                            <summary ><Link className="active" href="/docs/development/prepare">Development</Link></summary>
+                            <ul>
+                                <li><Link className={pathname === '/docs/development/prepare' ? 'active' : ''} href="/docs/development/prepare">Preparation</Link></li> 
                             </ul>
                         </details>
                     </li>
@@ -77,19 +89,19 @@ export function DocsDrawer({ children }: Readonly<{ children: React.ReactNode }>
                         <details open={isFrameworkDesignOpen}>
                             <summary ><Link className="active" href="/docs/framework-design/module-design">Framework Design</Link></summary>
                             <ul>
-                                {pathname === '/docs/framework-design/module-design' ? <li><Link className="active" href="/docs/framework-design/module-design">Module Design</Link></li> : <li><Link href="/docs/framework-design/module-design">Module Design</Link></li>}
-                                {pathname === '/docs/framework-design/unified-framework-design' ? <li><Link className="active" href="/docs/framework-design/module-design">Unified Framework Design</Link></li> : <li><Link href="/docs/framework-design/unified-framework-design">Unified Framework Design</Link></li>}
-                                {pathname === '/docs/framework-design/project-package-design' ? <li><Link className="active" href="/docs/framework-design/project-package-design">Project Package Design</Link></li> : <li><Link href="/docs/framework-design/project-package-design">Project Package Design</Link></li>}
-                                {pathname === '/docs/framework-design/dao-design' ? <li><Link className="active" href="/docs/framework-design/dao-design">DAO Design</Link></li> : <li><Link href="/docs/framework-design/dao-design">DAO Design</Link></li>}
-                                {pathname === '/docs/framework-design/constructure-design' ? <li><Link className="active" href="/docs/framework-design/constructure-design">Constructure Design</Link></li> : <li><Link href="/docs/framework-design/constructure-design">Constructure Design</Link></li>}
-                                {pathname === '/docs/framework-design/data-bz-model' ? <li><Link className="active" href="/docs/framework-design/data-bz-model">Data&BZ Model</Link></li> : <li><Link href="/docs/framework-design/data-bz-model">Data&BZ Model</Link></li>}
-                                {pathname === '/docs/framework-design/microservice' ? <li><Link className="active" href="/docs/framework-design/microservice">Microservice</Link></li> : <li><Link href="/docs/framework-design/microservice">Microservice</Link></li>}
-                                {pathname === '/docs/framework-design/tracing-design' ? <li><Link className="active" href="/docs/framework-design/tracing-design">Tracing Design</Link></li> : <li><Link href="/docs/framework-design/tracing-design">Tracing Design</Link></li>}
-                                {pathname === '/docs/framework-design/error-design' ? <li><Link className="active" href="/docs/framework-design/error-design">Error Design</Link></li> : <li><Link href="/docs/framework-design/error-design">Error Design</Link></li>}
-                                {pathname === '/docs/framework-design/interface-generic-design' ? <li><Link className="active" href="/docs/framework-design/interface-generic-design">Interface&Generic</Link></li> : <li><Link href="/docs/framework-design/interface-generic-design">Interface&Generic</Link></li>}
-                                {pathname === '/docs/framework-design/implict-explicit-init' ? <li><Link className="active" href="/docs/framework-design/implict-explicit-init">Implict&Explicit Init</Link></li> : <li><Link href="/docs/framework-design/implict-explicit-init">Implict&Explicit Init</Link></li>}
-                                {pathname === '/docs/framework-design/context-design' ? <li><Link className="active" href="/docs/framework-design/context-design">Context Design</Link></li> : <li><Link href="/docs/framework-design/context-design">Context Design</Link></li>}
-                                {pathname === '/docs/framework-design/enum-management' ? <li><Link className="active" href="/docs/framework-design/enum-management">Enum Management</Link></li> : <li><Link href="/docs/framework-design/enum-management">Enum Management</Link></li>}
+                                <li><Link className={pathname === '/docs/framework-design/module-design' ? 'active' : ''} href="/docs/framework-design/module-design">Module Design</Link></li>
+                                <li><Link className={pathname === '/docs/framework-design/module-design' ? 'active' : ''} href="/docs/framework-design/module-design">Unified Framework Design</Link></li>
+                                <li><Link className={pathname === '/docs/framework-design/project-package-design' ? 'active' : ''} href="/docs/framework-design/project-package-design">Project Package Design</Link></li>
+                                <li><Link className={pathname === '/docs/framework-design/dao-design' ? 'active' : ''} href="/docs/framework-design/dao-design">DAO Design</Link></li>
+                                <li><Link className={pathname === '/docs/framework-design/constructure-design' ? 'active' : ''} href="/docs/framework-design/constructure-design">Constructure Design</Link></li>
+                                <li><Link className={pathname === '/docs/framework-design/data-bz-model' ? 'active' : ''} href="/docs/framework-design/data-bz-model">Data&BZ Model</Link></li>
+                                <li><Link className={pathname === '/docs/framework-design/microservice' ? 'active' : ''} href="/docs/framework-design/microservice">Microservice</Link></li>
+                                <li><Link className={pathname === '/docs/framework-design/tracing-design' ? 'active' : ''} href="/docs/framework-design/tracing-design">Tracing Design</Link></li>
+                                <li><Link className={pathname === '/docs/framework-design/error-design' ? 'active' : ''} href="/docs/framework-design/error-design">Error Design</Link></li>
+                                <li><Link className={pathname === '/docs/framework-design/interface-generic-design' ? 'active' : ''} href="/docs/framework-design/interface-generic-design">Interface&Generic</Link></li>
+                                <li><Link className={pathname === '/docs/framework-design/implict-explicit-init' ? 'active' : ''} href="/docs/framework-design/implict-explicit-init">Implict&Explicit Init</Link></li>
+                                <li><Link className={pathname === '/docs/framework-design/context-design' ? 'active' : ''} href="/docs/framework-design/context-design">Context Design</Link></li> 
+                                <li><Link className={pathname === '/docs/framework-design/enum-management' ? 'active' : ''} href="/docs/framework-design/enum-management">Enum Management</Link></li> 
                             </ul>
                         </details>
                     </li>

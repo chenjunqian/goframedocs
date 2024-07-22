@@ -38,7 +38,7 @@ export function DocsDrawer({ children }: Readonly<{ children: React.ReactNode }>
             setIsFrameworkDesignOpen(true);
         } else if (pathname.startsWith('/docs/development')) {
             setIsDevelopmentOpen(true);
-        } else if (pathname.startsWith('/docs/core-components')) {
+        } else if (pathname.startsWith('/docs/core-component')) {
             setIsCoreComponentsOpen(true);
         } else {
             setIsQuickStartOpen(true);
@@ -97,6 +97,9 @@ export function DocsDrawer({ children }: Readonly<{ children: React.ReactNode }>
                             <summary ><Link className="active" href="/docs/core-component/object-management">Core Components</Link></summary>
                             <ul>
                                 <li><Link className={pathname === '/docs/core-component/object-management' ? 'active' : ''} href="/docs/core-component/object-management">Object Management</Link></li>
+                            </ul>
+                            <ul>
+                                <li><Link className={pathname === '/docs/core-component/debug-mode' ? 'active' : ''} href="/docs/core-component/debug-mode">Debug Mode</Link></li>
                             </ul>
                         </details>
                     </li>

@@ -13,6 +13,7 @@ export function DocsDrawer({ children }: Readonly<{ children: React.ReactNode }>
     const [isQuickStartOpen, setIsQuickStartOpen] = useState(true);
     const [isFrameworkDesignOpen, setIsFrameworkDesignOpen] = useState(false);
     const [isDevelopmentOpen, setIsDevelopmentOpen] = useState(false);
+    const [isCoreComponentsOpen, setIsCoreComponentsOpen] = useState(false);
 
     const pathname = usePathname();
 
@@ -29,12 +30,18 @@ export function DocsDrawer({ children }: Readonly<{ children: React.ReactNode }>
     }, []);
 
     useEffect(() => {
+        setIsQuickStartOpen(false);
+        setIsDevelopmentOpen(false);
+        setIsFrameworkDesignOpen(false);
+        setIsCoreComponentsOpen(false);
         if (pathname.startsWith('/docs/framework-design')) {
-            setIsQuickStartOpen(false);
-            setIsDevelopmentOpen(false);
             setIsFrameworkDesignOpen(true);
         } else if (pathname.startsWith('/docs/development')) {
             setIsDevelopmentOpen(true);
+        } else if (pathname.startsWith('/docs/core-components')) {
+            setIsCoreComponentsOpen(true);
+        } else {
+            setIsQuickStartOpen(true);
         }
     }, [pathname]);
 
@@ -69,7 +76,7 @@ export function DocsDrawer({ children }: Readonly<{ children: React.ReactNode }>
                             <summary ><Link className="" href="/docs/">Quick Start</Link></summary>
                             <ul>
                                 <li><Link className={pathname === '/docs/' ? 'active' : ''} href="/docs/">Introduction</Link></li>
-                                <li><Link className={pathname === '/docs/installation' ? 'active' : ''} href="/docs/installation">Installation</Link></li> 
+                                <li><Link className={pathname === '/docs/installation' ? 'active' : ''} href="/docs/installation">Installation</Link></li>
                                 <li><Link className={pathname === '/docs/create-application' ? 'active' : ''} href="/docs/create-application">Create Application</Link></li>
                                 <li><Link className={pathname === '/docs/startup' ? 'active' : ''} href="/docs/startup">Startup</Link></li>
                                 <li><Link className={pathname === '/docs/configuration' ? 'active' : ''} href="/docs/configuration">Configuration</Link></li>
@@ -77,11 +84,19 @@ export function DocsDrawer({ children }: Readonly<{ children: React.ReactNode }>
                             </ul>
                         </details>
                     </li>
-                    <li>
+                    {/* <li>
                         <details open={isDevelopmentOpen}>
                             <summary ><Link className="active" href="/docs/development/prepare">Development</Link></summary>
                             <ul>
                                 <li><Link className={pathname === '/docs/development/prepare' ? 'active' : ''} href="/docs/development/prepare">Preparation</Link></li> 
+                            </ul>
+                        </details>
+                    </li> */}
+                    <li>
+                        <details open={isCoreComponentsOpen}>
+                            <summary ><Link className="active" href="/docs/core-component/object-management">Core Components</Link></summary>
+                            <ul>
+                                <li><Link className={pathname === '/docs/core-component/object-management' ? 'active' : ''} href="/docs/core-component/object-management">Object Management</Link></li>
                             </ul>
                         </details>
                     </li>
@@ -100,8 +115,8 @@ export function DocsDrawer({ children }: Readonly<{ children: React.ReactNode }>
                                 <li><Link className={pathname === '/docs/framework-design/error-design' ? 'active' : ''} href="/docs/framework-design/error-design">Error Design</Link></li>
                                 <li><Link className={pathname === '/docs/framework-design/interface-generic-design' ? 'active' : ''} href="/docs/framework-design/interface-generic-design">Interface&Generic</Link></li>
                                 <li><Link className={pathname === '/docs/framework-design/implict-explicit-init' ? 'active' : ''} href="/docs/framework-design/implict-explicit-init">Implict&Explicit Init</Link></li>
-                                <li><Link className={pathname === '/docs/framework-design/context-design' ? 'active' : ''} href="/docs/framework-design/context-design">Context Design</Link></li> 
-                                <li><Link className={pathname === '/docs/framework-design/enum-management' ? 'active' : ''} href="/docs/framework-design/enum-management">Enum Management</Link></li> 
+                                <li><Link className={pathname === '/docs/framework-design/context-design' ? 'active' : ''} href="/docs/framework-design/context-design">Context Design</Link></li>
+                                <li><Link className={pathname === '/docs/framework-design/enum-management' ? 'active' : ''} href="/docs/framework-design/enum-management">Enum Management</Link></li>
                             </ul>
                         </details>
                     </li>

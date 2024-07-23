@@ -92,7 +92,7 @@ $ main grpc
 start grpc server
 ```
 
-## Structured Parameters
+## Structured Parameter
 
 Now that we're managing the command line through object-oriented methods, below is how parameters/options are managed in a structured way.
 

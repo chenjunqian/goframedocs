@@ -11,7 +11,7 @@ export default async function Page() {
         <DocsDrawer>
             <div className="w-full pl-16 pr-16 mt-9">
                 <DocsMarkdownViewer children={installationMD} />
-                <DocsPreNextBtns preName="Constructure Design" prePath="/docs/framework-design/constructure-design" nextName="Microservice Design" nextPath="/docs/framework-design/microservice-design" />
+                <DocsPreNextBtns preName="Constructure Design" prePath="/docs/framework-design/constructure-design" nextName="Microservice Design" nextPath="/docs/framework-design/microservice" />
             </div>
         </DocsDrawer>
     )

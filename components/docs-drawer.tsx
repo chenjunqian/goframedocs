@@ -126,7 +126,7 @@ export function DocsDrawer({ children }: Readonly<{ children: React.ReactNode }>
                             <summary ><Link className="active" href="/docs/framework-design/module-design">Framework Design</Link></summary>
                             <ul>
                                 <li><Link className={pathname === '/docs/framework-design/module-design' ? 'active' : ''} href="/docs/framework-design/module-design">Module Design</Link></li>
-                                <li><Link className={pathname === '/docs/framework-design/module-design' ? 'active' : ''} href="/docs/framework-design/module-design">Unified Framework Design</Link></li>
+                                <li><Link className={pathname === '/docs/framework-design/unified-framework-design' ? 'active' : ''} href="/docs/framework-design/unified-framework-design">Unified Framework Design</Link></li>
                                 <li><Link className={pathname === '/docs/framework-design/project-package-design' ? 'active' : ''} href="/docs/framework-design/project-package-design">Project Package Design</Link></li>
                                 <li><Link className={pathname === '/docs/framework-design/dao-design' ? 'active' : ''} href="/docs/framework-design/dao-design">DAO Design</Link></li>
                                 <li><Link className={pathname === '/docs/framework-design/constructure-design' ? 'active' : ''} href="/docs/framework-design/constructure-design">Constructure Design</Link></li>

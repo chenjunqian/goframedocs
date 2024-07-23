@@ -170,3 +170,74 @@ arguments validation failed for command "http": The Name field is required
         /Users/john/Workspace/Go/GOPATH/src/github.com/gogf/gf/.test/test.go:38
 2. The Name field is required
 ```
+
+It failed due to the `NAME` parameter is required.
+
+`Goframe` adopts a full error stack design, where all component errors come with a bottom-up error stack to facilitate quick error location. We can obtain the error object returned by the `RunWithError` method to close the stack information.
+
+Now add parameter input and try again:
+
+```bash
+$ main http my-http-server -p 8199
+2022-01-19 22:52:45.808 [DEBU] openapi specification is disabled
+
+      SERVER     | DOMAIN  | ADDRESS | METHOD | ROUTE |                             HANDLER                             |    MIDDLEWARE
+-----------------|---------|---------|--------|-------|-----------------------------------------------------------------|--------------------
+  my-http-server | default | :8199   | ALL    | /     | main.(*cMain).Http.func1                                        |
+-----------------|---------|---------|--------|-------|-----------------------------------------------------------------|--------------------
+  my-http-server | default | :8199   | ALL    | /*    | github.com/gogf/gf/v2/net/ghttp.internalMiddlewareServerTracing | GLOBAL MIDDLEWARE
+-----------------|---------|---------|--------|-------|-----------------------------------------------------------------|--------------------
+
+2022-01-19 22:52:45.810 66292: http server started listening on [:8199]
+```
+
+`Goframe` development tool commonly utilizes object-oriented, structured command line management. For more details, please refer: <https://github.com/gogf/gf/tree/master/cmd/gf>
+
+## Pre-Defined Tags
+
+`Goframe` also provides a pre-defined struct tags.
+
+- `name`: The name of the command.
+  - If it is an input argument structure, the name will automatically be read from the method name when the name is not specified.
+
+- `short`: The short name of the command.
+
+- `usage`: The description of the command.
+
+- `brief`: The brief description of the command.
+
+- `arg`: The input argument, not the option.
+  - Only use for tag
+
+- `orpah`: Withou parameters.
+
+- `description`: The description of the command, shorten with `dc`.
+
+- `additional`: The additional description of the command, shorten with `ad`.
+
+- `example`: The example of the command, shorten with `eg`.
+
+- `root`: Specifying the child command name as the parent command, other methods are its child commands.
+  - Only use for `Meta` struct command tag
+
+- `strict`: The strict mode, if the `input` parameter/option is not specified, an error will be reported.
+  - Only use for `Meta` struct command tag
+
+- `config`: The command's option data supports being read from a specified configuration, which is sourced from the default global singleton configuration object.
+  - Only use for `Meta` struct command tag
+
+## Advanced Features
+
+### Automatic Data Conversion
+
+Structured parameter input supports automatic data type conversion. You just need to define the data type, and the framework component will take care of the rest. Automatic data type conversion is found in many components of `goframe`, especially in the parameter input of `HTTP/GRPC` services. The underlying data conversion component used is: [Type Conversion](https://temperory.net).
+
+Command line argument data conversion follows a case-insensitive and special character-ignoring rule to match property fields. For example, if there is a field property called Name in the input argument structure, whether the command line input is named `name` or `NAME`, it will be received by the Name field property.
+
+### Automatic Data Validation
+
+Similarly, the data validation component also uses a unified component. For details, please refer to the section: [Data Validation](https://temperory.net).
+
+### Reading Data from Configuration
+
+When the corresponding data is not passed in the command line, the structured data of the input parameter supports automatic retrieval from the configuration component. Simply set the `config` tag in `Meta`, and the configuration is sourced from the default global singleton configuration object. For specific examples, you can refer to the source code of the `Goframe` framework development tool: <https://github.com/gogf/gf/tree/master/cmd/gf>

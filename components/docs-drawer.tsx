@@ -113,6 +113,7 @@ export function DocsDrawer({ children }: Readonly<{ children: React.ReactNode }>
                                             <li><Link className={pathname === '/docs/core-component/cli-management/function' ? 'active' : ''} href="/docs/core-component/cli-management/function">Function</Link></li>
                                             <li><Link className={pathname === '/docs/core-component/cli-management/parser' ? 'active' : ''} href="/docs/core-component/cli-management/parser">Parser</Link></li>
                                             <li><Link className={pathname === '/docs/core-component/cli-management/command' ? 'active' : ''} href="/docs/core-component/cli-management/command">Command</Link></li>
+                                            <li><Link className={pathname === '/docs/core-component/cli-management/parameter' ? 'active' : ''} href="/docs/core-component/cli-management/parameter">Parameter</Link></li>
                                         </ul>
                                     </details>
                                 </li>

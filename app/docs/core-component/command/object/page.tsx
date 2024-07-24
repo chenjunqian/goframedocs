@@ -5,13 +5,13 @@ import { promises as fs } from "fs";
 
 export default async function Page() {
 
-    const installationMD = await fs.readFile(process.cwd() + "/docs/core-component/cli-management/command.md", "utf-8");
+    const installationMD = await fs.readFile(process.cwd() + "/docs/core-component/command/command.md", "utf-8");
 
     return (
         <DocsDrawer>
             <div className="w-full pl-16 pr-16 mt-9">
                 <DocsMarkdownViewer children={installationMD} />
-                <DocsPreNextBtns preName="CLI | Parser" prePath="/docs/core-component/cli-management/parser" nextName="CLI | Parameter" nextPath="/docs/core-component/cli-management/parameter" />
+                <DocsPreNextBtns preName="Command | Parser" prePath="/docs/core-component/command/parser" nextName="Command | Parameter" nextPath="/docs/core-component/command/parameter" />
             </div>
         </DocsDrawer>
     )

@@ -1,4 +1,4 @@
-# CLI - Tracing
+# Command - Tracing
 
 ## Overview
 

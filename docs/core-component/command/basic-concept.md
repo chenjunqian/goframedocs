@@ -1,4 +1,4 @@
-# CLI - Basic Concept
+# Command - Basic Concept
 
 ## Arguments
 

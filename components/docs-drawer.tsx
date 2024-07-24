@@ -15,6 +15,7 @@ export function DocsDrawer({ children }: Readonly<{ children: React.ReactNode }>
     const [isDevelopmentOpen, setIsDevelopmentOpen] = useState(false);
     const [isCoreComponentsOpen, setIsCoreComponentsOpen] = useState(false);
     const [isCliManagementOpen, setIsCliManagementOpen] = useState(false);
+    const [isConfigurationOpen, setIsConfigurationOpen] = useState(false);
 
     const pathname = usePathname();
 
@@ -36,14 +37,17 @@ export function DocsDrawer({ children }: Readonly<{ children: React.ReactNode }>
         setIsFrameworkDesignOpen(false);
         setIsCoreComponentsOpen(false);
         setIsCliManagementOpen(false);
+        setIsConfigurationOpen(false);
         if (pathname.startsWith('/docs/framework-design')) {
             setIsFrameworkDesignOpen(true);
         } else if (pathname.startsWith('/docs/development')) {
             setIsDevelopmentOpen(true);
         } else if (pathname.startsWith('/docs/core-component')) {
             setIsCoreComponentsOpen(true);
-            if (pathname.startsWith('/docs/core-component/command-line')) {
+            if (pathname.startsWith('/docs/core-component/command')) {
                 setIsCliManagementOpen(true);
+            } else if (pathname.startsWith('/docs/core-component/configuration')) {
+                setIsConfigurationOpen(true);
             }
         } else {
             setIsQuickStartOpen(true);
@@ -106,16 +110,24 @@ export function DocsDrawer({ children }: Readonly<{ children: React.ReactNode }>
                             <ul>
                                 <li><Link className={pathname === '/docs/core-component/debug-mode' ? 'active' : ''} href="/docs/core-component/debug-mode">Debug Mode</Link></li>
                                 <li>
-                                    <details open={isCoreComponentsOpen}>
-                                        <summary ><Link className="active" href="/docs/core-component/cli-management">CLI Management</Link></summary>
+                                    <details open={isCliManagementOpen}>
+                                        <summary ><Link className="active" href="/docs/core-component/coommand">Command</Link></summary>
                                         <ul>
-                                            <li><Link className={pathname === '/docs/core-component/cli-management/basic-concept' ? 'active' : ''} href="/docs/core-component/cli-management/basic-concept">Basic Concept</Link></li>
-                                            <li><Link className={pathname === '/docs/core-component/cli-management/function' ? 'active' : ''} href="/docs/core-component/cli-management/function">Function</Link></li>
-                                            <li><Link className={pathname === '/docs/core-component/cli-management/parser' ? 'active' : ''} href="/docs/core-component/cli-management/parser">Parser</Link></li>
-                                            <li><Link className={pathname === '/docs/core-component/cli-management/command' ? 'active' : ''} href="/docs/core-component/cli-management/command">Command</Link></li>
-                                            <li><Link className={pathname === '/docs/core-component/cli-management/parameter' ? 'active' : ''} href="/docs/core-component/cli-management/parameter">Parameter</Link></li>
-                                            <li><Link className={pathname === '/docs/core-component/cli-management/terminal-interaction' ? 'active' : ''} href="/docs/core-component/cli-management/terminal-interaction">Terminal Interaction</Link></li>
-                                            <li><Link className={pathname === '/docs/core-component/cli-management/tracing' ? 'active' : ''} href="/docs/core-component/cli-management/tracing">Tracing</Link></li>
+                                            <li><Link className={pathname === '/docs/core-component/command/basic-concept' ? 'active' : ''} href="/docs/core-component/command/basic-concept">Basic Concept</Link></li>
+                                            <li><Link className={pathname === '/docs/core-component/command/function' ? 'active' : ''} href="/docs/core-component/command/function">Function</Link></li>
+                                            <li><Link className={pathname === '/docs/core-component/command/parser' ? 'active' : ''} href="/docs/core-component/command/parser">Parser</Link></li>
+                                            <li><Link className={pathname === '/docs/core-component/command/object' ? 'active' : ''} href="/docs/core-component/command/object">Object</Link></li>
+                                            <li><Link className={pathname === '/docs/core-component/command/parameter' ? 'active' : ''} href="/docs/core-component/command/parameter">Parameter</Link></li>
+                                            <li><Link className={pathname === '/docs/core-component/command/terminal-interaction' ? 'active' : ''} href="/docs/core-component/command/terminal-interaction">Terminal Interaction</Link></li>
+                                            <li><Link className={pathname === '/docs/core-component/command/tracing' ? 'active' : ''} href="/docs/core-component/command/tracing">Tracing</Link></li>
+                                        </ul>
+                                    </details>
+                                </li>
+                                <li>
+                                    <details open={isConfigurationOpen}>
+                                        <summary ><Link className="active" href="/docs/core-component/configuration">Configuration</Link></summary>
+                                        <ul>
+                                            <li><Link className={pathname === '/docs/core-component/configuration/object' ? 'active' : ''} href="/docs/core-component/configuration/object">Object</Link></li>
                                         </ul>
                                     </details>
                                 </li>

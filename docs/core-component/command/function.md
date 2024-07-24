@@ -1,4 +1,4 @@
-# CLI - Function
+# Command - Function
 
 The `gcmd` component provides commonly used basic package methods, which can directly obtain command line arguments and options according to the default parsing rules.
 

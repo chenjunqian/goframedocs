@@ -1,4 +1,4 @@
-# CLI - Parser
+# Command - Parser
 
 ## Overview
 

@@ -1,4 +1,4 @@
-# CLI - Terminal Interaction
+# Command - Terminal Interaction
 
 ## Introduction
 

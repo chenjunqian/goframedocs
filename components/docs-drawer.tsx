@@ -115,6 +115,7 @@ export function DocsDrawer({ children }: Readonly<{ children: React.ReactNode }>
                                             <li><Link className={pathname === '/docs/core-component/cli-management/command' ? 'active' : ''} href="/docs/core-component/cli-management/command">Command</Link></li>
                                             <li><Link className={pathname === '/docs/core-component/cli-management/parameter' ? 'active' : ''} href="/docs/core-component/cli-management/parameter">Parameter</Link></li>
                                             <li><Link className={pathname === '/docs/core-component/cli-management/terminal-interaction' ? 'active' : ''} href="/docs/core-component/cli-management/terminal-interaction">Terminal Interaction</Link></li>
+                                            <li><Link className={pathname === '/docs/core-component/cli-management/tracing' ? 'active' : ''} href="/docs/core-component/cli-management/tracing">Tracing</Link></li>
                                         </ul>
                                     </details>
                                 </li>

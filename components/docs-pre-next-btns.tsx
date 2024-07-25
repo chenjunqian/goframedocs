@@ -16,8 +16,8 @@ export function DocsPreNextBtns({ preName, prePath, nextName, nextPath }: DocsPr
     return (
         <div className="w-full lg:max-w-3xl mb-6">
             <div className="divider mb-6" />
-            <div className="w-full flex justify-center">
-                <div className={`w-1/2 flex justify-start ${!prePath ? 'invisible' : ''}`}>
+            <div className="w-full md:flex md:justify-center">
+                <div className={`md:w-1/2 w-full flex md:justify-start justify-center ${!prePath ? 'invisible' : ''}`}>
                     <Link href={prePath ? prePath : "/"} className="btn flex">
                         <ArrowLeft className="w-5 h-5 mr-2" />
                         <div className="text-left">
@@ -26,7 +26,7 @@ export function DocsPreNextBtns({ preName, prePath, nextName, nextPath }: DocsPr
                         </div>
                     </Link>
                 </div>
-                <div className={`w-1/2 flex justify-end ${!nextPath ? 'invisible' : ''}`}>
+                <div className={`md:w-1/2 w-full flex md:justify-end justify-center md:pt-0 pt-4 ${!nextPath ? 'invisible' : ''}`}>
                     <Link href={nextPath ? nextPath : "/"} className="btn btn-neutral flex">
                         <div className="text-right">
                             <div className="text-base-content/50 hidden text-xs font-normal md:block">next</div>

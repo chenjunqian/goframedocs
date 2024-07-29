@@ -132,6 +132,7 @@ export function DocsDrawer({ children }: Readonly<{ children: React.ReactNode }>
                                             <li><Link className={pathname === '/docs/core-component/configuration/function' ? 'active' : ''} href="/docs/core-component/configuration/function">Function</Link></li>
                                             <li><Link className={pathname === '/docs/core-component/configuration/interface-base' ? 'active' : ''} href="/docs/core-component/configuration/interface-base">Interface-Base</Link></li>
                                             <li><Link className={pathname === '/docs/core-component/configuration/adapter-file' ? 'active' : ''} href="/docs/core-component/configuration/adapter-file">Adapter File</Link></li>
+                                            <li><Link className={pathname === '/docs/core-component/configuration/adapter-content' ? 'active' : ''} href="/docs/core-component/configuration/adapter-content">Adapter Content</Link></li>
                                         </ul>
                                     </details>
                                 </li>

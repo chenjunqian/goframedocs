@@ -16,6 +16,7 @@ export function DocsDrawer({ children }: Readonly<{ children: React.ReactNode }>
     const [isCoreComponentsOpen, setIsCoreComponentsOpen] = useState(false);
     const [isCliManagementOpen, setIsCliManagementOpen] = useState(false);
     const [isConfigurationOpen, setIsConfigurationOpen] = useState(false);
+    const [isLogOpen, setIsLogOpen] = useState(false);
 
     const pathname = usePathname();
 
@@ -38,6 +39,7 @@ export function DocsDrawer({ children }: Readonly<{ children: React.ReactNode }>
         setIsCoreComponentsOpen(false);
         setIsCliManagementOpen(false);
         setIsConfigurationOpen(false);
+        setIsLogOpen(false);
         if (pathname.startsWith('/docs/framework-design')) {
             setIsFrameworkDesignOpen(true);
         } else if (pathname.startsWith('/docs/development')) {
@@ -48,6 +50,8 @@ export function DocsDrawer({ children }: Readonly<{ children: React.ReactNode }>
                 setIsCliManagementOpen(true);
             } else if (pathname.startsWith('/docs/core-component/configuration')) {
                 setIsConfigurationOpen(true);
+            } else if (pathname.startsWith('/docs/core-component/log')) {
+                setIsLogOpen(true);
             }
         } else {
             setIsQuickStartOpen(true);
@@ -132,6 +136,14 @@ export function DocsDrawer({ children }: Readonly<{ children: React.ReactNode }>
                                             <li><Link className={pathname === '/docs/core-component/configuration/function' ? 'active' : ''} href="/docs/core-component/configuration/function">Function</Link></li>
                                             <li><Link className={pathname === '/docs/core-component/configuration/interface-base' ? 'active' : ''} href="/docs/core-component/configuration/interface-base">Interface-Base</Link></li>
                                             <li><Link className={pathname === '/docs/core-component/configuration/adapter' ? 'active' : ''} href="/docs/core-component/configuration/adapter">Adapter</Link></li>
+                                        </ul>
+                                    </details>
+                                </li>
+                                <li>
+                                    <details open={isLogOpen}>
+                                        <summary ><Link className="active" href="/docs/core-component/log">Log</Link></summary>
+                                        <ul>
+                                            <li><Link className={pathname === '/docs/core-component/log/config' ? 'active' : ''} href="/docs/core-component/log/config">Log | Configuration</Link></li>
                                         </ul>
                                     </details>
                                 </li>

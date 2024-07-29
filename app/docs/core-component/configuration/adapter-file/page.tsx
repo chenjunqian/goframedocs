@@ -5,7 +5,7 @@ import { promises as fs } from "fs";
 
 export default async function Page() {
 
-    const installationMD = await fs.readFile(process.cwd() + "/docs/core-component/configuration/interface-base.md", "utf-8");
+    const installationMD = await fs.readFile(process.cwd() + "/docs/core-component/configuration/adapter-file.md", "utf-8");
 
     return (
         <DocsDrawer>

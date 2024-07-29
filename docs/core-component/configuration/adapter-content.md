@@ -1,4 +1,4 @@
-# Configuration - Adapter Content
+# Configuration - Content Adapter
 
 ## `AdapterContent`
 

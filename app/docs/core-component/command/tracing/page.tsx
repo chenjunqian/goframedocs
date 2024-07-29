@@ -11,7 +11,7 @@ export default async function Page() {
         <DocsDrawer>
             <div className="w-full pl-16 pr-16 mt-9">
                 <DocsMarkdownViewer children={installationMD} />
-                <DocsPreNextBtns preName="Command | Terminal" prePath="/docs/core-component/command/parameter" nextName="Command | configuration" nextPath="/docs/core-component/command/configuration" />
+                <DocsPreNextBtns preName="Command | Terminal" prePath="/docs/core-component/command/parameter" nextName="Command | configuration" nextPath="/docs/core-component/configuration/" />
             </div>
         </DocsDrawer>
     )

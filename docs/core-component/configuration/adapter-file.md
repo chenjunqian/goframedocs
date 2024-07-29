@@ -1,4 +1,4 @@
-# Configuration - Adapter File
+# Configuration - File Adapter
 
 ## AdapterFile
 

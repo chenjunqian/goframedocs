@@ -1,6 +1,6 @@
 # Log - Path
 
-## Log File
+## File Name Format
 
 By defaul log file named with current date with format `YYY-MM-DD.log`, we can use `SetFile` method to change it.
 

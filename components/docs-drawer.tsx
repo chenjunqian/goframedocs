@@ -147,6 +147,7 @@ export function DocsDrawer({ children }: Readonly<{ children: React.ReactNode }>
                                             <li><Link className={pathname === '/docs/core-component/log/level' ? 'active' : ''} href="/docs/core-component/log/level">Level</Link></li>
                                             <li><Link className={pathname === '/docs/core-component/log/path' ? 'active' : ''} href="/docs/core-component/log/path">Path</Link></li>
                                             <li><Link className={pathname === '/docs/core-component/log/chain-opts' ? 'active' : ''} href="/docs/core-component/log/chain-opts">Chain Opts</Link></li>
+                                            <li><Link className={pathname === '/docs/core-component/log/color-print' ? 'active' : ''} href="/docs/core-component/log/color-print">Color Print</Link></li>
                                         </ul>
                                     </details>
                                 </li>

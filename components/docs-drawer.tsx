@@ -81,7 +81,7 @@ export function DocsDrawer({ children }: Readonly<{ children: React.ReactNode }>
                     <div className="flex items-center mb-4">
                         <a className="btn btn-ghost text-xl" href="/">
                             <Image src="/gf-logo.png" alt="logo" width={32} height={32} />
-                            Goframe V2
+                            Goframe
                         </a>
                     </div>
                     <li>

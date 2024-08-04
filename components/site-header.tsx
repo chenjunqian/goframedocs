@@ -18,7 +18,7 @@ export function SiteHeader() {
                 </div>
                 <div className="navbar-end">
                     <ul className="px-1 flex items-center">
-                        <li className="mr-4">
+                        {/* <li className="mr-4">
                             <Link href="/docs">
                                 <button className="btn btn-sm btn-ghost text-base">Document</button>
                             </Link>
@@ -29,7 +29,7 @@ export function SiteHeader() {
                                     <Github className="w-5 h-5" />
                                 </button>
                             </Link>
-                        </li>
+                        </li> */}
                     </ul>
                 </div>
             </div>

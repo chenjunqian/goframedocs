@@ -150,6 +150,7 @@ export function DocsDrawer({ children }: Readonly<{ children: React.ReactNode }>
                                             <li><Link className={pathname === '/docs/core-component/log/color-print' ? 'active' : ''} href="/docs/core-component/log/color-print">Color Print</Link></li>
                                             <li><Link className={pathname === '/docs/core-component/log/context' ? 'active' : ''} href="/docs/core-component/log/context">Context</Link></li>
                                             <li><Link className={pathname === '/docs/core-component/log/handler' ? 'active' : ''} href="/docs/core-component/log/handler">Handler</Link></li>
+                                            <li><Link className={pathname === '/docs/core-component/log/json-format' ? 'active' : ''} href="/docs/core-component/log/json-format">JSON Format</Link></li>
                                         </ul>
                                     </details>
                                 </li>

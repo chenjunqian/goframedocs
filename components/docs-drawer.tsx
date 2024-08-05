@@ -157,6 +157,7 @@ export function DocsDrawer({ children }: Readonly<{ children: React.ReactNode }>
                                             <li><Link className={pathname === '/docs/core-component/log/writer' ? 'active' : ''} href="/docs/core-component/log/writer">Writer</Link></li>
                                             <li><Link className={pathname === '/docs/core-component/log/flags' ? 'active' : ''} href="/docs/core-component/log/flags">Flags</Link></li>
                                             <li><Link className={pathname === '/docs/core-component/log/rotate' ? 'active' : ''} href="/docs/core-component/log/rotate">Rotate</Link></li>
+                                            <li><Link className={pathname === '/docs/core-component/log/faq' ? 'active' : ''} href="/docs/core-component/log/faq">FAQ</Link></li>
                                         </ul>
                                     </details>
                                 </li>

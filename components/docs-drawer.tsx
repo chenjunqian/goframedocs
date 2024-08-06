@@ -170,6 +170,7 @@ export function DocsDrawer({ children }: Readonly<{ children: React.ReactNode }>
                                         <summary ><Link className="active" href="/docs/core-component/error">Error</Link></summary>
                                         <ul>
                                             <li><Link className={pathname === '/docs/core-component/error/function' ? 'active' : ''} href="/docs/core-component/error/function">Function</Link></li>
+                                            <li><Link className={pathname === '/docs/core-component/error/stack' ? 'active' : ''} href="/docs/core-component/error/stack">Stack</Link></li>
                                         </ul>
                                     </details>
                                 </li>

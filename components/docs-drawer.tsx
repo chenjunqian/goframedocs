@@ -17,6 +17,7 @@ export function DocsDrawer({ children }: Readonly<{ children: React.ReactNode }>
     const [isCliManagementOpen, setIsCliManagementOpen] = useState(false);
     const [isConfigurationOpen, setIsConfigurationOpen] = useState(false);
     const [isLogOpen, setIsLogOpen] = useState(false);
+    const [isErrorOpen, setIsErrorOpen] = useState(false);
 
     const pathname = usePathname();
 
@@ -40,6 +41,7 @@ export function DocsDrawer({ children }: Readonly<{ children: React.ReactNode }>
         setIsCliManagementOpen(false);
         setIsConfigurationOpen(false);
         setIsLogOpen(false);
+        setIsErrorOpen(false);
         if (pathname.startsWith('/docs/framework-design')) {
             setIsFrameworkDesignOpen(true);
         } else if (pathname.startsWith('/docs/development')) {
@@ -52,6 +54,8 @@ export function DocsDrawer({ children }: Readonly<{ children: React.ReactNode }>
                 setIsConfigurationOpen(true);
             } else if (pathname.startsWith('/docs/core-component/log')) {
                 setIsLogOpen(true);
+            } else if (pathname.startsWith('/docs/core-component/error')) {
+                setIsErrorOpen(true);
             }
         } else {
             setIsQuickStartOpen(true);
@@ -158,6 +162,14 @@ export function DocsDrawer({ children }: Readonly<{ children: React.ReactNode }>
                                             <li><Link className={pathname === '/docs/core-component/log/flags' ? 'active' : ''} href="/docs/core-component/log/flags">Flags</Link></li>
                                             <li><Link className={pathname === '/docs/core-component/log/rotate' ? 'active' : ''} href="/docs/core-component/log/rotate">Rotate</Link></li>
                                             <li><Link className={pathname === '/docs/core-component/log/faq' ? 'active' : ''} href="/docs/core-component/log/faq">FAQ</Link></li>
+                                        </ul>
+                                    </details>
+                                </li>
+                                <li>
+                                    <details open={isErrorOpen}>
+                                        <summary ><Link className="active" href="/docs/core-component/error">Error</Link></summary>
+                                        <ul>
+                                            <li><Link className={pathname === '/docs/core-component/error/function' ? 'active' : ''} href="/docs/core-component/error/function">Function</Link></li>
                                         </ul>
                                     </details>
                                 </li>

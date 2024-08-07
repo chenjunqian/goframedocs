@@ -4,7 +4,7 @@ import { DocsPreNextBtns } from "@/components/docs-pre-next-btns";
 import { promises as fs } from "fs";
 
 
-export default async function Page() {
+export default async function Page({params}: {params: {slug: string[]}}) {
 
     const introductionMD = await fs.readFile(process.cwd() + "/docs/introduction.md", "utf-8");
 

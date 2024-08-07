@@ -502,6 +502,17 @@ export const getDocsRouterInfo = (path: string): DocsRouterInfo => {
             }
             break;
 
+        case 'core-component/error/benchmark':
+            routerInfo = {
+                fullPath: '/docs/core-component/error/benchmark',
+                markdownPath: '/docs/core-component/error/benchmark.md',
+                PreBtnName: 'Error | Best Practices',
+                PreBtnPath: '/docs/core-component/error/best-practices',
+                NextBtnName: 'Core Component | Data Validation',
+                NextBtnPath: '/docs/core-component/data-valid',
+            }
+            break;
+
 
         default:
             break;

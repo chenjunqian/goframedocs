@@ -1,7 +1,7 @@
 import { DocsDrawer } from "@/components/docs-drawer";
 import { DocsMarkdownViewer } from "@/components/docs-markdown-viewer";
 import { DocsPreNextBtns } from "@/components/docs-pre-next-btns";
-import { getDocsRouterInfo } from "@/config/site";
+import { routerInfoDic } from "@/config/site";
 import { promises as fs } from "fs";
 
 
@@ -10,7 +10,7 @@ export default async function Page({params}: {params: {slug: string[]}}) {
     const slugs = params.slug;
     const path = slugs.join("/");
 
-    const routerInfo = getDocsRouterInfo(path);
+    const routerInfo = routerInfoDic[path];
 
     const introductionMD = await fs.readFile(process.cwd() + routerInfo.markdownPath, "utf-8");
 

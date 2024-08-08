@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
+import { routerInfoDic } from "@/config/site";
 
 
 export function DocsDrawer({ children }: Readonly<{ children: React.ReactNode }>) {
@@ -93,11 +94,11 @@ export function DocsDrawer({ children }: Readonly<{ children: React.ReactNode }>
                             <summary ><Link className="" href="/docs/">Quick Start</Link></summary>
                             <ul>
                                 <li><Link className={pathname === '/docs/' ? 'active' : ''} href="/docs/">Introduction</Link></li>
-                                <li><Link className={pathname === '/docs/installation' ? 'active' : ''} href="/docs/installation">Installation</Link></li>
-                                <li><Link className={pathname === '/docs/create-application' ? 'active' : ''} href="/docs/create-application">Create Application</Link></li>
-                                <li><Link className={pathname === '/docs/startup' ? 'active' : ''} href="/docs/startup">Startup</Link></li>
-                                <li><Link className={pathname === '/docs/configuration' ? 'active' : ''} href="/docs/configuration">Configuration</Link></li>
-                                <li><Link className={pathname === '/docs/example' ? 'active' : ''} href="/docs/example">Example</Link></li>
+                                <li><Link className={pathname === routerInfoDic['installation'].fullPath ? 'active' : ''} href={routerInfoDic['installation'].fullPath}>Installation</Link></li>
+                                <li><Link className={pathname === routerInfoDic['create-application'].fullPath ? 'active' : ''} href={routerInfoDic['create-application'].fullPath}>Create Application</Link></li>
+                                <li><Link className={pathname === routerInfoDic['startup'].fullPath ? 'active' : ''} href={routerInfoDic['startup'].fullPath}>Startup</Link></li>
+                                <li><Link className={pathname === routerInfoDic['configuration'].fullPath ? 'active' : ''} href={routerInfoDic['configuration'].fullPath}>Configuration</Link></li>
+                                <li><Link className={pathname === routerInfoDic['example'].fullPath ? 'active' : ''} href={routerInfoDic['example'].fullPath}>Example</Link></li>
                             </ul>
                         </details>
                     </li>
@@ -111,71 +112,71 @@ export function DocsDrawer({ children }: Readonly<{ children: React.ReactNode }>
                     </li> */}
                     <li>
                         <details open={isCoreComponentsOpen}>
-                            <summary ><Link className="active" href="/docs/core-component/object-management">Core Components</Link></summary>
+                            <summary ><Link className="active" href={routerInfoDic['core-component/object-management'].fullPath}>Core Components</Link></summary>
                             <ul>
-                                <li><Link className={pathname === '/docs/core-component/object-management' ? 'active' : ''} href="/docs/core-component/object-management">Object Management</Link></li>
+                                <li><Link className={pathname === routerInfoDic['core-component/object-management'].fullPath ? 'active' : ''} href={routerInfoDic['core-component/object-management'].fullPath}>Object Management</Link></li>
                             </ul>
                             <ul>
-                                <li><Link className={pathname === '/docs/core-component/debug-mode' ? 'active' : ''} href="/docs/core-component/debug-mode">Debug Mode</Link></li>
+                                <li><Link className={pathname === routerInfoDic['core-component/debug-mode'].fullPath ? 'active' : ''} href={routerInfoDic['core-component/debug-mode'].fullPath}>Debug Mode</Link></li>
                                 <li>
                                     <details open={isCliManagementOpen}>
-                                        <summary ><Link className="active" href="/docs/core-component/coommand">Command</Link></summary>
+                                        <summary ><Link className="active" href={routerInfoDic['core-component/command'].fullPath}>Command</Link></summary>
                                         <ul>
-                                            <li><Link className={pathname === '/docs/core-component/command/basic-concept' ? 'active' : ''} href="/docs/core-component/command/basic-concept">Basic Concept</Link></li>
-                                            <li><Link className={pathname === '/docs/core-component/command/function' ? 'active' : ''} href="/docs/core-component/command/function">Function</Link></li>
-                                            <li><Link className={pathname === '/docs/core-component/command/parser' ? 'active' : ''} href="/docs/core-component/command/parser">Parser</Link></li>
-                                            <li><Link className={pathname === '/docs/core-component/command/object' ? 'active' : ''} href="/docs/core-component/command/object">Object</Link></li>
-                                            <li><Link className={pathname === '/docs/core-component/command/parameter' ? 'active' : ''} href="/docs/core-component/command/parameter">Parameter</Link></li>
-                                            <li><Link className={pathname === '/docs/core-component/command/terminal-interaction' ? 'active' : ''} href="/docs/core-component/command/terminal-interaction">Terminal Interaction</Link></li>
-                                            <li><Link className={pathname === '/docs/core-component/command/tracing' ? 'active' : ''} href="/docs/core-component/command/tracing">Tracing</Link></li>
+                                            <li><Link className={pathname === routerInfoDic['core-component/command/basic-concept'].fullPath ? 'active' : ''} href={routerInfoDic['core-component/command/basic-concept'].fullPath}>Basic Concept</Link></li>
+                                            <li><Link className={pathname === routerInfoDic['core-component/command/function'].fullPath ? 'active' : ''} href={routerInfoDic['core-component/command/function'].fullPath}>Function</Link></li>
+                                            <li><Link className={pathname === routerInfoDic['core-component/command/parser'].fullPath ? 'active' : ''} href={routerInfoDic['core-component/command/parser'].fullPath}>Parser</Link></li>
+                                            <li><Link className={pathname === routerInfoDic['core-component/command/object'].fullPath ? 'active' : ''} href={routerInfoDic['core-component/command/object'].fullPath}>Object</Link></li>
+                                            <li><Link className={pathname === routerInfoDic['core-component/command/parameter'].fullPath ? 'active' : ''} href={routerInfoDic['core-component/command/parameter'].fullPath}>Parameter</Link></li>
+                                            <li><Link className={pathname === routerInfoDic['core-component/command/terminal-interaction'].fullPath ? 'active' : ''} href={routerInfoDic['core-component/command/terminal-interaction'].fullPath}>Terminal Interaction</Link></li>
+                                            <li><Link className={pathname === routerInfoDic['core-component/command/tracing'].fullPath ? 'active' : ''} href={routerInfoDic['core-component/command/tracing'].fullPath}>Tracing</Link></li>
                                         </ul>
                                     </details>
                                 </li>
                                 <li>
                                     <details open={isConfigurationOpen}>
-                                        <summary ><Link className="active" href="/docs/core-component/configuration">Configuration</Link></summary>
+                                        <summary ><Link className="active" href={routerInfoDic['core-component/configuration'].fullPath}>Configuration</Link></summary>
                                         <ul>
-                                            <li><Link className={pathname === '/docs/core-component/configuration/object' ? 'active' : ''} href="/docs/core-component/configuration/object">Object</Link></li>
-                                            <li><Link className={pathname === '/docs/core-component/configuration/config-file' ? 'active' : ''} href="/docs/core-component/configuration/config-file">Config File</Link></li>
-                                            <li><Link className={pathname === '/docs/core-component/configuration/function' ? 'active' : ''} href="/docs/core-component/configuration/function">Function</Link></li>
-                                            <li><Link className={pathname === '/docs/core-component/configuration/interface-base' ? 'active' : ''} href="/docs/core-component/configuration/interface-base">Interface-Base</Link></li>
-                                            <li><Link className={pathname === '/docs/core-component/configuration/adapter' ? 'active' : ''} href="/docs/core-component/configuration/adapter">Adapter</Link></li>
+                                            <li><Link className={pathname === routerInfoDic['core-component/configuration/object'].fullPath ? 'active' : ''} href={routerInfoDic['core-component/configuration/object'].fullPath}>Object</Link></li>
+                                            <li><Link className={pathname === routerInfoDic['core-component/configuration/config-file'].fullPath ? 'active' : ''} href={routerInfoDic['core-component/configuration/config-file'].fullPath}>Config File</Link></li>
+                                            <li><Link className={pathname === routerInfoDic['core-component/configuration/function'].fullPath ? 'active' : ''} href={routerInfoDic['core-component/configuration/function'].fullPath}>Function</Link></li>
+                                            <li><Link className={pathname === routerInfoDic['core-component/configuration/interface-base'].fullPath ? 'active' : ''} href={routerInfoDic['core-component/configuration/interface-base'].fullPath}>Interface-Base</Link></li>
+                                            <li><Link className={pathname === routerInfoDic['core-component/configuration/adapter'].fullPath ? 'active' : ''} href={routerInfoDic['core-component/configuration/adapter'].fullPath}>Adapter</Link></li>
                                         </ul>
                                     </details>
                                 </li>
                                 <li>
                                     <details open={isLogOpen}>
-                                        <summary ><Link className="active" href="/docs/core-component/log">Log</Link></summary>
+                                        <summary ><Link className="active" href={routerInfoDic['core-component/log'].fullPath}>Log</Link></summary>
                                         <ul>
-                                            <li><Link className={pathname === '/docs/core-component/log/config' ? 'active' : ''} href="/docs/core-component/log/config">Configuration</Link></li>
-                                            <li><Link className={pathname === '/docs/core-component/log/level' ? 'active' : ''} href="/docs/core-component/log/level">Level</Link></li>
-                                            <li><Link className={pathname === '/docs/core-component/log/path' ? 'active' : ''} href="/docs/core-component/log/path">Path</Link></li>
-                                            <li><Link className={pathname === '/docs/core-component/log/chain-opts' ? 'active' : ''} href="/docs/core-component/log/chain-opts">Chain Opts</Link></li>
-                                            <li><Link className={pathname === '/docs/core-component/log/color-print' ? 'active' : ''} href="/docs/core-component/log/color-print">Color Print</Link></li>
-                                            <li><Link className={pathname === '/docs/core-component/log/context' ? 'active' : ''} href="/docs/core-component/log/context">Context</Link></li>
-                                            <li><Link className={pathname === '/docs/core-component/log/handler' ? 'active' : ''} href="/docs/core-component/log/handler">Handler</Link></li>
-                                            <li><Link className={pathname === '/docs/core-component/log/json-format' ? 'active' : ''} href="/docs/core-component/log/json-format">JSON Format</Link></li>
-                                            <li><Link className={pathname === '/docs/core-component/log/async' ? 'active' : ''} href="/docs/core-component/log/async">Async</Link></li>
-                                            <li><Link className={pathname === '/docs/core-component/log/stack-print' ? 'active' : ''} href="/docs/core-component/log/stack-print">Stack Print</Link></li>
-                                            <li><Link className={pathname === '/docs/core-component/log/debug-info' ? 'active' : ''} href="/docs/core-component/log/debug-info">Debug Info</Link></li>
-                                            <li><Link className={pathname === '/docs/core-component/log/writer' ? 'active' : ''} href="/docs/core-component/log/writer">Writer</Link></li>
-                                            <li><Link className={pathname === '/docs/core-component/log/flags' ? 'active' : ''} href="/docs/core-component/log/flags">Flags</Link></li>
-                                            <li><Link className={pathname === '/docs/core-component/log/rotate' ? 'active' : ''} href="/docs/core-component/log/rotate">Rotate</Link></li>
-                                            <li><Link className={pathname === '/docs/core-component/log/faq' ? 'active' : ''} href="/docs/core-component/log/faq">FAQ</Link></li>
+                                            <li><Link className={pathname === routerInfoDic['core-component/log/config'].fullPath ? 'active' : ''} href={routerInfoDic['core-component/log/config'].fullPath}>Configuration</Link></li>
+                                            <li><Link className={pathname === routerInfoDic['core-component/log/level'].fullPath ? 'active' : ''} href={routerInfoDic['core-component/log/level'].fullPath}>Level</Link></li>
+                                            <li><Link className={pathname === routerInfoDic['core-component/log/path'].fullPath ? 'active' : ''} href={routerInfoDic['core-component/log/path'].fullPath}>Path</Link></li>
+                                            <li><Link className={pathname === routerInfoDic['core-component/log/chain-opts'].fullPath ? 'active' : ''} href={routerInfoDic['core-component/log/chain-opts'].fullPath}>Chain Opts</Link></li>
+                                            <li><Link className={pathname === routerInfoDic['core-component/log/color-print'].fullPath ? 'active' : ''} href={routerInfoDic['core-component/log/color-print'].fullPath}>Color Print</Link></li>
+                                            <li><Link className={pathname === routerInfoDic['core-component/log/context'].fullPath ? 'active' : ''} href={routerInfoDic['core-component/log/context'].fullPath}>Context</Link></li>
+                                            <li><Link className={pathname === routerInfoDic['core-component/log/handler'].fullPath ? 'active' : ''} href={routerInfoDic['core-component/log/handler'].fullPath}>Handler</Link></li>
+                                            <li><Link className={pathname === routerInfoDic['core-component/log/json-format'].fullPath ? 'active' : ''} href={routerInfoDic['core-component/log/json-format'].fullPath}>JSON Format</Link></li>
+                                            <li><Link className={pathname === routerInfoDic['core-component/log/async'].fullPath ? 'active' : ''} href={routerInfoDic['core-component/log/async'].fullPath}>Async</Link></li>
+                                            <li><Link className={pathname === routerInfoDic['core-component/log/stack-print'].fullPath ? 'active' : ''} href={routerInfoDic['core-component/log/stack-print'].fullPath}>Stack Print</Link></li>
+                                            <li><Link className={pathname === routerInfoDic['core-component/log/debug-info'].fullPath ? 'active' : ''} href={routerInfoDic['core-component/log/debug-info'].fullPath}>Debug Info</Link></li>
+                                            <li><Link className={pathname === routerInfoDic['core-component/log/writer'].fullPath ? 'active' : ''} href={routerInfoDic['core-component/log/writer'].fullPath}>Writer</Link></li>
+                                            <li><Link className={pathname === routerInfoDic['core-component/log/flags'].fullPath ? 'active' : ''} href={routerInfoDic['core-component/log/flags'].fullPath}>Flags</Link></li>
+                                            <li><Link className={pathname === routerInfoDic['core-component/log/rotate'].fullPath ? 'active' : ''} href={routerInfoDic['core-component/log/rotate'].fullPath}>Rotate</Link></li>
+                                            <li><Link className={pathname === routerInfoDic['core-component/log/faq'].fullPath ? 'active' : ''} href={routerInfoDic['core-component/log/faq'].fullPath}>FAQ</Link></li>
                                         </ul>
                                     </details>
                                 </li>
                                 <li>
                                     <details open={isErrorOpen}>
-                                        <summary ><Link className="active" href="/docs/core-component/error">Error</Link></summary>
+                                        <summary ><Link className="active" href={routerInfoDic['core-component/error'].fullPath}>Error</Link></summary>
                                         <ul>
-                                            <li><Link className={pathname === '/docs/core-component/error/function' ? 'active' : ''} href="/docs/core-component/error/function">Function</Link></li>
-                                            <li><Link className={pathname === '/docs/core-component/error/stack' ? 'active' : ''} href="/docs/core-component/error/stack">Stack</Link></li>
-                                            <li><Link className={pathname === '/docs/core-component/error/compare' ? 'active' : ''} href="/docs/core-component/error/compare">Compare</Link></li>
-                                            <li><Link className={pathname === '/docs/core-component/error/code' ? 'active' : ''} href="/docs/core-component/error/code">Code</Link></li>
-                                            <li><Link className={pathname === '/docs/core-component/error/others' ? 'active' : ''} href="/docs/core-component/error/others">Others</Link></li>
-                                            <li><Link className={pathname === '/docs/core-component/error/best-practices' ? 'active' : ''} href="/docs/core-component/error/best-practices">Best Practices</Link></li>
-                                            <li><Link className={pathname === '/docs/core-component/error/benchmark' ? 'active' : ''} href="/docs/core-component/error/benchmark">Benchmark</Link></li>
+                                            <li><Link className={pathname === routerInfoDic['core-component/error/function'].fullPath ? 'active' : ''} href={routerInfoDic['core-component/error/function'].fullPath}>Function</Link></li>
+                                            <li><Link className={pathname === routerInfoDic['core-component/error/stack'].fullPath ? 'active' : ''} href="/docs/core-component/error/stack">Stack</Link></li>
+                                            <li><Link className={pathname === routerInfoDic['core-component/error/compare'].fullPath ? 'active' : ''} href={routerInfoDic['core-component/error/compare'].fullPath}>Compare</Link></li>
+                                            <li><Link className={pathname === routerInfoDic['core-component/error/code'].fullPath ? 'active' : ''} href={routerInfoDic['core-component/error/code'].fullPath}>Code</Link></li>
+                                            <li><Link className={pathname === routerInfoDic['core-component/error/others'].fullPath ? 'active' : ''} href={routerInfoDic['core-component/error/others'].fullPath}>Others</Link></li>
+                                            <li><Link className={pathname === routerInfoDic['core-component/error/best-practices'].fullPath ? 'active' : ''} href={routerInfoDic['core-component/error/best-practices'].fullPath}>Best Practices</Link></li>
+                                            <li><Link className={pathname === routerInfoDic['core-component/error/benchmark'].fullPath ? 'active' : ''} href={routerInfoDic['core-component/error/benchmark'].fullPath}>Benchmark</Link></li>
                                         </ul>
                                     </details>
                                 </li>
@@ -184,21 +185,21 @@ export function DocsDrawer({ children }: Readonly<{ children: React.ReactNode }>
                     </li>
                     <li>
                         <details open={isFrameworkDesignOpen}>
-                            <summary ><Link className="active" href="/docs/framework-design/module-design">Framework Design</Link></summary>
+                            <summary ><Link className="active" href={routerInfoDic['framework-design'].fullPath}>Framework Design</Link></summary>
                             <ul>
-                                <li><Link className={pathname === '/docs/framework-design/module-design' ? 'active' : ''} href="/docs/framework-design/module-design">Module Design</Link></li>
-                                <li><Link className={pathname === '/docs/framework-design/unified-framework-design' ? 'active' : ''} href="/docs/framework-design/unified-framework-design">Unified Framework Design</Link></li>
-                                <li><Link className={pathname === '/docs/framework-design/project-package-design' ? 'active' : ''} href="/docs/framework-design/project-package-design">Project Package Design</Link></li>
-                                <li><Link className={pathname === '/docs/framework-design/dao-design' ? 'active' : ''} href="/docs/framework-design/dao-design">DAO Design</Link></li>
-                                <li><Link className={pathname === '/docs/framework-design/constructure-design' ? 'active' : ''} href="/docs/framework-design/constructure-design">Constructure Design</Link></li>
-                                <li><Link className={pathname === '/docs/framework-design/data-bz-model' ? 'active' : ''} href="/docs/framework-design/data-bz-model">Data&BZ Model</Link></li>
-                                <li><Link className={pathname === '/docs/framework-design/microservice' ? 'active' : ''} href="/docs/framework-design/microservice">Microservice</Link></li>
-                                <li><Link className={pathname === '/docs/framework-design/tracing-design' ? 'active' : ''} href="/docs/framework-design/tracing-design">Tracing Design</Link></li>
-                                <li><Link className={pathname === '/docs/framework-design/error-design' ? 'active' : ''} href="/docs/framework-design/error-design">Error Design</Link></li>
-                                <li><Link className={pathname === '/docs/framework-design/interface-generic-design' ? 'active' : ''} href="/docs/framework-design/interface-generic-design">Interface&Generic</Link></li>
-                                <li><Link className={pathname === '/docs/framework-design/implict-explicit-init' ? 'active' : ''} href="/docs/framework-design/implict-explicit-init">Implict&Explicit Init</Link></li>
-                                <li><Link className={pathname === '/docs/framework-design/context-design' ? 'active' : ''} href="/docs/framework-design/context-design">Context Design</Link></li>
-                                <li><Link className={pathname === '/docs/framework-design/enum-management' ? 'active' : ''} href="/docs/framework-design/enum-management">Enum Management</Link></li>
+                                <li><Link className={pathname === routerInfoDic['framework-design/module-design'].fullPath ? 'active' : ''} href={routerInfoDic['framework-design/module-design'].fullPath}>Module Design</Link></li>
+                                <li><Link className={pathname === routerInfoDic['framework-design/unified-framework-design'].fullPath ? 'active' : ''} href={routerInfoDic['framework-design/unified-framework-design'].fullPath}>Unified Framework Design</Link></li>
+                                <li><Link className={pathname === routerInfoDic['framework-design/project-package-design'].fullPath ? 'active' : ''} href={routerInfoDic['framework-design/project-package-design'].fullPath}>Project Package Design</Link></li>
+                                <li><Link className={pathname === routerInfoDic['framework-design/dao-design'].fullPath ? 'active' : ''} href={routerInfoDic['framework-design/dao-design'].fullPath}>DAO Design</Link></li>
+                                <li><Link className={pathname === routerInfoDic['framework-design/constructure-design'].fullPath ? 'active' : ''} href={routerInfoDic['framework-design/constructure-design'].fullPath}>Constructure Design</Link></li>
+                                <li><Link className={pathname === routerInfoDic['framework-design/data-bz-model'].fullPath ? 'active' : ''} href={routerInfoDic['framework-design/data-bz-model'].fullPath}>Data&BZ Model</Link></li>
+                                <li><Link className={pathname === routerInfoDic['framework-design/microservice'].fullPath ? 'active' : ''} href={routerInfoDic['framework-design/microservice'].fullPath}>Microservice</Link></li>
+                                <li><Link className={pathname === routerInfoDic['framework-design/tracing-design'].fullPath ? 'active' : ''} href={routerInfoDic['framework-design/tracing-design'].fullPath}>Tracing Design</Link></li>
+                                <li><Link className={pathname === routerInfoDic['framework-design/error-design'].fullPath ? 'active' : ''} href={routerInfoDic['framework-design/error-design'].fullPath}>Error Design</Link></li>
+                                <li><Link className={pathname === routerInfoDic['framework-design/interface-generic-design'].fullPath ? 'active' : ''} href={routerInfoDic['framework-design/interface-generic-design'].fullPath}>Interface&Generic</Link></li>
+                                <li><Link className={pathname === routerInfoDic['framework-design/implict-explicit-init'].fullPath ? 'active' : ''} href={routerInfoDic['framework-design/implict-explicit-init'].fullPath}>Implict&Explicit Init</Link></li>
+                                <li><Link className={pathname === routerInfoDic['framework-design/context-design'].fullPath ? 'active' : ''} href={routerInfoDic['framework-design/context-design'].fullPath}>Context Design</Link></li>
+                                <li><Link className={pathname === routerInfoDic['framework-design/enum-management'].fullPath ? 'active' : ''} href={routerInfoDic['framework-design/enum-management'].fullPath}>Enum Management</Link></li>
                             </ul>
                         </details>
                     </li>

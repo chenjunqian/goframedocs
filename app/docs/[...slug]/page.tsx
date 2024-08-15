@@ -17,7 +17,7 @@ export default async function Page({params}: {params: {slug: string[]}}) {
     return (
         <DocsDrawer>
             <div className="w-full pl-16 pr-16 mt-9">
-                <DocsMarkdownViewer children={introductionMD} />
+                <DocsMarkdownViewer>{introductionMD}</DocsMarkdownViewer>
                 <DocsPreNextBtns preName={routerInfo.PreBtnName} prePath={routerInfo.PreBtnPath} nextName={routerInfo.NextBtnName} nextPath={routerInfo.NextBtnPath} />
             </div>
         </DocsDrawer>

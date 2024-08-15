@@ -33,7 +33,7 @@ export default async function Page({params}: {params: {slug: string[]}}) {
                 <div className="flex w-full lg:max-w-3xl flex-col mt-6 mb-6">
                     <div className="divider"></div>
                 </div>
-                <DocsMarkdownViewer children={introductionMD} />
+                <DocsMarkdownViewer>{introductionMD}</DocsMarkdownViewer>
                 <DocsPreNextBtns nextName="Installation" nextPath="/docs/installation" />
             </div>
         </DocsDrawer>

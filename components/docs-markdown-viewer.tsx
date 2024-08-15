@@ -11,7 +11,6 @@ export function DocsMarkdownViewer({ children }: { children: string }) {
     return (
         <Markdown
             className="lg:prose prose-base lg:max-w-3xl"
-            children={children}
             components={{
                 code(props) {
                     const { children, className } = props
@@ -27,27 +26,26 @@ export function DocsMarkdownViewer({ children }: { children: string }) {
                 },
                 h1(props) {
                     const children = props.children
-                    return <Heading level={1} children={children} />
+                    return <Heading level={1}>{children}</Heading>
                 },
                 h2(props) {
                     const children = props.children
-                    return <Heading level={2} children={children} />
+                    return <Heading level={2}>{children}</Heading>
                 },
                 h3(props) {
                     const children = props.children
-                    return <Heading level={3} children={children} />
+                    return <Heading level={3}>{children}</Heading>
                 },
             }}
-        />
+        >{children}</Markdown>
     )
 }
 
 type HeadingResolverProps = {
     level: number;
-    children: React.ReactNode;
 };
 
-const Heading = ({ level, children }: HeadingResolverProps) => {
+const Heading = ({ level, children }: { level: number, children: React.ReactNode }) => {
     // Access actual (string) value of heading
     const heading = children?.valueOf();
 

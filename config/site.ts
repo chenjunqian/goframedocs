@@ -434,6 +434,15 @@ export const routerInfoDic: DocsRouterInfoDict = {
         NextBtnPath: '/docs/core-component/data-valid',
     },
 
+    'core-component/data-valid': {
+        fullPath: '/docs/core-component/data-valid',
+        markdownPath: '/docs/core-component/data-valid/overview.md',
+        PreBtnName: 'Error | Banchmark',
+        PreBtnPath: '/docs/core-component/error/benchmark',
+        NextBtnName: 'Data Validation | Rule',
+        NextBtnPath: '/docs/core-component/data-valid/rule',
+    },
+
     'framework-design': {
         fullPath: '/docs/framework-design',
         markdownPath: '/docs/framework-design/module-design.md',

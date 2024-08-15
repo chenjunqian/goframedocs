@@ -19,6 +19,7 @@ export function DocsDrawer({ children }: Readonly<{ children: React.ReactNode }>
     const [isConfigurationOpen, setIsConfigurationOpen] = useState(false);
     const [isLogOpen, setIsLogOpen] = useState(false);
     const [isErrorOpen, setIsErrorOpen] = useState(false);
+    const [isDataValidOpen, setIsDataValidOpen] = useState(false);
 
     const pathname = usePathname();
 
@@ -43,6 +44,7 @@ export function DocsDrawer({ children }: Readonly<{ children: React.ReactNode }>
         setIsConfigurationOpen(false);
         setIsLogOpen(false);
         setIsErrorOpen(false);
+        setIsDataValidOpen(false);
         if (pathname.startsWith('/docs/framework-design')) {
             setIsFrameworkDesignOpen(true);
         } else if (pathname.startsWith('/docs/development')) {
@@ -57,6 +59,8 @@ export function DocsDrawer({ children }: Readonly<{ children: React.ReactNode }>
                 setIsLogOpen(true);
             } else if (pathname.startsWith('/docs/core-component/error')) {
                 setIsErrorOpen(true);
+            } else if (pathname.startsWith('/docs/core-component/data-valid')) {
+                setIsDataValidOpen(true);
             }
         } else {
             setIsQuickStartOpen(true);
@@ -181,6 +185,11 @@ export function DocsDrawer({ children }: Readonly<{ children: React.ReactNode }>
                                     </details>
                                 </li>
                             </ul>
+                        </details>
+                    </li>
+                    <li>
+                        <details open={isDataValidOpen}>
+                            <summary><Link className="active" href={routerInfoDic['core-component/data-valid'].fullPath}>Data Valid</Link></summary>
                         </details>
                     </li>
                     <li>

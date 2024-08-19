@@ -184,12 +184,15 @@ export function DocsDrawer({ children }: Readonly<{ children: React.ReactNode }>
                                         </ul>
                                     </details>
                                 </li>
+                                <li>
+                                    <details open={isDataValidOpen}>
+                                        <summary><Link className="active" href={routerInfoDic['core-component/data-valid'].fullPath}>Data Validation</Link></summary>
+                                    </details>
+                                    <ul>
+                                        <li><Link className={pathname === routerInfoDic['core-component/data-valid/rule'].fullPath ? 'active' : ''} href={routerInfoDic['core-component/data-valid/rule'].fullPath}>Rule</Link></li>
+                                    </ul>
+                                </li>
                             </ul>
-                        </details>
-                    </li>
-                    <li>
-                        <details open={isDataValidOpen}>
-                            <summary><Link className="active" href={routerInfoDic['core-component/data-valid'].fullPath}>Data Valid</Link></summary>
                         </details>
                     </li>
                     <li>

@@ -443,6 +443,15 @@ export const routerInfoDic: DocsRouterInfoDict = {
         NextBtnPath: '/docs/core-component/data-valid/rule',
     },
 
+    'core-component/data-valid/rule': {
+        fullPath: '/docs/core-component/data-valid/rule',
+        markdownPath: '/docs/core-component/data-valid/rule.md',
+        PreBtnName: 'Data Validation | Overview',
+        PreBtnPath: '/docs/core-component/data-valid/',
+        NextBtnName: 'Data Validation | Object',
+        NextBtnPath: '/docs/core-component/data-valid/object',
+    },
+
     'framework-design': {
         fullPath: '/docs/framework-design',
         markdownPath: '/docs/framework-design/module-design.md',

@@ -6,9 +6,10 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { routerInfoDic } from "@/config/site";
+import { MarkdownHeading } from "@/components/docs-markdown-heading-navigator";
 
 
-export function DocsDrawer({ children }: Readonly<{ children: React.ReactNode }>) {
+export function DocsDrawer({ children, markdownHeadings }: Readonly<{ children: React.ReactNode, markdownHeadings?: MarkdownHeading[] }>) {
 
     const [isFixed, setIsFixed] = useState(false);
     const [isQuickStartOpen, setIsQuickStartOpen] = useState(true);
@@ -73,11 +74,25 @@ export function DocsDrawer({ children }: Readonly<{ children: React.ReactNode }>
             <div className="drawer-content">
                 {/* Page content here */}
                 <div className={`w-full lg:hidden flex h-10 bg-base-200 mt-1 ${isFixed ? 'fixed top-0 z-40' : ''}`}>
-                    <div className="flex justify-start items-center">
-                        <label htmlFor="docs-drawer" className="btn btn-sm btn-ghost drawer-button flex justify-start items-center ml-4">
-                            <Menu className="w-5 h-5" />
-                            <span>Menu</span>
-                        </label>
+                    <div className="flex w-full justify-start items-center">
+                        <div className="w-1/2 flex justify-start">
+                            <label htmlFor="docs-drawer" className="btn btn-sm btn-ghost drawer-button flex justify-start items-center ml-4">
+                                <Menu className="w-5 h-5" />
+                                <span>Menu</span>
+                            </label>
+                        </div>
+                        <div className="w-1/2 flex justify-end">
+                            <div className="dropdown dropdown-bottom dropdown-end">
+                                <div tabIndex={0} role="button" className="btn btn-sm btn-ghost m-1">On this page</div>
+                                <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+                                    {
+                                        markdownHeadings?.map((heading) => (
+                                            <li><a href={heading.slug}>{heading.text}</a></li>
+                                        ))
+                                    }
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div className={`w-full lg:hidden h-10 ${isFixed ? 'block' : 'hidden'}`}></div>

@@ -10,7 +10,7 @@ func (l *Logger) SetLevelStr(levelStr string) error
 func (l *Logger) SetLevelPrint(enabled bool)
 ```
 
-## `SetLevel`
+## SetLevel
 
 Use `SetLevel` to set the log level of current Logger object, `glog` module supports the following log levels constants:
 
@@ -56,7 +56,7 @@ Output:
 2021-12-31 11:16:57.272 [INFO] info1
 ```
 
-## `SetLevelStr`
+## SetLevelStr
 
 Use `SetLevelStr` to set the log level of current Logger object by string, case-insensitive.
 
@@ -108,7 +108,7 @@ Output:
 2021-12-31 11:20:15.019 [INFO] info1
 ```
 
-## `SetLevelPrint`
+## SetLevelPrint
 
 Use `SetLevelPrint` to enable or disable the log level print feature.
 

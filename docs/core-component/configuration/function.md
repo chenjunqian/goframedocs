@@ -2,7 +2,7 @@
 
 Below is a list of common methods. The documentation may not update in time for the new features in the code. For more methods and examples, please refer to the code documentation: <https://pkg.go.dev/github.com/gogf/gf/v2/os/gcfg>
 
-## `GetWithEnv`
+## GetWithEnv
 
 The `GetWithEnv` function first reads configuration data from the default configuration file. If the retrieval is empty, it will then obtain it from the current environment variables. Note the naming conversion rules:
 
@@ -42,7 +42,7 @@ func ExampleConfig_GetWithEnv() {
 }
 ```
 
-## `GetwithCmd`
+## GetwithCmd
 
 `GetWithCmd` is similar to the `GetWithEnv` function. It also first retrieves configuration data from the default configuration object. However, when the retrieval is empty, it obtains configuration information from the command line.
 
@@ -79,7 +79,7 @@ func ExampleConfig_GetWithCmd() {
 }
 ```
 
-## `MustGetWithCmd`
+## MustGetWithCmd
 
 The `MustGetWithCmd` is similar to the `GetWithCmd` method. This method only returns the configuration content, and if any internal errors occur, it will result in a panic.
 
@@ -112,7 +112,7 @@ func ExampleConfig_MustGetWithCmd() {
 }
 ```
 
-## `MustGetWithEnv`
+## MustGetWithEnv
 
 The `MustGetWithEnv` is similar to the `GetWithEnv` method. This method only returns the configuration content, and if any internal errors occur, it will result in a panic.
 
@@ -222,7 +222,7 @@ func ExampleConfig_MustData() {
 }
 ```
 
-## `Get`
+## Get
 
 The `Get` method retrieves configuration data and return `gvar` generic object.
 
@@ -263,7 +263,7 @@ func ExampleConfig_Get() {
 }
 ```
 
-## `MustGet`
+## MustGet
 
 The `MustGet` method retrieves configuration data and return `*gvar.Var`. If any internal errors occur, it will result in a panic.
 
@@ -301,7 +301,7 @@ func ExampleConfig_MustGet() {
     }
 ```
 
-## `GetAdapter`
+## GetAdapter
 
 `GetAdapter` returns the runtime `gcfg` adapter information.
 
@@ -325,7 +325,7 @@ func ExampleConfig_GetAdapter() {
 }
 ```
 
-## `SetAdapter`
+## SetAdapter
 
 `SetAdapter` sets the runtime `gcfg` adapter information.
 

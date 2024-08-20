@@ -1,6 +1,6 @@
 # Error | Others
 
-## `NewOption`
+## NewOption
 
 By `NewOption` method, we can customize the error object.
 
@@ -19,7 +19,7 @@ func ExampleNewOption() {
 }
 ```
 
-## `fmt` Format
+## fmt Format
 
 We can use `%+v` format to print the `error` stack information, and `gerror.Error` support below formats:
 

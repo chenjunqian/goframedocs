@@ -1,6 +1,6 @@
 # Error - Compare
 
-## `Equal` Compare
+## Equal Compare
 
 Error object support comparison, `Equal` method is used to check if two error objects are equal.
 
@@ -11,7 +11,7 @@ Error object support comparison, `Equal` method is used to check if two error ob
 func Equal(err, target error) bool
 ```
 
-### `Equal` Interface Definition
+### Equal Interface Definition
 
 Implement below interface to customize the `error` comparison.
 
@@ -39,7 +39,7 @@ func ExampleEqual() {
 }
 ```
 
-## `Is` Compare
+## Is Compare
 
 The `Is` method is used to check if a given `error` is within a specified `error` chain (if the `error` has a stack, it will recursively check it).
 
@@ -49,7 +49,7 @@ The `Is` method is used to check if a given `error` is within a specified `error
 func Is(err, target error) bool
 ```
 
-### `Is` Interface Definition
+### Is Interface Definition
 
 ```go
 Is(target error) bool

@@ -149,7 +149,7 @@ export const routerInfoDic: DocsRouterInfoDict = {
 
     'core-component/command/terminal-interaction': {
         fullPath: '/docs/core-component/command/terminal-interaction',
-        markdownPath: '/docs/core-component/command/terminal-interaction.md',
+        markdownPath: '/docs/core-component/command/terminal.md',
         PreBtnName: 'Command | Parameter',
         PreBtnPath: '/docs/core-component/command/parameter',
         NextBtnName: 'Command | Tracing',

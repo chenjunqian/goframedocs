@@ -2,7 +2,7 @@
 
 ## Code Creation
 
-### `NewCode/NewCodef`
+### NewCode and NewCodef
 
 Same with `New/Newf`, create an `error` object with error `message` and `code` information.
 
@@ -35,7 +35,7 @@ func ExampleNewCodef() {
 }
 ```
 
-### `WrapCode/WrapCodef`
+### WrapCode and WrapCodef
 
 Same with `Wrap/Wrapf`, wrap an error object with `error` object with error `message` and `code` information, and error code parameter.
 
@@ -70,7 +70,7 @@ func ExampleWrapCodef() {
 }
 ```
 
-### `NewCodeSkip/NewCodeSkipf`
+### NewCodeSkip and NewCodeSkipf
 
 Advanced function, nommaly not used. Same with `NewSkip/NewSkipf`, create an `error` object with error `message` and ignore part of `stack` information (ignore from current method to top), and error code parameter.
 

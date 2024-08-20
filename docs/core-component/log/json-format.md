@@ -2,7 +2,7 @@
 
 `glog` is very friendly to log analysis tools, supporting the output of log content in `JSON` format.
 
-## `map/struct` Parameters
+## map and struct Parameters
 
 To output `JSON` format log content, we can just use `map` or `struct` parameters.
 

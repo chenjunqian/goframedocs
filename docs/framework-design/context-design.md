@@ -121,7 +121,7 @@ func (s *replyService) Create(ctx context.Context, r *define.ReplyServiceCreateR
 }
 ```
 
-## `Context` Object Retrieval
+## Context Object Retrieval
 
 You can pass the `context.Context` variable by encapsulating it in the following methods within the `service`. The `context.Context` variable can be obtained in the `Goframe` `HTTP` request through the `r.Context()` method. In `GRPC` requests, the first parameter of the executed method in the compiled pb file is always `context.Context`.
 

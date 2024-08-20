@@ -36,7 +36,7 @@ type Command struct {
 
 - `HelpFunc`: Customize the help information. Generally, there is not much need for this, as the `Command` object can automatically generate help information.
 
-### `Func` Callback
+### Func Callback
 
 Definition:
 
@@ -85,7 +85,7 @@ func main() {
 
 This is also the appearance of the startup command-line object for most projects. Most projects have only one entry point and only one callback method implementation.
 
-### `HelpFunc` Callback
+### HelpFunc Callback
 
 The `Command` object can customize the `HelpFunc` callback method, but it can automatically generate help usage information, which is usually not necessary to customize. Moreover, the `gcmd` component has built-in support for the `h/help` option, allowing programs using the gcmd component to automatically generate help information through these options.
 

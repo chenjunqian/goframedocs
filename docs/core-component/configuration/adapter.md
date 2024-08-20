@@ -4,7 +4,7 @@
 
 `AdapterFile` is the default implementation of configuration management, base on file-based write/read.
 
-## `g.Cfg` Singleton Object
+## g.Cfg Singleton Object
 
 In most scenarios, we can just use the file-based configuration management implementation by the `g.Cfg` singleton object that has been encapsulated by the framework. For example:
 
@@ -49,7 +49,7 @@ output:
 map[debug:true link:mysql:root:12345678@tcp(127.0.0.1:3306)/test]
 ```
 
-## `gcfg.NewWithAdapter` Usage
+## gcfg.NewWithAdapter Usage
 
 We can also use `gcfg.NewWithAdapter` to create a configuration object with a custom configuration `Adapter`.
 

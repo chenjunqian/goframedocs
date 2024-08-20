@@ -224,7 +224,7 @@ Output:
 {"time":"2022-06-20 10:51:50.235","level":"ERRO","content":"Error occurs, please have a check"}
 ```
 
-### `Handler` Component
+### Handler Component
 
 `goframe` also provide some common log `Hanlder`.
 

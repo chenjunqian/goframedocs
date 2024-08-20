@@ -73,13 +73,13 @@ Common objects are typically managed through the `singleton` pattern, allowing y
 
 Note: During the runtime phase, every time a singleton object is obtained through the `g` module, there is an internal global locking mechanism to ensure the concurrency safety of operations and data. In principle, there may be lock contention in scenarios with high concurrency, but in most business scenarios, developers do not need to worry too much about the performance loss caused by lock contention. Additionally, developers can save the obtained singleton objects to internal variables of specific modules for repeated use, thereby avoiding lock contention during runtime.
 
-### `HTTP` Client
+### HTTP Client
 
 ```go
 func Client() *ghttp.Client
 ```
 
-### `Validator` Object
+### Validator Object
 
 ```go
 func Validator() *gvalid.Validator

@@ -13,7 +13,7 @@ func Scanf(format string, info ...interface{}) string
 
 These two methods display the given information to the terminal and automatically read the input from the terminal user, returning it with the enter symbol.
 
-## `Scan` Usage
+## Scan Usage
 
 ```go
 package main
@@ -38,7 +38,7 @@ john
 > Your name is: john
 ```
 
-## `Scanf` Usage
+## Scanf Usage
 
 ```go
 package main

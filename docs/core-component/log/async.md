@@ -6,7 +6,7 @@ Use `SetAsync`/`SetFlags` methods of the log object, or the chained operation me
 
 If both synchronous and asynchronous printing are used for the same file log output, be aware that the content of the log file may appear out of order, and this situation should be avoided.
 
-## `SetAsync`
+## SetAsync
 
 Enable asynchronous output.
 
@@ -45,7 +45,7 @@ Output:
 2019-06-02 15:44:21.399 async log 9
 ```
 
-## `Async` Chain Operation
+## Async Chain Operation
 
 ```go
 package main

@@ -15,7 +15,7 @@ func GetOpt(name string, def ...string) *gvar.Var
 func GetOptAll() map[string]string
 ```
 
-## `Init` Customization
+## Init Customization
 
 By default, `gcmd` read and parse argument from `os.Args`. We can use `Init` to customize the argument.
 
@@ -29,7 +29,7 @@ func ExampleInit() {
 }
 ```
 
-## `GetArg*` Get Arguments
+## GetArg Get Arguments
 
 Parameter retrieval can be done through the following two methods:
 
@@ -60,7 +60,7 @@ func ExampleGetArgAll() {
 }
 ```
 
-## `GetOpt*` Get Options
+## GetOpt Get Options
 
 Option retrieval can be done through the following two methods:
 
@@ -91,7 +91,7 @@ func ExampleGetOptAll() {
 }
 ```
 
-## `GetOptWithEnv` Featrue
+## GetOptWithEnv Featrue
 
 ```go
 func GetOptWithEnv(key string, def ...interface{}) *gvar.Var

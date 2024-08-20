@@ -8,7 +8,7 @@ When validation rules involve scenarios of joint validation, the **parameter nam
 
 The validation decorative rule `v` is used to set the validation specifications for the property.
 
-### `ci`
+### ci
 
 By default the value comparison is case-sensitive, it can be changed by rule `ci(Case Insensitive)`, like `same`, `different`, `in`, `not-in`.
 
@@ -37,7 +37,7 @@ func Example_Rule_CaseInsensitive() {
 }
 ```
 
-### `bail`
+### bail
 
 If there are multiple validation rules for a parameter, and if the rules include both a `required*` rule and a `bail` rule used together, it is recommended to place the `required*` validation rule before all other rules. Otherwise, the characteristic of the `bail` rule (stop subsequent validation upon failure) may cause the subsequent `required*` rules to not take effect.
 
@@ -69,7 +69,7 @@ func Example_Rule_Bail() {
 }
 ```
 
-### `foreach`
+### foreach
 
 Used for array parameters, it iterates over the parameter as an array and applies the rule to each item in the array.
 
@@ -101,7 +101,7 @@ func Example_Rule_Foreach() {
 
 Functional rules implement specific validation logic, and the framework has a very comprehensive and powerful set of built-in validation rules.
 
-### `required`
+### required
 
 Required parameter, support string and also `Slice/Map` types.
 
@@ -128,7 +128,7 @@ func Example_Rule_Required() {
 }
 ```
 
-### `required-if`
+### required if
 
 Required parameter (when any given field value is equal to the given value, that is: when the value of the `field` is `value`, the current verification `field` is a required parameter). Multiple fields are separated by a comma.
 
@@ -160,7 +160,7 @@ func Example_Rule_RequiredIf() {
 }
 ```
 
-### `required-unless`
+### required unless
 
 Required parameter (when the given `field` value is not equal to any of the given values, that is: when the value of the `field` is not `value`, the current verification field is a required parameter). Multiple fields are separated by a comma.
 
@@ -190,7 +190,7 @@ func Example_Rule_RequiredUnless() {
 }
 ```
 
-### `required-with`
+### required with
 
 Requred Parameter. When one of the given field value is not empty.
 
@@ -221,7 +221,7 @@ func Example_Rule_RequiredWith() {
 }
 ```
 
-### `required-with-all`
+### required with all
 
 Requred Parameter. When all the given field value is not empty.
 
@@ -252,7 +252,7 @@ func Example_Rule_RequiredWithAll() {
 }
 ```
 
-### `required-without`
+### required without
 
 Requred Parameter. When one of the given field value is empty.
 
@@ -282,7 +282,7 @@ func Example_Rule_RequiredWithout() {
 }
 ```
 
-### `required-without-all`
+### required without all
 
 Requred Parameter. When all the given field value is empty.
 
@@ -311,7 +311,7 @@ func Example_Rule_RequiredWithoutAll() {
 }
 ```
 
-### `date`
+### date
 
 The parameter is of a common date type, which supports the use of hyphens (`-`), slashes (`/`), or dots (`.`) as connectors between dates. It also supports `8-digit` length dates without connectors, in the formats such as: `2006-01-02, 2006/01/02, 2006.01.02, 20060102`.
 
@@ -346,7 +346,7 @@ func Example_Rule_Date() {
 }
 ```
 
-### `date-time`
+### date time
 
 Parameter is of a common date-time type, which only supports the hyphen (`-`) as the connector between the date and time, in the format such as: `2006-01-02 12:00:00`.
 
@@ -379,7 +379,7 @@ func Example_Rule_Datetime() {
 }
 ```
 
-### `date-format`
+### date format
 
 Check if the date is in the specified date/time `format`. The format parameter follows the `gtime` date format (which can include both date and time). For format details, refer to the section: [gtime module](https://temperory.net).
 
@@ -411,7 +411,7 @@ func Example_Rule_DateFormat() {
 }
 ```
 
-### `before`
+### before
 
 Check if the given date/time is before the date/time of the specified field.
 
@@ -439,7 +439,7 @@ func Example_Rule_Before() {
 }
 ```
 
-### `before-equal`
+### before equal
 
 Check if the given date/time is before the date/time of the specified field, or equal to the date/time of the specified field.
 
@@ -467,7 +467,7 @@ func Example_Rule_BeforeEqual() {
 }
 ```
 
-### `after`
+### after
 
 Check if the given date/time is after the date/time of the specified field.
 
@@ -495,7 +495,7 @@ func Example_Rule_After() {
 }
 ```
 
-### `after-equal`
+### after equal
 
 Check if the given date/time is after the date/time of the specified field, or equal to the date/time of the specified field.
 
@@ -523,7 +523,7 @@ func Example_Rule_AfterEqual() {
 }
 ```
 
-### `array`
+### array
 
 Check if the parameter is an array. If the parameter is `JSON` array, it will also be considered as an array.
 
@@ -553,7 +553,7 @@ func Example_Rule_Array() {
 }
 ```
 
-### `enums`
+### enums
 
 Validate if the submitted parameter is within the enumeration values of the field type. This rule needs to be used in conjunction with the `gf gen enums` command. For more details, refer to: [Enum - gen enums](https://temperory.net) .
 
@@ -587,7 +587,7 @@ func ExampleRule_Enums() {
 }
 ```
 
-### `email`
+### email
 
 Check if the parameter is a valid email address.
 
@@ -619,7 +619,7 @@ func Example_Rule_Email() {
 }
 ```
 
-### `phone`
+### phone
 
 Check if the parameter is a valid phone number. (Currently only support China phone number)
 
@@ -652,7 +652,7 @@ func Example_Rule_Phone() {
 }
 ```
 
-### `phone-loose`
+### phone loose
 
 Loose phone number verification, as long as it meets the 11-digit number starting with `13, 14, 15, 16, 17, 18, or 19`, it can pass the verification. It can be used for non-strict business scenarios.
 
@@ -684,7 +684,7 @@ func Example_Rule_PhoneLoose() {
 }
 ```
 
-### `telephone`
+### telephone
 
 Mainland China landline phone numbers, "XXXX-XXXXXXX", "XXXX-XXXXXXXX", "XXX-XXXXXXX", "XXX-XXXXXXXX", "XXXXXXX", "XXXXXXXX".
 
@@ -716,7 +716,7 @@ func Example_Rule_Telephone() {
 }
 ```
 
-### `passport`
+### passport
 
 Universal account rules (start with a letter, can only contain letters, numbers, and underscores, with a length between 6 and 18 characters).
 
@@ -749,7 +749,7 @@ func Example_Rule_Passport() {
 }
 ```
 
-### `password`
+### password
 
 Universal password rules (any characters, with a length between 6 and 18 characters).
 
@@ -776,7 +776,7 @@ func Example_Rule_Password() {
 }
 ```
 
-### `password2`
+### password2
 
 Medium-strength password (based on the universal password rules, it is required that the password must contain uppercase and lowercase letters as well as numbers).
 
@@ -809,7 +809,7 @@ func Example_Rule_Password2() {
 }
 ```
 
-### `password3`
+### password3
 
 Strong password (based on the universal password rules, it is required that the password must contain uppercase and lowercase letters as well as numbers and special characters).
 
@@ -839,7 +839,7 @@ func Example_Rule_Password3() {
 }
 ```
 
-### `postcode`
+### postcode
 
 Mainland China postcode rules.
 
@@ -869,7 +869,7 @@ func Example_Rule_Postcode() {
 }
 ```
 
-### `resident-id`
+### resident id
 
 Mainland China id rules.
 
@@ -894,7 +894,7 @@ func Example_Rule_ResidentId() {
 }
 ```
 
-### `bank-card`
+### bank card
 
 Mainland China bank card rules.
 
@@ -919,7 +919,7 @@ func Example_Rule_BankCard() {
 }
 ```
 
-### `qq`
+### qq
 
 Tencent QQ account rules.
 
@@ -949,7 +949,7 @@ func Example_Rule_QQ() {
 }
 ```
 
-### `ip`
+### ip
 
 `IPv4/IPv6` address rules.
 
@@ -981,7 +981,7 @@ func Example_Rule_IP() {
 }
 ```
 
-### `ipv4`
+### ipv4
 
 `IPv4` address rules.
 
@@ -1008,7 +1008,7 @@ func Example_Rule_IPV4() {
 }
 ```
 
-### `ipv6`
+### ipv6
 
 `IPv6` address rules.
 
@@ -1035,7 +1035,7 @@ func Example_Rule_IPV6() {
 }
 ```
 
-### `mac`
+### mac
 
 `MAC` address rules.
 
@@ -1062,7 +1062,7 @@ func Example_Rule_Mac() {
 }
 ```
 
-### `url`
+### url
 
 Support start with `http`, `https`, `ftp` and `file`.
 
@@ -1091,7 +1091,7 @@ func Example_Rule_Url() {
 }
 ```
 
-### `domain`
+### domain
 
 Domain rules. `xxx.yyy` (first digit must be a letter).
 
@@ -1123,7 +1123,7 @@ func Example_Rule_Domain() {
 }
 ```
 
-### `size`
+### size
 
 The size of the parameter.
 
@@ -1150,7 +1150,7 @@ func Example_Rule_Size() {
 }
 ```
 
-### `length`
+### length
 
 The parameter length should be between `min` and `max` (where the length parameters are integers). Note that the underlying calculation of length is based on `Unicode`.
 
@@ -1177,7 +1177,7 @@ func Example_Rule_Length() {
 }
 ```
 
-### `min-length`
+### min length
 
 The parameter length should be greater than or equal to `min` (where the length parameters are integers). Note that the underlying calculation of length is based on `Unicode`.
 
@@ -1204,7 +1204,7 @@ func Example_Rule_MinLength() {
 }
 ```
 
-### `max-length`
+### max length
 
 The parameter length should be less than or equal to `max` (where the length parameters are integers). Note that the underlying calculation of length is based on `Unicode`.
 
@@ -1231,7 +1231,7 @@ func Example_Rule_MaxLength() {
 }
 ```
 
-### `between`
+### between
 
 The value of the parameter should be between `min` and `max` (support integer and float).
 
@@ -1263,7 +1263,7 @@ func Example_Rule_Between() {
 }
 ```
 
-### `min`
+### min
 
 The value of the parameter should be greater than or equal to `min` (support integer and float).
 
@@ -1295,7 +1295,7 @@ func Example_Rule_Min() {
 }
 ```
 
-### `max`
+### max
 
 The value of the parameter should be less than or equal to `max` (support integer and float).
 
@@ -1327,7 +1327,7 @@ func Example_Rule_Max() {
 }
 ```
 
-### `json`
+### json
 
 Check if the parameter is a valid `JSON` string.
 
@@ -1354,7 +1354,7 @@ func Example_Rule_Json() {
 }
 ```
 
-### `integer`
+### integer
 
 Check if the parameter is an integer (Positive integer or negative integer.
 ).
@@ -1385,7 +1385,7 @@ func Example_Rule_Integer() {
 }
 ```
 
-### `float`
+### float
 
 Check if the parameter is a float.
 
@@ -1414,7 +1414,7 @@ func Example_Rule_Float() {
 }
 ```
 
-### `boolean`
+### boolean
 
 Boolean value (`1`, `true`, `on`, `yes` are considered `true` | `0`, `false`, `off`, `no`, empty string `""` are considered `false`).
 
@@ -1450,7 +1450,7 @@ func Example_Rule_Boolean() {
 }
 ```
 
-### `same`
+### same
 
 Check if the parameter is the same as the specified field.
 
@@ -1478,7 +1478,7 @@ func Example_Rule_Same() {
 }
 ```
 
-### `different`
+### different
 
 The parameter should different from the specified field.
 
@@ -1506,7 +1506,7 @@ func Example_Rule_Different() {
 }
 ```
 
-### `eq`
+### eq
 
 The parameter value must be the same as the value of the `field` parameter. The `same` rule's alias, with the same functionality as the `same` rule.
 
@@ -1534,7 +1534,7 @@ func Example_Rule_EQ() {
 }
 ```
 
-### `not-eq`
+### not eq
 
 The parameter value must be different from the value of the `field` parameter. The `different` rule's alias, with the same functionality as the `different` rule.
 
@@ -1562,7 +1562,7 @@ func Example_Rule_NotEQ() {
 }
 ```
 
-### `gt`
+### gt
 
 The parameter value must be greater than the value of the `field` parameter.
 
@@ -1590,7 +1590,7 @@ func Example_Rule_GT() {
 }
 ```
 
-### `gte`
+### gte
 
 The parameter value must be greater than or equal to the value of the `field` parameter.
 
@@ -1618,7 +1618,7 @@ func Example_Rule_GTE() {
 }
 ```
 
-### `lt`
+### lt
 
 The parameter value must be less than the value of the `field` parameter.
 
@@ -1646,7 +1646,7 @@ func Example_Rule_LT() {
 }
 ```
 
-### `lte`
+### lte
 
 The parameter value must be less than or equal to the value of the `field` parameter.
 
@@ -1674,7 +1674,7 @@ func Example_Rule_LTE() {
 }
 ```
 
-### `in`
+### in
 
 The parameter value should be among `value1`, `value2`, ... (string matching).
 
@@ -1702,7 +1702,7 @@ func Example_Rule_In() {
 }
 ```
 
-### `not-in`
+### not in
 
 The parameter value should not be among `value1`, `value2`, ... (string matching).
 
@@ -1730,7 +1730,7 @@ func Example_Rule_NotIn() {
 }
 ```
 
-### `regex`
+### regex
 
 The parameter value should match the regular expression `pattern`.
 
@@ -1759,7 +1759,7 @@ func Example_Rule_Regex() {
 }
 ```
 
-### `not-regex`
+### not regex
 
 The parameter value should not match the regular expression `pattern`.
 

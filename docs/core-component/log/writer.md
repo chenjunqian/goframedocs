@@ -67,7 +67,7 @@ Stack:
 1. /Users/goframe/Workspace/Go/GOPATH/src/github.com/gogf/gf/v2/geg/os/glog/glog_writer_hook.go:27
 ```
 
-## `Graylog` Example
+## Graylog Example
 
 If we need to print the log to standard output and log file, and also need to output to the `Graylog` server, we can implement the following `Writer`:
 

@@ -31,14 +31,14 @@ export function getMarkdownHeadings(md: string): MarkdownHeading[] {
 export function MarkdownHeadingNavigator({ headings, className }: { headings: MarkdownHeading[], className?: string }) {
     return (
         <div className={`${className}`}>
-            <div className={`flex flex-col gap-2 fixed top-16 ml-9 border-l border-gray-500`}>
-                <div className="text-sm font-bold ml-2 mb-4">On this page</div>
+            <div className={`flex flex-col gap-2 fixed top-16 ml-9 border-l border-gray-500 pb-2`}>
+                <div className="text-sm font-bold ml-4 mb-4">On this page</div>
                 {headings.map((heading, index) => {
                     return (
                         <a
                             key={index}
                             href={heading.slug}
-                            className="text-sm font-medium ml-2 hover:underline"
+                            className={`text-sm font-medium ${heading.level === 2 ? 'ml-4' : 'ml-6'} hover:underline`}
                         >
                             {heading.text}
                         </a>

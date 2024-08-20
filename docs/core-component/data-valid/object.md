@@ -79,7 +79,7 @@ err = g.Validator().Data("").Assoc(data).
 fmt.Println(err.Error())
 ```
 
-### `Struct` Data Validation
+### Struct Data Validation
 
 ```go
 type User struct {
@@ -106,7 +106,7 @@ if err != nil {
 // [map[Type:map[required:Please select user type]]]
 ```
 
-### `Map` Data Validation
+### Map Data Validation
 
 ```go
 params := map[string]interface{}{

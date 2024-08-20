@@ -84,10 +84,10 @@ export function DocsDrawer({ children, markdownHeadings }: Readonly<{ children: 
                         <div className="w-1/2 flex justify-end">
                             <div className="dropdown dropdown-bottom dropdown-end">
                                 <div tabIndex={0} role="button" className="btn btn-sm btn-ghost m-1">On this page</div>
-                                <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+                                <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-72 p-2 shadow">
                                     {
                                         markdownHeadings?.map((heading) => (
-                                            <li><a href={heading.slug}>{heading.text}</a></li>
+                                            <li><a className={`text-sm ${heading.level === 1 ? 'font-bold' : ''}  ${heading.level === 2 ? 'ml-4' : 'ml-6'} `} href={heading.slug}>{heading.text}</a></li>
                                         ))
                                     }
                                 </ul>

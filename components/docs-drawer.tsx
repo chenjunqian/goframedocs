@@ -190,6 +190,7 @@ export function DocsDrawer({ children }: Readonly<{ children: React.ReactNode }>
                                     </details>
                                     <ul>
                                         <li><Link className={pathname === routerInfoDic['core-component/data-valid/rule'].fullPath ? 'active' : ''} href={routerInfoDic['core-component/data-valid/rule'].fullPath}>Rule</Link></li>
+                                        <li><Link className={pathname === routerInfoDic['core-component/data-valid/object'].fullPath ? 'active' : ''} href={routerInfoDic['core-component/data-valid/object'].fullPath}>Object</Link></li>
                                     </ul>
                                 </li>
                             </ul>

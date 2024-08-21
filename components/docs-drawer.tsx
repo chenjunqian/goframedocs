@@ -37,15 +37,7 @@ export function DocsDrawer({ children, markdownHeadings }: Readonly<{ children: 
     }, []);
 
     useEffect(() => {
-        setIsQuickStartOpen(false);
-        setIsDevelopmentOpen(false);
-        setIsFrameworkDesignOpen(false);
-        setIsCoreComponentsOpen(false);
-        setIsCliManagementOpen(false);
-        setIsConfigurationOpen(false);
-        setIsLogOpen(false);
-        setIsErrorOpen(false);
-        setIsDataValidOpen(false);
+
         if (pathname.startsWith('/docs/framework-design')) {
             setIsFrameworkDesignOpen(true);
         } else if (pathname.startsWith('/docs/development')) {
@@ -202,11 +194,12 @@ export function DocsDrawer({ children, markdownHeadings }: Readonly<{ children: 
                                 <li>
                                     <details open={isDataValidOpen}>
                                         <summary><Link className="active" href={routerInfoDic['core-component/data-valid'].fullPath}>Data Validation</Link></summary>
+                                        <ul>
+                                            <li><Link className={pathname === routerInfoDic['core-component/data-valid/rule'].fullPath ? 'active' : ''} href={routerInfoDic['core-component/data-valid/rule'].fullPath}>Rule</Link></li>
+                                            <li><Link className={pathname === routerInfoDic['core-component/data-valid/object'].fullPath ? 'active' : ''} href={routerInfoDic['core-component/data-valid/object'].fullPath}>Object</Link></li>
+                                            <li><Link className={pathname === routerInfoDic['core-component/data-valid/result'].fullPath ? 'active' : ''} href={routerInfoDic['core-component/data-valid/result'].fullPath}>Result</Link></li>
+                                        </ul>
                                     </details>
-                                    <ul>
-                                        <li><Link className={pathname === routerInfoDic['core-component/data-valid/rule'].fullPath ? 'active' : ''} href={routerInfoDic['core-component/data-valid/rule'].fullPath}>Rule</Link></li>
-                                        <li><Link className={pathname === routerInfoDic['core-component/data-valid/object'].fullPath ? 'active' : ''} href={routerInfoDic['core-component/data-valid/object'].fullPath}>Object</Link></li>
-                                    </ul>
                                 </li>
                             </ul>
                         </details>

@@ -457,8 +457,17 @@ export const routerInfoDic: DocsRouterInfoDict = {
         markdownPath: '/docs/core-component/data-valid/object.md',
         PreBtnName: 'Data Validation | Rule',
         PreBtnPath: '/docs/core-component/data-valid/rule',
-        NextBtnName: 'Data Validation | Error',
-        NextBtnPath: '/docs/core-component/data-valid/error',
+        NextBtnName: 'Data Validation | Result',
+        NextBtnPath: '/docs/core-component/data-valid/result',
+    },
+
+    'core-component/data-valid/result': {
+        fullPath: '/docs/core-component/data-valid/result',
+        markdownPath: '/docs/core-component/data-valid/result.md',
+        PreBtnName: 'Data Validation | Object',
+        PreBtnPath: '/docs/core-component/data-valid/object',
+        NextBtnName: 'Data Validation | Types',
+        NextBtnPath: '/docs/core-component/data-valid/types',
     },
 
     'framework-design': {

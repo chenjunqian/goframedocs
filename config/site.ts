@@ -503,7 +503,16 @@ export const routerInfoDic: DocsRouterInfoDict = {
         PreBtnName: 'Data Validation | Recursive',
         PreBtnPath: '/docs/core-component/data-valid/recursive',
         NextBtnName: 'Data Validation | Custom Error',
-        NextBtnPath: '/docs/core-component/data-valid/custom-erro',
+        NextBtnPath: '/docs/core-component/data-valid/custom-error',
+    },
+
+    'core-component/data-valid/custom-error': {
+        fullPath: '/docs/core-component/data-valid/custom-error',
+        markdownPath: '/docs/core-component/data-valid/custom-error.md',
+        PreBtnName: 'Data Validation | Custom Rule',
+        PreBtnPath: '/docs/core-component/data-valid/custom-rule',
+        NextBtnName: 'Data Validation | Custom Error',
+        NextBtnPath: '/docs/core-component/data-valid/custom-error',
     },
 
     'framework-design': {

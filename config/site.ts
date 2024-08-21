@@ -479,6 +479,15 @@ export const routerInfoDic: DocsRouterInfoDict = {
         NextBtnPath: '/docs/core-component/data-valid/optional',
     },
 
+    'core-component/data-valid/optional': {
+        fullPath: '/docs/core-component/data-valid/optional',
+        markdownPath: '/docs/core-component/data-valid/optional.md',
+        PreBtnName: 'Data Validation | Types',
+        PreBtnPath: '/docs/core-component/data-valid/types',
+        NextBtnName: 'Data Validation | Recursive',
+        NextBtnPath: '/docs/core-component/data-valid/recursive',
+    },
+
     'framework-design': {
         fullPath: '/docs/framework-design',
         markdownPath: '/docs/framework-design/module-design.md',

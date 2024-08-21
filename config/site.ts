@@ -497,6 +497,15 @@ export const routerInfoDic: DocsRouterInfoDict = {
         NextBtnPath: '/docs/core-component/data-valid/custom-rule',
     },
 
+    'core-component/data-valid/custom-rule': {
+        fullPath: '/docs/core-component/data-valid/custom-rule',
+        markdownPath: '/docs/core-component/data-valid/custom-rule.md',
+        PreBtnName: 'Data Validation | Recursive',
+        PreBtnPath: '/docs/core-component/data-valid/recursive',
+        NextBtnName: 'Data Validation | Custom Error',
+        NextBtnPath: '/docs/core-component/data-valid/custom-erro',
+    },
+
     'framework-design': {
         fullPath: '/docs/framework-design',
         markdownPath: '/docs/framework-design/module-design.md',

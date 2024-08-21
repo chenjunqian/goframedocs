@@ -276,3 +276,70 @@ func main() {
     fmt.Println(err)
 }
 ```
+
+## Complete Data Validation
+
+When we specify a `struct`, our validation rules are limited to checking the keys or properties within it. If we aim to conduct a comprehensive validation of the `struct` object itself through rules, we find that we are unable to register a custom validation rule for the validation component. However, our validation component does support direct validation of the current struct object. Let's consider an example where we need to perform a complete custom validation for a user creation request and register a validation rule for `UserCreateReq` to accomplish this.
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "github.com/gogf/gf/v2/database/gdb"
+    "github.com/gogf/gf/v2/errors/gerror"
+    "github.com/gogf/gf/v2/frame/g"
+    "github.com/gogf/gf/v2/os/gctx"
+    "github.com/gogf/gf/v2/util/gvalid"
+    "time"
+)
+
+// UserCreateReq defines the structure for user creation request.
+type UserCreateReq struct {
+    g.Meta `v:"UserCreateReq"`
+    Name   string
+    Pass   string
+}
+
+// RuleUserCreateReq defines the custom validation rule for UserCreateReq.
+func RuleUserCreateReq(ctx context.Context, in gvalid.RuleFuncInput) error {
+    var req *UserCreateReq
+    if err := in.Data.Scan(&req); err != nil {
+        return gerror.Wrap(err, `Scanning data to UserCreateReq failed`)
+    }
+    // Check if the user name already exists in the database.
+    count, err := g.Model("user").Ctx(ctx).Cache(gdb.CacheOption{
+        Duration: time.Hour,
+        Name:     "",
+        Force:    false,
+    }).Where("name", req.Name).Count()
+    if err != nil {
+        return err
+    }
+    if count > 0 {
+        return gerror.Newf(`The name "%s" is already taken by someone else`, req.Name)
+    }
+    return nil
+}
+
+func main() {
+    var (
+        ctx  = gctx.New()
+        user = &UserCreateReq{
+            Name: "john",
+            Pass: "123456",
+        }
+    )
+    err := g.Validator().RuleFunc("UserCreateReq", RuleUserCreateReq).Data(user).Run(ctx)
+    fmt.Println(err)
+}
+```
+
+By embedding the `g.Meta` metadata into the structure, we bind it with the custom validation rules of `UserCreateReq`. When this structure is part of our code, we can utilize the `UserCreateReq` rules to validate the struct object through the `CheckStruct` function.
+
+Output:
+
+```bash
+The name "john" is already token
+```

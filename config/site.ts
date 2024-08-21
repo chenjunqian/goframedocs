@@ -470,6 +470,15 @@ export const routerInfoDic: DocsRouterInfoDict = {
         NextBtnPath: '/docs/core-component/data-valid/types',
     },
 
+    'core-component/data-valid/types': {
+        fullPath: '/docs/core-component/data-valid/types',
+        markdownPath: '/docs/core-component/data-valid/types.md',
+        PreBtnName: 'Data Validation | Result',
+        PreBtnPath: '/docs/core-component/data-valid/result',
+        NextBtnName: 'Data Validation | Optional',
+        NextBtnPath: '/docs/core-component/data-valid/optional',
+    },
+
     'framework-design': {
         fullPath: '/docs/framework-design',
         markdownPath: '/docs/framework-design/module-design.md',

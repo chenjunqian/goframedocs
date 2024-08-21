@@ -198,6 +198,7 @@ export function DocsDrawer({ children, markdownHeadings }: Readonly<{ children: 
                                             <li><Link className={pathname === routerInfoDic['core-component/data-valid/rule'].fullPath ? 'active' : ''} href={routerInfoDic['core-component/data-valid/rule'].fullPath}>Rule</Link></li>
                                             <li><Link className={pathname === routerInfoDic['core-component/data-valid/object'].fullPath ? 'active' : ''} href={routerInfoDic['core-component/data-valid/object'].fullPath}>Object</Link></li>
                                             <li><Link className={pathname === routerInfoDic['core-component/data-valid/result'].fullPath ? 'active' : ''} href={routerInfoDic['core-component/data-valid/result'].fullPath}>Result</Link></li>
+                                            <li><Link className={pathname === routerInfoDic['core-component/data-valid/types'].fullPath ? 'active' : ''} href={routerInfoDic['core-component/data-valid/types'].fullPath}>Types</Link></li>
                                         </ul>
                                     </details>
                                 </li>

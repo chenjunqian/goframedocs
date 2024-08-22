@@ -21,6 +21,7 @@ export function DocsDrawer({ children, markdownHeadings }: Readonly<{ children: 
     const [isLogOpen, setIsLogOpen] = useState(false);
     const [isErrorOpen, setIsErrorOpen] = useState(false);
     const [isDataValidOpen, setIsDataValidOpen] = useState(false);
+    const [isTypeConvertOpen, setIsTypeConvertOpen] = useState(false);
 
     const pathname = usePathname();
 
@@ -54,6 +55,8 @@ export function DocsDrawer({ children, markdownHeadings }: Readonly<{ children: 
                 setIsErrorOpen(true);
             } else if (pathname.startsWith('/docs/core-component/data-valid')) {
                 setIsDataValidOpen(true);
+            } else if (pathname.startsWith('/docs/core-component/type-convert')) {
+                setIsTypeConvertOpen(true);
             }
         } else {
             setIsQuickStartOpen(true);
@@ -208,6 +211,13 @@ export function DocsDrawer({ children, markdownHeadings }: Readonly<{ children: 
                                         </ul>
                                     </details>
                                 </li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li>
+                        <details open={isTypeConvertOpen}>
+                            <summary ><Link className="active" href={routerInfoDic['core-component/type-convert'].fullPath}>Type Convert</Link></summary>
+                            <ul>
                             </ul>
                         </details>
                     </li>

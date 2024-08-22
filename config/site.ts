@@ -533,6 +533,15 @@ export const routerInfoDic: DocsRouterInfoDict = {
         NextBtnPath: '/docs/core-component/type-convert/overview',
     },
 
+    'core-component/type-convert': {
+        fullPath: '/docs/core-component/type-convert',
+        markdownPath: '/docs/core-component/type-convert/overview.md',
+        PreBtnName: 'Data Validation | FAQ',
+        PreBtnPath: '/docs/core-component/data-valid/faq',
+        NextBtnName: 'Type Convert | Basic Type',
+        NextBtnPath: '/docs/core-component/type-convert/basic-type',
+    },
+
     'framework-design': {
         fullPath: '/docs/framework-design',
         markdownPath: '/docs/framework-design/module-design.md',

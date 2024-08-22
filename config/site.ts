@@ -524,6 +524,15 @@ export const routerInfoDic: DocsRouterInfoDict = {
         NextBtnPath: '/docs/core-component/data-valid/faq',
     },
 
+    'core-component/data-valid/faq': {
+        fullPath: '/docs/core-component/data-valid/faq',
+        markdownPath: '/docs/core-component/data-valid/faq.md',
+        PreBtnName: 'Data Validation | Methods',
+        PreBtnPath: '/docs/core-component/data-valid/method',
+        NextBtnName: 'Type Convert | Overview',
+        NextBtnPath: '/docs/core-component/type-convert/overview',
+    },
+
     'framework-design': {
         fullPath: '/docs/framework-design',
         markdownPath: '/docs/framework-design/module-design.md',

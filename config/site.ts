@@ -511,8 +511,17 @@ export const routerInfoDic: DocsRouterInfoDict = {
         markdownPath: '/docs/core-component/data-valid/custom-error.md',
         PreBtnName: 'Data Validation | Custom Rule',
         PreBtnPath: '/docs/core-component/data-valid/custom-rule',
-        NextBtnName: 'Data Validation | Custom Error',
-        NextBtnPath: '/docs/core-component/data-valid/custom-error',
+        NextBtnName: 'Data Validation | Methods',
+        NextBtnPath: '/docs/core-component/data-valid/method',
+    },
+
+    'core-component/data-valid/method': {
+        fullPath: '/docs/core-component/data-valid/method',
+        markdownPath: '/docs/core-component/data-valid/method.md',
+        PreBtnName: 'Data Validation | Custom Error',
+        PreBtnPath: '/docs/core-component/data-valid/custom-error',
+        NextBtnName: 'Data Validation | FAQ',
+        NextBtnPath: '/docs/core-component/data-valid/faq',
     },
 
     'framework-design': {

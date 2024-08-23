@@ -605,6 +605,15 @@ export const routerInfoDic: DocsRouterInfoDict = {
         NextBtnPath: '/docs/core-component/type-convert/benchmark',
     },
 
+    'core-component/type-convert/benchmark': {
+        fullPath: '/docs/core-component/type-convert/benchmark',
+        markdownPath: '/docs/core-component/type-convert/benchmark.md',
+        PreBtnName: 'Type Convert | Converter',
+        PreBtnPath: '/docs/core-component/type-convert/converter',
+        NextBtnName: 'Cache | Overview',
+        NextBtnPath: '/docs/core-component/cache',
+    },
+
     'framework-design': {
         fullPath: '/docs/framework-design',
         markdownPath: '/docs/framework-design/module-design.md',

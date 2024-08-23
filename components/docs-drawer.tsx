@@ -223,6 +223,7 @@ export function DocsDrawer({ children, markdownHeadings }: Readonly<{ children: 
                                 <li><Link className={pathname === routerInfoDic['core-component/type-convert/struct'].fullPath ? 'active' : ''} href={routerInfoDic['core-component/type-convert/struct'].fullPath}>Struct</Link></li>
                                 <li><Link className={pathname === routerInfoDic['core-component/type-convert/structs'].fullPath ? 'active' : ''} href={routerInfoDic['core-component/type-convert/structs'].fullPath}>Structs</Link></li>
                                 <li><Link className={pathname === routerInfoDic['core-component/type-convert/scan'].fullPath ? 'active' : ''} href={routerInfoDic['core-component/type-convert/scan'].fullPath}>Scan</Link></li>
+                                <li><Link className={pathname === routerInfoDic['core-component/type-convert/unmarshal'].fullPath ? 'active' : ''} href={routerInfoDic['core-component/type-convert/unmarshal'].fullPath}>Unmarshal</Link></li>
                             </ul>
                         </details>
                     </li>

@@ -587,6 +587,15 @@ export const routerInfoDic: DocsRouterInfoDict = {
         NextBtnPath: '/docs/core-component/type-convert/unmarshal',
     },
 
+    'core-component/type-convert/unmarshal': {
+        fullPath: '/docs/core-component/type-convert/unmarshal',
+        markdownPath: '/docs/core-component/type-convert/unmarshal.md',
+        PreBtnName: 'Type Convert | Scan',
+        PreBtnPath: '/docs/core-component/type-convert/scan',
+        NextBtnName: 'Type Convert | Feature',
+        NextBtnPath: '/docs/core-component/type-convert/feature',
+    },
+
     'framework-design': {
         fullPath: '/docs/framework-design',
         markdownPath: '/docs/framework-design/module-design.md',

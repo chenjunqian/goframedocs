@@ -592,8 +592,17 @@ export const routerInfoDic: DocsRouterInfoDict = {
         markdownPath: '/docs/core-component/type-convert/unmarshal.md',
         PreBtnName: 'Type Convert | Scan',
         PreBtnPath: '/docs/core-component/type-convert/scan',
-        NextBtnName: 'Type Convert | Feature',
-        NextBtnPath: '/docs/core-component/type-convert/feature',
+        NextBtnName: 'Type Convert | Converter',
+        NextBtnPath: '/docs/core-component/type-convert/converter',
+    },
+
+    'core-component/type-convert/converter': {
+        fullPath: '/docs/core-component/type-convert/converter',
+        markdownPath: '/docs/core-component/type-convert/converter.md',
+        PreBtnName: 'Type Convert | Unmarshal',
+        PreBtnPath: '/docs/core-component/type-convert/unmarshal',
+        NextBtnName: 'Type Convert | Benchmark',
+        NextBtnPath: '/docs/core-component/type-convert/benchmark',
     },
 
     'framework-design': {

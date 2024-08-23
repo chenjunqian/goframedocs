@@ -220,6 +220,7 @@ export function DocsDrawer({ children, markdownHeadings }: Readonly<{ children: 
                             <ul>
                                 <li><Link className={pathname === routerInfoDic['core-component/type-convert/basic-type'].fullPath ? 'active' : ''} href={routerInfoDic['core-component/type-convert/basic-type'].fullPath}>Basic Type</Link></li>
                                 <li><Link className={pathname === routerInfoDic['core-component/type-convert/map'].fullPath ? 'active' : ''} href={routerInfoDic['core-component/type-convert/map'].fullPath}>Map</Link></li>
+                                <li><Link className={pathname === routerInfoDic['core-component/type-convert/struct'].fullPath ? 'active' : ''} href={routerInfoDic['core-component/type-convert/struct'].fullPath}>Struct</Link></li>
                             </ul>
                         </details>
                     </li>

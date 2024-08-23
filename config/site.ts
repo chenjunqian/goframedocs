@@ -569,6 +569,15 @@ export const routerInfoDic: DocsRouterInfoDict = {
         NextBtnPath: '/docs/core-component/type-convert/strcuts',
     },
 
+    'core-component/type-convert/structs': {
+        fullPath: '/docs/core-component/type-convert/structs',
+        markdownPath: '/docs/core-component/type-convert/structs.md',
+        PreBtnName: 'Type Convert | Struct',
+        PreBtnPath: '/docs/core-component/type-convert/struct',
+        NextBtnName: 'Type Convert | Scan',
+        NextBtnPath: '/docs/core-component/type-convert/scan',
+    },
+
     'framework-design': {
         fullPath: '/docs/framework-design',
         markdownPath: '/docs/framework-design/module-design.md',

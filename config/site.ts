@@ -637,7 +637,7 @@ export const routerNodeTree: DocsRouterNode[] = [
                     {
                         name: "Memory Cache",
                         fullPath: '/docs/core-component/cache/memory-cache',
-                        markdownPath: '/docs/core-component/cache/memory-cache.md',
+                        markdownPath: '/docs/core-component/cache/memory.md',
                         PreBtnName: 'Cache | Interface',
                         PreBtnPath: '/docs/core-component/cache/interface',
                         NextBtnName: 'Cache | Redis Cache',

@@ -651,6 +651,15 @@ export const routerNodeTree: DocsRouterNode[] = [
                         PreBtnPath: '/docs/core-component/cache/memory-cache',
                         NextBtnName: 'Cache | Methods',
                         NextBtnPath: '/docs/core-component/cache/methods',
+                    },
+                    {
+                        name: "Methods",
+                        fullPath: '/docs/core-component/cache/methods',
+                        markdownPath: '/docs/core-component/cache/methods.md',
+                        PreBtnName: 'Cache | Redis Cache',
+                        PreBtnPath: '/docs/core-component/cache/redis-cache',
+                        NextBtnName: 'Template | Overview',
+                        NextBtnPath: '/docs/core-component/template/',
                     }
                 ]
             }

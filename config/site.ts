@@ -616,7 +616,26 @@ export const routerNodeTree: DocsRouterNode[] = [
                     }
                 ]
             },
-
+            {
+                name: "Cache",
+                fullPath: '/docs/core-component/cache',
+                markdownPath: '/docs/core-component/cache/overview.md',
+                PreBtnName: 'Type Convert | Benchmark',
+                PreBtnPath: '/docs/core-component/type-convert/benchmark',
+                NextBtnName: 'Cache | Interface',
+                NextBtnPath: '/docs/core-component/cache/interface',
+                childrenNode: [
+                    {
+                        name: "Interface",
+                        fullPath: '/docs/core-component/cache/interface',
+                        markdownPath: '/docs/core-component/cache/interface.md',
+                        PreBtnName: 'Cache | Overview',
+                        PreBtnPath: '/docs/core-component/cache',
+                        NextBtnName: 'Cache | Memory Cache',
+                        NextBtnPath: '/docs/core-component/cache/memory-cache',
+                    }
+                ]
+            }
         ]
     },
     {

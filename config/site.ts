@@ -672,7 +672,15 @@ export const routerNodeTree: DocsRouterNode[] = [
                 NextBtnName: 'Template Engine | Configuration',
                 NextBtnPath: '/docs/core-component/template-engine/config',
                 childrenNode: [
-                    
+                    {
+                        name: "Configuration",
+                        fullPath: '/docs/core-component/template-engine/config',
+                        markdownPath: '/docs/core-component/template-engine/config.md',
+                        PreBtnName: 'Template Engine | Overview',
+                        PreBtnPath: '/docs/core-component/template-engine/',
+                        NextBtnName: 'Template Engine | Tags',
+                        NextBtnPath: '/docs/core-component/template-engine/tags',
+                    }
                 ]
             }
         ]

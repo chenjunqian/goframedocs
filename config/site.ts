@@ -687,8 +687,35 @@ export const routerNodeTree: DocsRouterNode[] = [
                         markdownPath: '/docs/core-component/template-engine/tags.md',
                         PreBtnName: 'Template Engine | Configuration',
                         PreBtnPath: '/docs/core-component/template-engine/config',
-                        NextBtnName: 'Template Engine | Methods',
+                        NextBtnName: 'Template Engine | Basic Methods',
                         NextBtnPath: '/docs/core-component/template-engine/methods',
+                    },
+                    {
+                        name: "Basic Methods",
+                        fullPath: '/docs/core-component/template-engine/methods',
+                        markdownPath: '/docs/core-component/template-engine/methods.md',
+                        PreBtnName: 'Template Engine | Tags',
+                        PreBtnPath: '/docs/core-component/template-engine/tags',
+                        NextBtnName: 'Template Engine | Built-in Methods',
+                        NextBtnPath: '/docs/core-component/template-engine/built-in-methods',
+                    },
+                    {
+                        name: "Built-in Methods",
+                        fullPath: '/docs/core-component/template-engine/built-in-methods',
+                        markdownPath: '/docs/core-component/template-engine/built-in-methods.md',
+                        PreBtnName: 'Template Engine | Methods',
+                        PreBtnPath: '/docs/core-component/template-engine/methods',
+                        NextBtnName: 'Template Engine | Customized Methods',
+                        NextBtnPath: '/docs/core-component/template-engine/customized-methods',
+                    },
+                    {
+                        name: "Customized Methods",
+                        fullPath: '/docs/core-component/template-engine/customized-methods',
+                        markdownPath: '/docs/core-component/template-engine/customized-methods.md',
+                        PreBtnName: 'Template Engine | Built-in Methods',
+                        PreBtnPath: '/docs/core-component/template-engine/built-in-methods',
+                        NextBtnName: 'Template Engine | Variables',
+                        NextBtnPath: '/docs/core-component/template-engine/variables',
                     }
                 ]
             }

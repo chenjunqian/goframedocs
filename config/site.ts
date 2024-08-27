@@ -680,6 +680,15 @@ export const routerNodeTree: DocsRouterNode[] = [
                         PreBtnPath: '/docs/core-component/template-engine/',
                         NextBtnName: 'Template Engine | Tags',
                         NextBtnPath: '/docs/core-component/template-engine/tags',
+                    },
+                    {
+                        name: "Tags",
+                        fullPath: '/docs/core-component/template-engine/tags',
+                        markdownPath: '/docs/core-component/template-engine/tags.md',
+                        PreBtnName: 'Template Engine | Configuration',
+                        PreBtnPath: '/docs/core-component/template-engine/config',
+                        NextBtnName: 'Template Engine | Methods',
+                        NextBtnPath: '/docs/core-component/template-engine/methods',
                     }
                 ]
             }

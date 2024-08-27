@@ -658,9 +658,21 @@ export const routerNodeTree: DocsRouterNode[] = [
                         markdownPath: '/docs/core-component/cache/methods.md',
                         PreBtnName: 'Cache | Redis Cache',
                         PreBtnPath: '/docs/core-component/cache/redis-cache',
-                        NextBtnName: 'Template | Overview',
-                        NextBtnPath: '/docs/core-component/template/',
+                        NextBtnName: 'Template Engine | Overview',
+                        NextBtnPath: '/docs/core-component/template-engine/',
                     }
+                ]
+            },
+            {
+                name: "Template Engine",
+                fullPath: '/docs/core-component/template-engine',
+                markdownPath: '/docs/core-component/template-engine/overview.md',
+                PreBtnName: 'Cache | Methods',
+                PreBtnPath: '/docs/core-component/cache/methods',
+                NextBtnName: 'Template Engine | Configuration',
+                NextBtnPath: '/docs/core-component/template-engine/config',
+                childrenNode: [
+                    
                 ]
             }
         ]

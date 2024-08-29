@@ -790,6 +790,15 @@ export const routerNodeTree: DocsRouterNode[] = [
                                 PreBtnPath: '/docs/core-component/orm/chain-opts',
                                 NextBtnName: 'ORM Chain Operation | Write',
                                 NextBtnPath: '/docs/core-component/orm/chain-opts/write',
+                            },
+                            {
+                                name: "Write",
+                                fullPath: '/docs/core-component/orm/chain-opts/write',
+                                markdownPath: '/docs/core-component/orm/chain-opts/write.md',
+                                PreBtnName: 'ORM Chain Operation | Model Creation',
+                                PreBtnPath: '/docs/core-component/orm/chain-opts/model-creation',
+                                NextBtnName: 'ORM Chain Operation | Update & Delete',
+                                NextBtnPath: '/docs/core-component/orm/chain-opts/update-delete',
                             }
                         ]
                     }

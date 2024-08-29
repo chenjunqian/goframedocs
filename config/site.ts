@@ -754,6 +754,26 @@ export const routerNodeTree: DocsRouterNode[] = [
                         NextBtnPath: '/docs/core-component/orm',
                     }
                 ]
+            },
+            {
+                name: "ORM",
+                fullPath: '/docs/core-component/orm',
+                markdownPath: '/docs/core-component/orm/overview.md',
+                PreBtnName: 'Template Engine | Others',
+                PreBtnPath: '/docs/core-component/template-engine/others',
+                NextBtnName: 'ORM | Overview',
+                NextBtnPath: '/docs/core-component/orm',
+                childrenNode: [
+                    {
+                        name: "Configuration",
+                        fullPath: '/docs/core-component/orm/config',
+                        markdownPath: '/docs/core-component/orm/config.md',
+                        PreBtnName: 'ORM | Overview',
+                        PreBtnPath: '/docs/core-component/orm',
+                        NextBtnName: 'ORM | Chain Operation',
+                        NextBtnPath: '/docs/core-component/orm/chain-opts',
+                    }
+                ]
             }
         ]
     },

@@ -734,6 +734,15 @@ export const routerNodeTree: DocsRouterNode[] = [
                         PreBtnPath: '/docs/core-component/template-engine/variables',
                         NextBtnName: 'Template Engine | XSS',
                         NextBtnPath: '/docs/core-component/template-engine/xss',
+                    },
+                    {
+                        name: "XSS",
+                        fullPath: '/docs/core-component/template-engine/xss',
+                        markdownPath: '/docs/core-component/template-engine/xss.md',
+                        PreBtnName: 'Template Engine | Layout',
+                        PreBtnPath: '/docs/core-component/template-engine/layout',
+                        NextBtnName: 'Template Engine | Others',
+                        NextBtnPath: '/docs/core-component/template-engine/others',
                     }
                 ]
             }

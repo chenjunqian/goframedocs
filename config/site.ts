@@ -772,6 +772,26 @@ export const routerNodeTree: DocsRouterNode[] = [
                         PreBtnPath: '/docs/core-component/orm',
                         NextBtnName: 'ORM | Chain Operation',
                         NextBtnPath: '/docs/core-component/orm/chain-opts',
+                    },
+                    {
+                        name: "Chain Operation",
+                        fullPath: '/docs/core-component/orm/chain-opts',
+                        markdownPath: '/docs/core-component/orm/chain-opts/overview.md',
+                        PreBtnName: 'ORM | Configuration',
+                        PreBtnPath: '/docs/core-component/orm/config',
+                        NextBtnName: 'ORM | Model Creation',
+                        NextBtnPath: '/docs/core-component/orm/chain-opts/model-creation',
+                        childrenNode: [
+                            {
+                                name: "Model Creation",
+                                fullPath: '/docs/core-component/orm/chain-opts/model-creation',
+                                markdownPath: '/docs/core-component/orm/chain-opts/model-creation.md',
+                                PreBtnName: 'ORM | Chain Operation',
+                                PreBtnPath: '/docs/core-component/orm/chain-opts',
+                                NextBtnName: 'ORM Chain Operation| Write',
+                                NextBtnPath: '/docs/core-component/orm/chain-opts/write',
+                            }
+                        ]
                     }
                 ]
             }

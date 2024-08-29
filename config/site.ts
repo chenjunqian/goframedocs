@@ -743,6 +743,15 @@ export const routerNodeTree: DocsRouterNode[] = [
                         PreBtnPath: '/docs/core-component/template-engine/layout',
                         NextBtnName: 'Template Engine | Others',
                         NextBtnPath: '/docs/core-component/template-engine/others',
+                    },
+                    {
+                        name: "Others",
+                        fullPath: '/docs/core-component/template-engine/others',
+                        markdownPath: '/docs/core-component/template-engine/others.md',
+                        PreBtnName: 'Template Engine | XSS',
+                        PreBtnPath: '/docs/core-component/orm',
+                        NextBtnName: 'ORM | Overview',
+                        NextBtnPath: '/docs/core-component/orm',
                     }
                 ]
             }

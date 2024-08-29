@@ -716,6 +716,15 @@ export const routerNodeTree: DocsRouterNode[] = [
                         PreBtnPath: '/docs/core-component/template-engine/built-in-methods',
                         NextBtnName: 'Template Engine | Variables',
                         NextBtnPath: '/docs/core-component/template-engine/variables',
+                    },
+                    {
+                        name: "Variables",
+                        fullPath: '/docs/core-component/template-engine/variables',
+                        markdownPath: '/docs/core-component/template-engine/variables.md',
+                        PreBtnName: 'Template Engine | Customized Methods',
+                        PreBtnPath: '/docs/core-component/template-engine/customized-methods',
+                        NextBtnName: 'Template Engine | Layout',
+                        NextBtnPath: '/docs/core-component/template-engine/layout',
                     }
                 ]
             }

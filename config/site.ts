@@ -725,6 +725,15 @@ export const routerNodeTree: DocsRouterNode[] = [
                         PreBtnPath: '/docs/core-component/template-engine/customized-methods',
                         NextBtnName: 'Template Engine | Layout',
                         NextBtnPath: '/docs/core-component/template-engine/layout',
+                    },
+                    {
+                        name: "Layout",
+                        fullPath: '/docs/core-component/template-engine/layout',
+                        markdownPath: '/docs/core-component/template-engine/layout.md',
+                        PreBtnName: 'Template Engine | Variables',
+                        PreBtnPath: '/docs/core-component/template-engine/variables',
+                        NextBtnName: 'Template Engine | XSS',
+                        NextBtnPath: '/docs/core-component/template-engine/xss',
                     }
                 ]
             }

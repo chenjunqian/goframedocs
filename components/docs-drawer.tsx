@@ -58,7 +58,7 @@ export function DocsDrawer({ children, markdownHeadings }: Readonly<{ children: 
             </div>
             <div className="drawer-side z-40">
                 <label htmlFor="docs-drawer" aria-label="close sidebar" className="drawer-overlay"></label>
-                <ul className="menu bg-base-200 text-base-content min-h-full w-72 p-4">
+                <ul className="menu bg-base-200 text-base-content min-h-full w-auto min-w-72 p-4">
                     {/* Sidebar content here */}
                     <div className="flex items-center mb-4">
                         <a className="btn btn-ghost text-xl" href="/">
@@ -84,7 +84,7 @@ function DrawerItemList({ routerNodes }: { routerNodes: DocsRouterNode[] }) {
                 return (
                     <li key={node.fullPath}>
                         <details open={node.fullPath === pathname || pathname.startsWith(node.fullPath)}>
-                            <summary><Link className={pathname === node.fullPath ? 'active' : ''} href={node.fullPath}>{node.name}</Link></summary>
+                            <summary><Link className={pathname.startsWith(node.fullPath) ? 'active' : ''} href={node.fullPath}>{node.name}</Link></summary>
                             <ul>
                                 {iterateNodes(node.childrenNode)}
                             </ul>

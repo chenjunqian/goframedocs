@@ -788,7 +788,7 @@ export const routerNodeTree: DocsRouterNode[] = [
                                 markdownPath: '/docs/core-component/orm/chain-opts/model-creation.md',
                                 PreBtnName: 'ORM | Chain Operation',
                                 PreBtnPath: '/docs/core-component/orm/chain-opts',
-                                NextBtnName: 'ORM Chain Operation| Write',
+                                NextBtnName: 'ORM Chain Operation | Write',
                                 NextBtnPath: '/docs/core-component/orm/chain-opts/write',
                             }
                         ]

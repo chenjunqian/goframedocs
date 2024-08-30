@@ -799,6 +799,15 @@ export const routerNodeTree: DocsRouterNode[] = [
                                 PreBtnPath: '/docs/core-component/orm/chain-opts/model-creation',
                                 NextBtnName: 'ORM Chain Operation | Update & Delete',
                                 NextBtnPath: '/docs/core-component/orm/chain-opts/update-delete',
+                            },
+                            {
+                                name: "Update & Delete",
+                                fullPath: '/docs/core-component/orm/chain-opts/update-delete',
+                                markdownPath: '/docs/core-component/orm/chain-opts/update-delete.md',
+                                PreBtnName: 'ORM Chain Operation | Write',
+                                PreBtnPath: '/docs/core-component/orm/chain-opts/write',
+                                NextBtnName: 'ORM Chain Operation | Query',
+                                NextBtnPath: '/docs/core-component/orm/chain-opts/query',
                             }
                         ]
                     }

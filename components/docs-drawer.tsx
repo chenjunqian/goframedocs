@@ -45,7 +45,7 @@ export function DocsDrawer({ children, markdownHeadings }: Readonly<{ children: 
                                 <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-72 p-2 shadow">
                                     {
                                         markdownHeadings?.map((heading) => (
-                                            <li><a className={`text-sm ${heading.level === 1 ? 'font-bold' : ''}  ${heading.level === 2 ? 'ml-4' : 'ml-6'} `} href={heading.slug}>{heading.text}</a></li>
+                                            <li key={heading.slug}><a className={`text-sm ${heading.level === 1 ? 'font-bold' : ''}  ${heading.level === 2 ? 'ml-4' : 'ml-6'} `} href={heading.slug}>{heading.text}</a></li>
                                         ))
                                     }
                                 </ul>
@@ -93,7 +93,7 @@ function DrawerItemList({ routerNodes }: { routerNodes: DocsRouterNode[] }) {
                 )
             } else {
                 return (
-                    <li><Link className={pathname === node.fullPath ? 'active' : ''} href={node.fullPath}>{node.name}</Link></li>
+                    <li key={node.fullPath}><Link className={pathname === node.fullPath ? 'active' : ''} href={node.fullPath}>{node.name}</Link></li>
                 )
             }
         })

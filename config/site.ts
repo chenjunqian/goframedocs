@@ -826,6 +826,15 @@ export const routerNodeTree: DocsRouterNode[] = [
                                         PreBtnPath: '/docs/core-component/orm/chain-opts/query',
                                         NextBtnName: 'ORM Chain Operation | All&One&Array&Value&Count',
                                         NextBtnPath: '/docs/core-component/orm/chain-opts/query/all-one-array-value-count',
+                                    },
+                                    {
+                                        name: "All&One&Array&Value&Count",
+                                        fullPath: '/docs/core-component/orm/chain-opts/query/all-one-array-value-count',
+                                        markdownPath: '/docs/core-component/orm/chain-opts/query/all-one-array-value-count.md',
+                                        PreBtnName: 'ORM Chain Operation | Where',
+                                        PreBtnPath: '/docs/core-component/orm/chain-opts/query/where',
+                                        NextBtnName: 'ORM Chain Operation | All&Count',
+                                        NextBtnPath: '/docs/core-component/orm/chain-opts/query/all-count',
                                     }
                                 ]
                             }

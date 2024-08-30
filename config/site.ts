@@ -833,8 +833,17 @@ export const routerNodeTree: DocsRouterNode[] = [
                                         markdownPath: '/docs/core-component/orm/chain-opts/query/all-one-array-value-count.md',
                                         PreBtnName: 'ORM Chain Operation | Where',
                                         PreBtnPath: '/docs/core-component/orm/chain-opts/query/where',
-                                        NextBtnName: 'ORM Chain Operation | All&Count',
+                                        NextBtnName: 'ORM Chain Operation | AllAndCount',
                                         NextBtnPath: '/docs/core-component/orm/chain-opts/query/all-count',
+                                    },
+                                    {
+                                        name: "AllAndCount",
+                                        fullPath: '/docs/core-component/orm/chain-opts/query/all-count',
+                                        markdownPath: '/docs/core-component/orm/chain-opts/query/all-count.md',
+                                        PreBtnName: 'ORM Chain Operation | All&One&Array&Value&Count',
+                                        PreBtnPath: '/docs/core-component/orm/chain-opts/query/all-one-array-value-count',
+                                        NextBtnName: 'ORM Chain Operation | Scane',
+                                        NextBtnPath: '/docs/core-component/orm/chain-opts/query/scan',
                                     }
                                 ]
                             }

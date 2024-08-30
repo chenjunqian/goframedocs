@@ -817,6 +817,17 @@ export const routerNodeTree: DocsRouterNode[] = [
                                 PreBtnPath: '/docs/core-component/orm/chain-opts/update-delete',
                                 NextBtnName: 'ORM Chain Operation | Where',
                                 NextBtnPath: '/docs/core-component/orm/chain-opts/query/where',
+                                childrenNode: [
+                                    {
+                                        name: "Where",
+                                        fullPath: '/docs/core-component/orm/chain-opts/query/where',
+                                        markdownPath: '/docs/core-component/orm/chain-opts/query/where.md',
+                                        PreBtnName: 'ORM Chain Operation | Query',
+                                        PreBtnPath: '/docs/core-component/orm/chain-opts/query',
+                                        NextBtnName: 'ORM Chain Operation | All&One&Array&Value&Count',
+                                        NextBtnPath: '/docs/core-component/orm/chain-opts/query/all-one-array-value-count',
+                                    }
+                                ]
                             }
                         ]
                     }

@@ -808,6 +808,15 @@ export const routerNodeTree: DocsRouterNode[] = [
                                 PreBtnPath: '/docs/core-component/orm/chain-opts/write',
                                 NextBtnName: 'ORM Chain Operation | Query',
                                 NextBtnPath: '/docs/core-component/orm/chain-opts/query',
+                            },
+                            {
+                                name: "Query",
+                                fullPath: '/docs/core-component/orm/chain-opts/query',
+                                markdownPath: '/docs/core-component/orm/chain-opts/query/overview.md',
+                                PreBtnName: 'ORM Chain Operation | Update & Delete',
+                                PreBtnPath: '/docs/core-component/orm/chain-opts/update-delete',
+                                NextBtnName: 'ORM Chain Operation | Where',
+                                NextBtnPath: '/docs/core-component/orm/chain-opts/query/where',
                             }
                         ]
                     }

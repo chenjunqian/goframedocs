@@ -23,7 +23,7 @@ export function DocsDrawer({ children, markdownHeadings }: Readonly<{ children: 
         window.addEventListener('scroll', handleScroll);
         const activeItem = document.querySelector(`a[href="${currentPath}"]`);
         if (activeItem) {
-            activeItem.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            // activeItem.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
         return () => {
             window.removeEventListener('scroll', handleScroll);

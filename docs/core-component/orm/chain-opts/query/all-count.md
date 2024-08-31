@@ -1,4 +1,4 @@
-# ORM Chain Options - Query - AllAndCount
+# ORM Query - AllAndCount
 
 The `AllAndCount` method, available from version v2.5.0, is used to query both a list of data records and the total count of records simultaneously. This method is typically used in scenarios involving pagination, simplifying the logic required for pagination queries.
 

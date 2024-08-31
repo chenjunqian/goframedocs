@@ -1,4 +1,4 @@
-# ORM Chain Options - Query
+# ORM Query
 
 ## Overview
 

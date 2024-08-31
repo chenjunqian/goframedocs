@@ -13,6 +13,7 @@ import { DocsRouterNode } from "@/config/types";
 export function DocsDrawer({ children, markdownHeadings }: Readonly<{ children: React.ReactNode, markdownHeadings?: MarkdownHeading[] }>) {
 
     const [isFixed, setIsFixed] = useState(false);
+    const currentPath = usePathname();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -20,11 +21,14 @@ export function DocsDrawer({ children, markdownHeadings }: Readonly<{ children: 
         };
 
         window.addEventListener('scroll', handleScroll);
-
+        const activeItem = document.querySelector(`a[href="${currentPath}"]`);
+        if (activeItem) {
+            activeItem.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
-    }, []);
+    }, [currentPath]);
 
     return (
         <div className="drawer lg:drawer-open">

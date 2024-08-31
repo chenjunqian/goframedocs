@@ -842,8 +842,17 @@ export const routerNodeTree: DocsRouterNode[] = [
                                         markdownPath: '/docs/core-component/orm/chain-opts/query/all-count.md',
                                         PreBtnName: 'ORM Chain Operation | All&One&Array&Value&Count',
                                         PreBtnPath: '/docs/core-component/orm/chain-opts/query/all-one-array-value-count',
-                                        NextBtnName: 'ORM Chain Operation | Scane',
+                                        NextBtnName: 'ORM Chain Operation | Scan',
                                         NextBtnPath: '/docs/core-component/orm/chain-opts/query/scan',
+                                    },
+                                    {
+                                        name: "Scan",
+                                        fullPath: '/docs/core-component/orm/chain-opts/query/scan',
+                                        markdownPath: '/docs/core-component/orm/chain-opts/query/scan.md',
+                                        PreBtnName: 'ORM Chain Operation | AllAndCount',
+                                        PreBtnPath: '/docs/core-component/orm/chain-opts/query/all-count',
+                                        NextBtnName: 'ORM Chain Operation | ScanAndCount',
+                                        NextBtnPath: '/docs/core-component/orm/chain-opts/query/scan-count',
                                     }
                                 ]
                             }

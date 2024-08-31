@@ -871,6 +871,15 @@ export const routerNodeTree: DocsRouterNode[] = [
                                         PreBtnPath: '/docs/core-component/orm/chain-opts/query/scan-count',
                                         NextBtnName: 'ORM | Group&Order&Having',
                                         NextBtnPath: '/docs/core-component/orm/chain-opts/query/group-order-having',
+                                    },
+                                    {
+                                        name: "Group&Order&Having",
+                                        fullPath: '/docs/core-component/orm/chain-opts/query/group-order-having',
+                                        markdownPath: '/docs/core-component/orm/chain-opts/query/group-order-having.md',
+                                        PreBtnName: 'ORM | Join',
+                                        PreBtnPath: '/docs/core-component/orm/chain-opts/query/join',
+                                        NextBtnName: 'ORM | Union',
+                                        NextBtnPath: '/docs/core-component/orm/chain-opts/query/union',
                                     }
                                 ]
                             }

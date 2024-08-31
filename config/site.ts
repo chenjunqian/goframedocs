@@ -897,7 +897,16 @@ export const routerNodeTree: DocsRouterNode[] = [
                                         PreBtnName: 'ORM | Union',
                                         PreBtnPath: '/docs/core-component/orm/chain-opts/query/union',
                                         NextBtnName: 'ORM | Common Operation',
-                                        NextBtnPath: '/docs/core-component/orm/chain-opts/common-opts',
+                                        NextBtnPath: '/docs/core-component/orm/chain-opts/query/common-opts',
+                                    },
+                                    {
+                                        name: "Common Operation",
+                                        fullPath: '/docs/core-component/orm/chain-opts/query/common-opts',
+                                        markdownPath: '/docs/core-component/orm/chain-opts/query/common-opts.md',
+                                        PreBtnName: 'ORM | SubQuery',
+                                        PreBtnPath: '/docs/core-component/orm/chain-opts/query/subquery',
+                                        NextBtnName: 'ORM | Model Association',
+                                        NextBtnPath: '/docs/core-component/orm/chain-opts/model-association',
                                     }
                                 ]
                             }

@@ -889,6 +889,15 @@ export const routerNodeTree: DocsRouterNode[] = [
                                         PreBtnPath: '/docs/core-component/orm/chain-opts/query/group-order-having',
                                         NextBtnName: 'ORM | SubQuery',
                                         NextBtnPath: '/docs/core-component/orm/chain-opts/query/subquery',
+                                    },
+                                    {
+                                        name: "SubQuery",
+                                        fullPath: '/docs/core-component/orm/chain-opts/query/subquery',
+                                        markdownPath: '/docs/core-component/orm/chain-opts/query/subquery.md',
+                                        PreBtnName: 'ORM | Union',
+                                        PreBtnPath: '/docs/core-component/orm/chain-opts/query/union',
+                                        NextBtnName: 'ORM | Common Operation',
+                                        NextBtnPath: '/docs/core-component/orm/chain-opts/common-opts',
                                     }
                                 ]
                             }

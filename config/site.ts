@@ -853,6 +853,15 @@ export const routerNodeTree: DocsRouterNode[] = [
                                         PreBtnPath: '/docs/core-component/orm/chain-opts/query/all-count',
                                         NextBtnName: 'ORM Chain Operation | ScanAndCount',
                                         NextBtnPath: '/docs/core-component/orm/chain-opts/query/scan-count',
+                                    },
+                                    {
+                                        name: "ScanAndCount",
+                                        fullPath: '/docs/core-component/orm/chain-opts/query/scan-count',
+                                        markdownPath: '/docs/core-component/orm/chain-opts/query/scan-count.md',
+                                        PreBtnName: 'ORM Chain Operation | Scan',
+                                        PreBtnPath: '/docs/core-component/orm/chain-opts/query/scan',
+                                        NextBtnName: 'ORM Chain Operation | Join',
+                                        NextBtnPath: '/docs/core-component/orm/chain-opts/query/join',
                                     }
                                 ]
                             }

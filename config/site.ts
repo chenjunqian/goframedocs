@@ -880,6 +880,15 @@ export const routerNodeTree: DocsRouterNode[] = [
                                         PreBtnPath: '/docs/core-component/orm/chain-opts/query/join',
                                         NextBtnName: 'ORM | Union',
                                         NextBtnPath: '/docs/core-component/orm/chain-opts/query/union',
+                                    },
+                                    {
+                                        name: "Union",
+                                        fullPath: '/docs/core-component/orm/chain-opts/query/union',
+                                        markdownPath: '/docs/core-component/orm/chain-opts/query/union.md',
+                                        PreBtnName: 'ORM | Group&Order&Having',
+                                        PreBtnPath: '/docs/core-component/orm/chain-opts/query/group-order-having',
+                                        NextBtnName: 'ORM | SubQuery',
+                                        NextBtnPath: '/docs/core-component/orm/chain-opts/query/subquery',
                                     }
                                 ]
                             }

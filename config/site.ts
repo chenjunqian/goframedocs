@@ -938,6 +938,15 @@ export const routerNodeTree: DocsRouterNode[] = [
                                         NextBtnPath: '/docs/core-component/orm/chain-opts/input-object',
                                     }
                                 ]
+                            },
+                            {
+                                name: "Input Object",
+                                fullPath: '/docs/core-component/orm/chain-opts/input-object',
+                                markdownPath: '/docs/core-component/orm/chain-opts/input-object.md',
+                                PreBtnName: 'ORM | Static Model Association',
+                                PreBtnPath: '/docs/core-component/orm/chain-opts/model-association',
+                                NextBtnName: 'ORM | Filed Filter',
+                                NextBtnPath: '/docs/core-component/orm/chain-opts/filed-filter',
                             }
                         ]
                     }

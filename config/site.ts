@@ -965,6 +965,15 @@ export const routerNodeTree: DocsRouterNode[] = [
                                 PreBtnPath: '/docs/core-component/orm/chain-opts/field-Field',
                                 NextBtnName: 'ORM | Transaction',
                                 NextBtnPath: '/docs/core-component/orm/chain-opts/transaction',
+                            },
+                            {
+                                name: "Transaction",
+                                fullPath: '/docs/core-component/orm/chain-opts/transaction',
+                                markdownPath: '/docs/core-component/orm/chain-opts/transaction.md',
+                                PreBtnName: 'ORM | Field Retrieval',
+                                PreBtnPath: '/docs/core-component/orm/chain-opts/field-retrieval',
+                                NextBtnName: 'ORM | Master Slave',
+                                NextBtnPath: '/docs/core-component/orm/chain-opts/master-slave',
                             }
                         ]
                     }

@@ -909,6 +909,35 @@ export const routerNodeTree: DocsRouterNode[] = [
                                         NextBtnPath: '/docs/core-component/orm/chain-opts/model-association',
                                     }
                                 ]
+                            },
+                            {
+                                name: "Model Association",
+                                fullPath: '/docs/core-component/orm/chain-opts/model-association',
+                                markdownPath: '/docs/core-component/orm/chain-opts/model-association/overview.md',
+                                PreBtnName: 'ORM | Common Operation',
+                                PreBtnPath: '/docs/core-component/orm/chain-opts/query/common-opts',
+                                NextBtnName: 'ORM | Dynamic Association',
+                                NextBtnPath: '/docs/core-component/orm/chain-opts/model-association/dynamic-association',
+                                childrenNode: [
+                                    {
+                                        name: "Dynamic Association",
+                                        fullPath: '/docs/core-component/orm/chain-opts/model-association/dynamic-association',
+                                        markdownPath: '/docs/core-component/orm/chain-opts/model-association/dynamic-association.md',
+                                        PreBtnName: 'ORM | Model Association',
+                                        PreBtnPath: '/docs/core-component/orm/chain-opts/model-association',
+                                        NextBtnName: 'ORM | Static Association',
+                                        NextBtnPath: '/docs/core-component/orm/chain-opts/model-association/static-association',
+                                    },
+                                    {
+                                        name: "Static Association",
+                                        fullPath: '/docs/core-component/orm/chain-opts/model-association/static-association',
+                                        markdownPath: '/docs/core-component/orm/chain-opts/model-association/static-association.md',
+                                        PreBtnName: 'ORM | Dynamic Association',
+                                        PreBtnPath: '/docs/core-component/orm/chain-opts/model-association/dynamic-association',
+                                        NextBtnName: 'ORM | Input Object',
+                                        NextBtnPath: '/docs/core-component/orm/chain-opts/input-object',
+                                    }
+                                ]
                             }
                         ]
                     }

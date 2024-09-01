@@ -983,6 +983,15 @@ export const routerNodeTree: DocsRouterNode[] = [
                                 PreBtnPath: '/docs/core-component/orm/chain-opts/transaction',
                                 NextBtnName: 'ORM | Cache',
                                 NextBtnPath: '/docs/core-component/orm/chain-opts/cache',
+                            },
+                            {
+                                name: "Cache",
+                                fullPath: '/docs/core-component/orm/chain-opts/cache',
+                                markdownPath: '/docs/core-component/orm/chain-opts/cache.md',
+                                PreBtnName: 'ORM | Master Slave',
+                                PreBtnPath: '/docs/core-component/orm/chain-opts/master-slave',
+                                NextBtnName: 'ORM | Datetime',
+                                NextBtnPath: '/docs/core-component/orm/chain-opts/datetime',
                             }
                         ]
                     }

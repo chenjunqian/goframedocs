@@ -947,6 +947,15 @@ export const routerNodeTree: DocsRouterNode[] = [
                                 PreBtnPath: '/docs/core-component/orm/chain-opts/model-association',
                                 NextBtnName: 'ORM | Filed Filter',
                                 NextBtnPath: '/docs/core-component/orm/chain-opts/filed-filter',
+                            },
+                            {
+                                name: "Filed Filter",
+                                fullPath: '/docs/core-component/orm/chain-opts/filed-filter',
+                                markdownPath: '/docs/core-component/orm/chain-opts/filed-filter.md',
+                                PreBtnName: 'ORM | Input Object',
+                                PreBtnPath: '/docs/core-component/orm/chain-opts/input-object',
+                                NextBtnName: 'ORM | Filed Achieve',
+                                NextBtnPath: '/docs/core-component/orm/chain-opts/filed-achieve',
                             }
                         ]
                     }

@@ -992,6 +992,15 @@ export const routerNodeTree: DocsRouterNode[] = [
                                 PreBtnPath: '/docs/core-component/orm/chain-opts/master-slave',
                                 NextBtnName: 'ORM | Datetime',
                                 NextBtnPath: '/docs/core-component/orm/chain-opts/datetime',
+                            },
+                            {
+                                name: "Datetime",
+                                fullPath: '/docs/core-component/orm/chain-opts/datetime',
+                                markdownPath: '/docs/core-component/orm/chain-opts/datetime.md',
+                                PreBtnName: 'ORM | Cache',
+                                PreBtnPath: '/docs/core-component/orm/chain-opts/cache',
+                                NextBtnName: 'ORM | DB Switch',
+                                NextBtnPath: '/docs/core-component/orm/chain-opts/db-switch',
                             }
                         ]
                     }

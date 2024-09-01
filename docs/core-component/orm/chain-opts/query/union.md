@@ -1,4 +1,4 @@
-# ORM Query - Union/UnionAll
+# ORM Chain Operation - Query - Union/UnionAll
 
 The GoFrame ORM component supports `Union` and `UnionAll` operations. The `Union` and `UnionAll` operators are used to combine the results of two or more `SELECT` statements into a single result set. For more information about `Union` and `UnionAll` combined queries, please refer to the official MySQL documentation: [MySQL Union Documentation](https://dev.mysql.com/doc/refman/8.0/en/union.html).
 

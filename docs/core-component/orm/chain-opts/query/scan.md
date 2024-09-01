@@ -1,4 +1,4 @@
-# ORM Query - Scan
+# ORM Chain Operation - Query - Scan
 
 The `Scan` method supports converting query results into a struct or a struct array. The `Scan` method will automatically recognize the type of conversion to be executed based on the given parameter type.
 

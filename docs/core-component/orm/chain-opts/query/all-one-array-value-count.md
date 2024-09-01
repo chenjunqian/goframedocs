@@ -1,4 +1,4 @@
-# ORM Query - All&One&Array&Value&Count
+# ORM Chain Operation - Query - All&One&Array&Value&Count
 
 The following five methods are commonly used for data querying in the ORM component:
 

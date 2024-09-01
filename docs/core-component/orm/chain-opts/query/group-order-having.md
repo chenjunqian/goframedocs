@@ -1,4 +1,4 @@
-# ORM Query - Group/Order/Having
+# ORM Chain Operation - Query - Group/Order/Having
 
 ## Group and Order
 

@@ -1,4 +1,4 @@
-# ORM - Transaction Handling
+# ORM Chain Operation - Transaction Handling
 
 The `Model` object can also be created through the `TX` transaction interface. A `Model` object created through a transaction object functions the same as a `Model` object created through a `DB` database object, except that all operations of the former are based on transactions. After a transaction is committed or rolled back, the corresponding `Model` object can no longer be used; otherwise, an error will be returned. Since the `TX` interface cannot be reused, one transaction object corresponds to one transaction process only, which ends after `Commit` or `Rollback`.
 

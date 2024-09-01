@@ -1,4 +1,4 @@
-# ORM Query - LeftJoin/RightJoin/InnerJoin
+# ORM Chain Operation - Query - LeftJoin/RightJoin/InnerJoin
 
 ## LeftJoin/RightJoin/InnerJoin
 

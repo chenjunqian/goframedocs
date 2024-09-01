@@ -1,4 +1,4 @@
-# ORM Query - Subquery Features
+# ORM Chain Operation - Query - Subquery Features
 
 The ORM component currently supports three common types of subquery syntax: `Where` subquery, `Having` subquery, and `From` subquery.
 

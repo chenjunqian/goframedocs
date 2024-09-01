@@ -1,4 +1,4 @@
-# ORM Query - Update and Delete
+# ORM Chain Operation - Query - Update and Delete
 
 The ORM component provides several common methods for conditional queries. These methods support various data types as input parameters.
 

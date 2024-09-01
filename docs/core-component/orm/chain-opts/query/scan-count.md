@@ -1,4 +1,4 @@
-# ORM Query - ScanAndCount
+# ORM Chain Operation - Query - ScanAndCount
 
 ## Basic Introduction
 

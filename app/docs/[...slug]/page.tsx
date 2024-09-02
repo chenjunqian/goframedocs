@@ -11,11 +11,6 @@ export default async function Page({ params }: { params: { slug: string[] } }) {
 
     const slugs = params.slug;
     const path = "/docs/" + slugs.join("/");
-    const quickStartNode: DocsRouterNode = {
-        name: 'Quick Start',
-        fullPath: '/docs',
-        markdownPath: '/docs/quick-start/installation.md',
-    }
 
     function findRouterNodeByPath(path: string, routerNode: DocsRouterNode[]): DocsRouterNode | undefined {
         for (const node of routerNode) {

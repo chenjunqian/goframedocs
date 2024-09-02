@@ -1086,6 +1086,44 @@ export const routerNodeTree: DocsRouterNode[] = [
                                 NextBtnPath: '/docs/core-component/orm/result'
                             }
                         ]
+                    },
+                    {
+                        name: "Result",
+                        fullPath: '/docs/core-component/orm/result',
+                        markdownPath: '/docs/core-component/orm/result/result-type.md',
+                        PreBtnName: 'ORM | Nested Transaction',
+                        PreBtnPath: '/docs/core-component/orm/transaction/nested-transaction',
+                        NextBtnName: 'ORM | Empty Result',
+                        NextBtnPath: '/docs/core-component/orm/empty-result',
+                        childrenNode: [
+                            {
+                                name: "Result Type",
+                                fullPath: '/docs/core-component/orm/result/result-type',
+                                markdownPath: '/docs/core-component/orm/result/result-type.md',
+                                PreBtnName: 'ORM | Nested Transaction',
+                                PreBtnPath: '/docs/core-component/orm/transaction/nested-transaction',
+                                NextBtnName: 'ORM | Empty Result',
+                                NextBtnPath: '/docs/core-component/orm/empty-result',
+                            },
+                            {
+                                name: "Empty Result",
+                                fullPath: '/docs/core-component/orm/result/empty-result',
+                                markdownPath: '/docs/core-component/orm/result/empty-result.md',
+                                PreBtnName: 'ORM | Result Type',
+                                PreBtnPath: '/docs/core-component/orm/result-type',
+                                NextBtnName: 'ORM | Array Result',
+                                NextBtnPath: '/docs/core-component/orm/result/array-result',
+                            },
+                            {
+                                name: "Array Result",
+                                fullPath: '/docs/core-component/orm/result/array-result',
+                                markdownPath: '/docs/core-component/orm/result/empty-array-result.md',
+                                PreBtnName: 'ORM | Empty Result',
+                                PreBtnPath: '/docs/core-component/orm/empty-result',
+                                NextBtnName: 'ORM | Timezone',
+                                NextBtnPath: '/docs/core-component/orm/result/timezone',
+                            }
+                        ]
                     }
                 ]
             }

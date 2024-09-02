@@ -1035,10 +1035,19 @@ export const routerNodeTree: DocsRouterNode[] = [
                                 markdownPath: '/docs/core-component/orm/chain-opts/lock.md',
                                 PreBtnName: 'ORM | Handler',
                                 PreBtnPath: '/docs/core-component/orm/chain-opts/handler',
-                                NextBtnName: 'ORM | String SQL',
-                                NextBtnPath: '/docs/core-component/orm/chain-opts/string-sql',
+                                NextBtnName: 'ORM | Native Method',
+                                NextBtnPath: '/docs/core-component/orm/native-method',
                             }
                         ]
+                    },
+                    {
+                        name: "Native Method",
+                        fullPath: '/docs/core-component/orm/native-method',
+                        markdownPath: '/docs/core-component/orm/native-method.md',
+                        PreBtnName: 'ORM | Lock',
+                        PreBtnPath: '/docs/core-component/orm/chain-opts/lock',
+                        NextBtnName: 'ORM | Transaction',
+                        NextBtnPath: '/docs/core-component/orm/transaction',
                     }
                 ]
             }

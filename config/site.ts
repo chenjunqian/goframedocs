@@ -1048,6 +1048,44 @@ export const routerNodeTree: DocsRouterNode[] = [
                         PreBtnPath: '/docs/core-component/orm/chain-opts/lock',
                         NextBtnName: 'ORM | Transaction',
                         NextBtnPath: '/docs/core-component/orm/transaction',
+                    },
+                    {
+                        name: "Transaction",
+                        fullPath: '/docs/core-component/orm/transaction',
+                        markdownPath: '/docs/core-component/orm/transaction/overview.md',
+                        PreBtnName: 'ORM | Native Method',
+                        PreBtnPath: '/docs/core-component/orm/native-method',
+                        NextBtnName: 'ORM | Common Transaction Operation',
+                        NextBtnPath: '/docs/core-component/orm/transaction/common-transaction',
+                        childrenNode: [
+                            {
+                                name: "Conventional Transaction",
+                                fullPath: '/docs/core-component/orm/transaction/conventional-transaction',
+                                markdownPath: '/docs/core-component/orm/transaction/conventional-transaction.md',
+                                PreBtnName: 'ORM | Transaction',
+                                PreBtnPath: '/docs/core-component/orm/transaction',
+                                NextBtnName: 'ORM | Closure Transaction',
+                                NextBtnPath: '/docs/core-component/orm/transaction/closure-transaction',
+                            },
+                            {
+                                name: "Closure Transaction",
+                                fullPath: '/docs/core-component/orm/transaction/closure-transaction',
+                                markdownPath: '/docs/core-component/orm/transaction/closure-transaction.md',
+                                PreBtnName: 'ORM | Conventional Transaction',
+                                PreBtnPath: '/docs/core-component/orm/transaction/conventional-transaction',
+                                NextBtnName: 'ORM | Nested Transaction',
+                                NextBtnPath: '/docs/core-component/orm/transaction/nested-transaction',
+                            },
+                            {
+                                name: "Nested Transaction",
+                                fullPath: '/docs/core-component/orm/transaction/nested-transaction',
+                                markdownPath: '/docs/core-component/orm/transaction/nested-transaction.md',
+                                PreBtnName: 'ORM | Closure Transaction',
+                                PreBtnPath: '/docs/core-component/orm/transaction/closure-transaction',
+                                NextBtnName: 'ORM | Result',
+                                NextBtnPath: '/docs/core-component/orm/result'
+                            }
+                        ]
                     }
                 ]
             }

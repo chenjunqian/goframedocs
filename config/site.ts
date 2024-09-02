@@ -1019,6 +1019,15 @@ export const routerNodeTree: DocsRouterNode[] = [
                                 PreBtnPath: '/docs/core-component/orm/chain-opts/db-switch',
                                 NextBtnName: 'ORM | Handler',
                                 NextBtnPath: '/docs/core-component/orm/chain-opts/handler',
+                            },
+                            {
+                                name: "Handler",
+                                fullPath: '/docs/core-component/orm/chain-opts/handler',
+                                markdownPath: '/docs/core-component/orm/chain-opts/handler.md',
+                                PreBtnName: 'ORM | Hook',
+                                PreBtnPath: '/docs/core-component/orm/chain-opts/hook',
+                                NextBtnName: 'ORM | Lock',
+                                NextBtnPath: '/docs/core-component/orm/chain-opts/lock',
                             }
                         ]
                     }

@@ -1,6 +1,6 @@
-# ORM Chain Operations - Datetime
+# ORM Chain Operation - Datetime
 
-> **Note**: This feature is only effective for chain operations.
+> **Note**: This feature is only effective for chain operation.
 
 The `gdb` module supports automatic filling of timestamps for record insertion, updating, and deletion to improve development and maintenance efficiency. To maintain consistency in field names and types, it is recommended that:
 

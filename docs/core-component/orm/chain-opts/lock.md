@@ -17,7 +17,7 @@
 
 The `gdb` module provides two methods, `LockShared` and `LockUpdate`, to help implement pessimistic locks in SQL statements.
 
-### Using LockShared
+### LockShared
 
 The `LockShared` method is used to place a "shared lock" on selected rows during a query, which prevents them from being modified until the transaction is committed:
 
@@ -31,7 +31,7 @@ This query is equivalent to the following SQL statement:
 SELECT * FROM `users` WHERE `votes` > 100 LOCK IN SHARE MODE
 ```
 
-### Using LockUpdate
+### LockUpdate
 
 The `LockUpdate` method creates a `FOR UPDATE` lock, which prevents the selected rows from being modified or deleted by other transactions:
 
@@ -49,8 +49,6 @@ Both `FOR UPDATE` and `LOCK IN SHARE MODE` ensure that the selected records cann
 
 - **LOCK IN SHARE MODE** allows other transactions to read the locked rows, but prevents them from modifying or deleting the rows.
 - **FOR UPDATE** blocks other locking reads on the locked rows until the transaction is complete, but non-locking reads are still allowed.
-
-## Pessimistic Lock in Action
 
 To illustrate, consider an example where you read a value and then update it in another statement.
 

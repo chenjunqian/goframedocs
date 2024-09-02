@@ -1028,6 +1028,15 @@ export const routerNodeTree: DocsRouterNode[] = [
                                 PreBtnPath: '/docs/core-component/orm/chain-opts/hook',
                                 NextBtnName: 'ORM | Lock',
                                 NextBtnPath: '/docs/core-component/orm/chain-opts/lock',
+                            },
+                            {
+                                name: "Lock",
+                                fullPath: '/docs/core-component/orm/chain-opts/lock',
+                                markdownPath: '/docs/core-component/orm/chain-opts/lock.md',
+                                PreBtnName: 'ORM | Handler',
+                                PreBtnPath: '/docs/core-component/orm/chain-opts/handler',
+                                NextBtnName: 'ORM | String SQL',
+                                NextBtnPath: '/docs/core-component/orm/chain-opts/string-sql',
                             }
                         ]
                     }

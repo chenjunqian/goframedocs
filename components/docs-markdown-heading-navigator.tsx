@@ -31,7 +31,7 @@ export function getMarkdownHeadings(md: string): MarkdownHeading[] {
 export function MarkdownHeadingNavigator({ headings, className }: { headings: MarkdownHeading[], className?: string }) {
     return (
         <div className={`${className}`}>
-            <div className={`flex flex-col gap-2 fixed top-16 ml-9 border-l border-gray-500 pb-2  max-h-screen overflow-scroll`}>
+            <div className={`flex flex-col gap-2 fixed top-16 ml-9 border-l border-gray-500 pb-2  max-h-[80vh] overflow-scroll`}>
                 <div className="text-sm font-bold ml-4 mb-4">On this page</div>
                 {headings.map((heading, index) => {
                     return (

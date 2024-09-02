@@ -1001,6 +1001,15 @@ export const routerNodeTree: DocsRouterNode[] = [
                                 PreBtnPath: '/docs/core-component/orm/chain-opts/cache',
                                 NextBtnName: 'ORM | DB Switch',
                                 NextBtnPath: '/docs/core-component/orm/chain-opts/db-switch',
+                            },
+                            {
+                                name: "DB Switch",
+                                fullPath: '/docs/core-component/orm/chain-opts/db-switch',
+                                markdownPath: '/docs/core-component/orm/chain-opts/db-switch.md',
+                                PreBtnName: 'ORM | Datetime',
+                                PreBtnPath: '/docs/core-component/orm/chain-opts/datetime',
+                                NextBtnName: 'ORM | Hook',
+                                NextBtnPath: '/docs/core-component/orm/chain-opts/hook',
                             }
                         ]
                     }

@@ -1124,6 +1124,15 @@ export const routerNodeTree: DocsRouterNode[] = [
                                 NextBtnPath: '/docs/core-component/orm/result/timezone',
                             }
                         ]
+                    },
+                    {
+                        name: "Timezone",
+                        fullPath: '/docs/core-component/orm/timezone',
+                        markdownPath: '/docs/core-component/orm/timezone.md',
+                        PreBtnName: 'ORM | Array Result',
+                        PreBtnPath: '/docs/core-component/orm/result/array-result',
+                        NextBtnName: 'ORM | Model Generation',
+                        NextBtnPath: '/docs/core-component/orm/model-generation',
                     }
                 ]
             }

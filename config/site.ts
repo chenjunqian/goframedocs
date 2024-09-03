@@ -1133,6 +1133,15 @@ export const routerNodeTree: DocsRouterNode[] = [
                         PreBtnPath: '/docs/core-component/orm/result/array-result',
                         NextBtnName: 'ORM | Model Generation',
                         NextBtnPath: '/docs/core-component/orm/model-generation',
+                    },
+                    {
+                        name: "Model Generation",
+                        fullPath: '/docs/core-component/orm/model-generation',
+                        markdownPath: '/docs/core-component/orm/model-generation.md',
+                        PreBtnName: 'ORM | Timezone',
+                        PreBtnPath: '/docs/core-component/orm/timezone',
+                        NextBtnName: 'ORM | Advanced Features',
+                        NextBtnPath: '/docs/core-component/orm/advanced-features',
                     }
                 ]
             }

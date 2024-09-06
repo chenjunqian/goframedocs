@@ -1281,6 +1281,15 @@ export const routerNodeTree: DocsRouterNode[] = [
                         PreBtnPath: '/docs/core-component/orm/interface-implement',
                         NextBtnName: 'ORM | Best Practices',
                         NextBtnPath: '/docs/core-component/orm/best-practices',
+                    },
+                    {
+                        name: "Best Practices",
+                        fullPath: '/docs/core-component/orm/best-practices',
+                        markdownPath: '/docs/core-component/orm/best-practices.md',
+                        PreBtnName: 'ORM | Context',
+                        PreBtnPath: '/docs/core-component/orm/context',
+                        NextBtnName: 'ORM |FAQ',
+                        NextBtnPath: '/docs/core-component/orm/faq',
                     }
                 ]
             }

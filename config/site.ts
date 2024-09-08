@@ -1301,6 +1301,35 @@ export const routerNodeTree: DocsRouterNode[] = [
                         NextBtnPath: '/docs/core-component/i18n',
                     }
                 ]
+            },
+            {
+                name: "I18N",
+                fullPath: '/docs/core-component/i18n',
+                markdownPath: '/docs/core-component/i18n/overview.md',
+                PreBtnName: 'ORM | FAQ',
+                PreBtnPath: '/docs/core-component/orm/faq',
+                NextBtnName: 'I18N | Configuration',
+                NextBtnPath: '/docs/core-component/i18n/configuration.md',
+                childrenNode: [
+                    {
+                        name: "Configuration",
+                        fullPath: '/docs/core-component/i18n/configuration',
+                        markdownPath: '/docs/core-component/i18n/configuration.md',
+                        PreBtnName: 'I18N',
+                        PreBtnPath: '/docs/core-component/i18n',
+                        NextBtnName: 'I18N | Usage',
+                        NextBtnPath: '/docs/core-component/i18n/usage.md',
+                    },
+                    {
+                        name: "Usage",
+                        fullPath: '/docs/core-component/i18n/usage',
+                        markdownPath: '/docs/core-component/i18n/usage.md',
+                        PreBtnName: 'I18N | Configuration',
+                        PreBtnPath: '/docs/core-component/i18n/configuration',
+                        NextBtnName: 'Resource | Overview',
+                        NextBtnPath: '/docs/core-component/resource',
+                    }
+                ]
             }
         ]
     },

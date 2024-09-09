@@ -65,7 +65,7 @@ export const routerNodeTree: DocsRouterNode[] = [
         ]
     },
     {
-        name: "Core Component",
+        name: "Core Component ⭐️",
         fullPath: '/docs/core-component',
         markdownPath: '/docs/core-component/object-management.md',
         PreBtnName: 'Exmaple',

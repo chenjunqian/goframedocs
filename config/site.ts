@@ -1330,6 +1330,71 @@ export const routerNodeTree: DocsRouterNode[] = [
                         NextBtnPath: '/docs/core-component/resource',
                     }
                 ]
+            },
+            {
+                name: "Resource",
+                fullPath: '/docs/core-component/resource',
+                markdownPath: '/docs/core-component/resource/overview.md',
+                PreBtnName: 'I18N | Usage',
+                PreBtnPath: '/docs/core-component/i18n/usage',
+                NextBtnName: 'Resource | Tool Pack',
+                NextBtnPath: '/docs/core-component/resource/tool-pack.md',
+                childrenNode: [
+                    {
+                        name: "Overview",
+                        fullPath: '/docs/core-component/resource',
+                        markdownPath: '/docs/core-component/resource/overview.md',
+                        PreBtnName: 'I18N | Usage',
+                        PreBtnPath: '/docs/core-component/i18n/usage',
+                        NextBtnName: 'Resource | Tool Pack',
+                        NextBtnPath: '/docs/core-component/resource/tool-pack',
+                    },
+                    {
+                        name: "Tool Pack",
+                        fullPath: '/docs/core-component/resource/tool-pack',
+                        markdownPath: '/docs/core-component/resource/tool-pack.md',
+                        PreBtnName: 'Resource | Overview',
+                        PreBtnPath: '/docs/core-component/resource',
+                        NextBtnName: 'Resource | Function Pack',
+                        NextBtnPath: '/docs/core-component/resource/function-pack',
+                    },
+                    {
+                        name: "Function Pack",
+                        fullPath: '/docs/core-component/resource/function-pack',
+                        markdownPath: '/docs/core-component/resource/function-pack.md',
+                        PreBtnName: 'Resource | Tool Pack',
+                        PreBtnPath: '/docs/core-component/resource/tool-pack',
+                        NextBtnName: 'Resource | Functions',
+                        NextBtnPath: '/docs/core-component/resource/functions',
+                    },
+                    {
+                        name: "Functions",
+                        fullPath: '/docs/core-component/resource/functions',
+                        markdownPath: '/docs/core-component/resource/functions.md',
+                        PreBtnName: 'Resource | Function Pack',
+                        PreBtnPath: '/docs/core-component/resource/function-pack',
+                        NextBtnName: 'Resource | Example',
+                        NextBtnPath: '/docs/core-component/resource/example',
+                    },
+                    {
+                        name: "Example",
+                        fullPath: '/docs/core-component/resource/example',
+                        markdownPath: '/docs/core-component/resource/example.md',
+                        PreBtnName: 'Resource | Functions',
+                        PreBtnPath: '/docs/core-component/resource/functions',
+                        NextBtnName: 'Resource | Best Practices',
+                        NextBtnPath: '/docs/core-component/resource/best-practices',
+                    },
+                    {
+                        name: "Best Practices",
+                        fullPath: '/docs/core-component/resource/best-practices',
+                        markdownPath: '/docs/core-component/resource/best-practices.md',
+                        PreBtnName: 'Resource | Example',
+                        PreBtnPath: '/docs/core-component/resource/example',
+                        NextBtnName: 'Component List',
+                        NextBtnPath: '/docs/component-list',
+                    }
+                ]
             }
         ]
     },

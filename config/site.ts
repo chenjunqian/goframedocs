@@ -101,10 +101,19 @@ export const routerNodeTree: DocsRouterNode[] = [
                 NextBtnPath: '/docs/core-component/command/basic-concept',
                 childrenNode: [
                     {
+                        name: "Overview",
+                        fullPath: '/docs/core-component/command',
+                        markdownPath: '/docs/core-component/command/command.md',
+                        PreBtnName: 'Core Component | Debug Mode',
+                        PreBtnPath: '/docs/core-component/debug-mode',
+                        NextBtnName: 'Command | Basic Concept',
+                        NextBtnPath: '/docs/core-component/command/basic-concept',
+                    },
+                    {
                         name: "Basic Concept",
                         fullPath: '/docs/core-component/command/basic-concept',
                         markdownPath: '/docs/core-component/command/basic-concept.md',
-                        PreBtnName: 'Core Component | Command',
+                        PreBtnName: 'Command | Overview',
                         PreBtnPath: '/docs/core-component/command',
                         NextBtnName: 'Command | Function',
                         NextBtnPath: '/docs/core-component/command/function',
@@ -175,10 +184,19 @@ export const routerNodeTree: DocsRouterNode[] = [
                 NextBtnPath: '/docs/core-component/configuration/object',
                 childrenNode: [
                     {
+                        name: "Overview",
+                        fullPath: '/docs/core-component/configuration',
+                        markdownPath: '/docs/core-component/configuration/overview.md',
+                        PreBtnName: 'Command | Tracing',
+                        PreBtnPath: '/docs/core-component/command/tracing',
+                        NextBtnName: 'Configuration | Object',
+                        NextBtnPath: '/docs/core-component/configuration/object',
+                    },
+                    {
                         name: "Object",
                         fullPath: '/docs/core-component/configuration/object',
                         markdownPath: '/docs/core-component/configuration/object.md',
-                        PreBtnName: 'Configuration | Configuration',
+                        PreBtnName: 'Configuration | Overview',
                         PreBtnPath: '/docs/core-component/configuration',
                         NextBtnName: 'Configuration | Config File',
                         NextBtnPath: '/docs/core-component/configuration/config-file',
@@ -231,10 +249,19 @@ export const routerNodeTree: DocsRouterNode[] = [
                 NextBtnPath: '/docs/core-component/log/config',
                 childrenNode: [
                     {
+                        name: "Overview",
+                        fullPath: '/docs/core-component/log',
+                        markdownPath: '/docs/core-component/log/overview.md',
+                        PreBtnName: 'Configuration | Adapter',
+                        PreBtnPath: '/docs/core-component/configuration/adapter',
+                        NextBtnName: 'Log | Configuration',
+                        NextBtnPath: '/docs/core-component/log/config',
+                    },
+                    {
                         name: "Configuration",
                         fullPath: '/docs/core-component/log/config',
                         markdownPath: '/docs/core-component/log/config.md',
-                        PreBtnName: 'Core Component | Log',
+                        PreBtnName: 'Log | Overview',
                         PreBtnPath: '/docs/core-component/log',
                         NextBtnName: 'Log | Level',
                         NextBtnPath: '/docs/core-component/log/level',
@@ -377,11 +404,20 @@ export const routerNodeTree: DocsRouterNode[] = [
                 NextBtnPath: '/docs/core-component/error/function',
                 childrenNode: [
                     {
+                        name: "Overview",
+                        fullPath: '/docs/core-component/error',
+                        markdownPath: '/docs/core-component/error/overview.md',
+                        PreBtnName: 'Log | FAQ',
+                        PreBtnPath: '/docs/core-component/log/faq',
+                        NextBtnName: 'Error | Function',
+                        NextBtnPath: '/docs/core-component/error/function',
+                    },
+                    {
                         name: "Function",
                         fullPath: '/docs/core-component/error/function',
                         markdownPath: '/docs/core-component/error/function.md',
-                        PreBtnName: 'Error | Function',
-                        PreBtnPath: '/docs/core-component/error/function',
+                        PreBtnName: 'Error | Overview',
+                        PreBtnPath: '/docs/core-component/error/',
                         NextBtnName: 'Error | Compare',
                         NextBtnPath: '/docs/core-component/error/compare',
                     },
@@ -437,10 +473,19 @@ export const routerNodeTree: DocsRouterNode[] = [
                 fullPath: '/docs/core-component/data-valid',
                 markdownPath: '/docs/core-component/data-valid/overview.md',
                 PreBtnName: 'Error | Banchmark',
-                PreBtnPath: '/docs/core-component/error',
+                PreBtnPath: '/docs/core-component/error/benchmark',
                 NextBtnName: 'Data Validation | Rule',
                 NextBtnPath: '/docs/core-component/data-valid/rule',
                 childrenNode: [
+                    {
+                        name: "Overview",
+                        fullPath: '/docs/core-component/data-valid',
+                        markdownPath: '/docs/core-component/data-valid/overview.md',
+                        PreBtnName: 'Error | Banchmark',
+                        PreBtnPath: '/docs/core-component/error/benchmark',
+                        NextBtnName: 'Data Validation | Rule',
+                        NextBtnPath: '/docs/core-component/data-valid/rule',
+                    },
                     {
                         name: "Rule",
                         fullPath: '/docs/core-component/data-valid/rule',
@@ -543,6 +588,15 @@ export const routerNodeTree: DocsRouterNode[] = [
                 NextBtnPath: '/docs/core-component/type-convert/basic-type',
                 childrenNode: [
                     {
+                        name: "Overview",
+                        fullPath: '/docs/core-component/type-convert',
+                        markdownPath: '/docs/core-component/type-convert/overview.md',
+                        PreBtnName: 'Data Validation | FQA',
+                        PreBtnPath: '/docs/core-component/data-valid/faq',
+                        NextBtnName: 'Type Convert | Basic Type',
+                        NextBtnPath: '/docs/core-component/type-convert/basic-type',
+                    },
+                    {
                         name: "Basice Type",
                         fullPath: '/docs/core-component/type-convert/basic-type',
                         markdownPath: '/docs/core-component/type-convert/basic-type.md',
@@ -626,6 +680,15 @@ export const routerNodeTree: DocsRouterNode[] = [
                 NextBtnPath: '/docs/core-component/cache/interface',
                 childrenNode: [
                     {
+                        name: "Overview",
+                        fullPath: '/docs/core-component/cache',
+                        markdownPath: '/docs/core-component/cache/overview.md',
+                        PreBtnName: 'Type Convert | Benchmark',
+                        PreBtnPath: '/docs/core-component/type-convert/benchmark',
+                        NextBtnName: 'Cache | Interface',
+                        NextBtnPath: '/docs/core-component/cache/interface',
+                    },
+                    {
                         name: "Interface",
                         fullPath: '/docs/core-component/cache/interface',
                         markdownPath: '/docs/core-component/cache/interface.md',
@@ -672,6 +735,15 @@ export const routerNodeTree: DocsRouterNode[] = [
                 NextBtnName: 'Template Engine | Configuration',
                 NextBtnPath: '/docs/core-component/template-engine/config',
                 childrenNode: [
+                    {
+                        name: "Overview",
+                        fullPath: '/docs/core-component/template-engine',
+                        markdownPath: '/docs/core-component/template-engine/overview.md',
+                        PreBtnName: 'Cache | Methods',
+                        PreBtnPath: '/docs/core-component/cache/methods',
+                        NextBtnName: 'Template Engine | Configuration',
+                        NextBtnPath: '/docs/core-component/template-engine/config',
+                    },
                     {
                         name: "Configuration",
                         fullPath: '/docs/core-component/template-engine/config',
@@ -761,9 +833,18 @@ export const routerNodeTree: DocsRouterNode[] = [
                 markdownPath: '/docs/core-component/orm/overview.md',
                 PreBtnName: 'Template Engine | Others',
                 PreBtnPath: '/docs/core-component/template-engine/others',
-                NextBtnName: 'ORM | Overview',
-                NextBtnPath: '/docs/core-component/orm',
+                NextBtnName: 'ORM | Configuration',
+                NextBtnPath: '/docs/core-component/orm/config',
                 childrenNode: [
+                    {
+                        name: "Overview",
+                        fullPath: '/docs/core-component/orm',
+                        markdownPath: '/docs/core-component/orm/overview.md',
+                        PreBtnName: 'Template Engine | Others',
+                        PreBtnPath: '/docs/core-component/template-engine/others',
+                        NextBtnName: 'ORM | Configuration',
+                        NextBtnPath: '/docs/core-component/orm/config',
+                    },
                     {
                         name: "Configuration",
                         fullPath: '/docs/core-component/orm/config',
@@ -1311,6 +1392,15 @@ export const routerNodeTree: DocsRouterNode[] = [
                 NextBtnName: 'I18N | Configuration',
                 NextBtnPath: '/docs/core-component/i18n/configuration.md',
                 childrenNode: [
+                    {
+                        name: "Overview",
+                        fullPath: '/docs/core-component/i18n',
+                        markdownPath: '/docs/core-component/i18n/overview.md',
+                        PreBtnName: 'ORM | FAQ',
+                        PreBtnPath: '/docs/core-component/orm/faq',
+                        NextBtnName: 'I18N | Configuration',
+                        NextBtnPath: '/docs/core-component/i18n/configuration.md',
+                    },
                     {
                         name: "Configuration",
                         fullPath: '/docs/core-component/i18n/configuration',

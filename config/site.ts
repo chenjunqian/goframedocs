@@ -1489,6 +1489,26 @@ export const routerNodeTree: DocsRouterNode[] = [
         ]
     },
     {
+        name: "Component List",
+        fullPath: '/docs/component-list',
+        markdownPath: '/docs/component-list/overview.md',
+        PreBtnName: 'Core Component | Resource',
+        PreBtnPath: '/docs/core-component/resource',
+        NextBtnName: 'Component List | Data Structure',
+        NextBtnPath: '/docs/component-list/data-structure',
+        childrenNode: [
+            {
+                name: "Overview",
+                fullPath: '/docs/component-list',
+                markdownPath: '/docs/component-list/overview.md',
+                PreBtnName: 'Core Component | Resource',
+                PreBtnPath: '/docs/core-component/resource',
+                NextBtnName: 'Component List | Data Structure',
+                NextBtnPath: '/docs/component-list/data-structure',
+            }
+        ]
+    },
+    {
         name: "Framework Design",
         fullPath: '/docs/framework-design',
         markdownPath: '/docs/framework-design/module-design.md',

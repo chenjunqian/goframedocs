@@ -1505,6 +1505,64 @@ export const routerNodeTree: DocsRouterNode[] = [
                 PreBtnPath: '/docs/core-component/resource',
                 NextBtnName: 'Component List | Data Structure',
                 NextBtnPath: '/docs/component-list/data-structure',
+            },
+            {
+                name: "Data Structure",
+                fullPath: '/docs/component-list/data-structure/dict',
+                markdownPath: '/docs/component-list/data-structure/dict/overview.md',
+                PreBtnName: 'Component List | Overview',
+                PreBtnPath: '/docs/component-list',
+                NextBtnName: 'gmap | Basic',
+                NextBtnPath: '/docs/component-list/data-structure/gmap/basic',
+                childrenNode: [
+                    {
+                        name: "Dictionary - gmap",
+                        fullPath: '/docs/component-list/data-structure/dict',
+                        markdownPath: '/docs/component-list/data-structure/dict/overview.md',
+                        PreBtnName: 'Component List | Overview',
+                        PreBtnPath: '/docs/component-list',
+                        NextBtnName: 'gmap | Basic',
+                        NextBtnPath: '/docs/component-list/data-structure/gmap/basic',
+                        childrenNode: [
+                            {
+                                name: "Overview",
+                                fullPath: '/docs/component-list/data-structure/dict',
+                                markdownPath: '/docs/component-list/data-structure/dict/overview.md',
+                                PreBtnName: 'Component List | Overview',
+                                PreBtnPath: '/docs/component-list',
+                                NextBtnName: 'Dictionary | Basic Usage',
+                                NextBtnPath: '/docs/component-list/data-structure/dict/basic',
+                            },
+                            {
+                                name: "Basic Usage",
+                                fullPath: '/docs/component-list/data-structure/dict/basic',
+                                markdownPath: '/docs/component-list/data-structure/dict/basic.md',
+                                PreBtnName: 'Dictionary | Overview',
+                                PreBtnPath: '/docs/component-list/data-structure/dict',
+                                NextBtnName: 'Dictionary | Benchmark',
+                                NextBtnPath: '/docs/component-list/data-structure/dict/benchmark',
+                            },
+                            {
+                                name: "Benchmark",
+                                fullPath: '/docs/component-list/data-structure/dict/benchmark',
+                                markdownPath: '/docs/component-list/data-structure/dict/benchmark.md',
+                                PreBtnName: 'Dictionary | Basic Usage',
+                                PreBtnPath: '/docs/component-list/data-structure/dict/basic',
+                                NextBtnName: 'Dictionary | Functions',
+                                NextBtnPath: '/docs/component-list/data-structure/dict/functions',
+                            },
+                            {
+                                name: "Functions",
+                                fullPath: '/docs/component-list/data-structure/dict/functions',
+                                markdownPath: '/docs/component-list/data-structure/dict/functions.md',
+                                PreBtnName: 'Dictionary | Benchmark',
+                                PreBtnPath: '/docs/component-list/data-structure/dict/benchmark',
+                                NextBtnName: 'Array | garray',
+                                NextBtnPath: '/docs/component-list/data-structure/array',
+                            }
+                        ]
+                    }
+                ]
             }
         ]
     },

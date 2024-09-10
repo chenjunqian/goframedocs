@@ -164,10 +164,6 @@ The `database.logger` is the log configuration for `gdb`. If this configuration 
 - `level`: Specifies the log level (optional), e.g., `all`, `error`, `critical`, etc.
 - `stdout`: Whether to output logs to the console (optional), defaults to `true`.
 
-Here's the translated and formatted Markdown version of the Goframe documentation:
-
----
-
 ## Native Configuration
 
 ***Advanced, Optional***

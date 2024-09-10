@@ -503,8 +503,6 @@ This example also demonstrates two types of data for custom error message passin
 }
 ```
 
-Certainly! Here is the translation of the provided Chinese content from the GoFrame technical documentation into English, formatted in Markdown:
-
 ## Map Ordered Validation
 
 ### Overview

@@ -1517,7 +1517,7 @@ export const routerNodeTree: DocsRouterNode[] = [
                 childrenNode: [
                     {
                         name: "Dictionary - gmap",
-                        fullPath: '/docs/component-list/data-structure',
+                        fullPath: '/docs/component-list/data-structure/dict',
                         markdownPath: '/docs/component-list/data-structure/dict/overview.md',
                         PreBtnName: 'Component List | Overview',
                         PreBtnPath: '/docs/component-list',

@@ -1599,6 +1599,53 @@ export const routerNodeTree: DocsRouterNode[] = [
                                 NextBtnPath: '/docs/component-list/data-structure/array/benchmark',
                             }
                         ]
+                    },
+                    {
+                        name: "Set - gset",
+                        fullPath: '/docs/component-list/data-structure/set',
+                        markdownPath: '/docs/component-list/data-structure/set/overview.md',
+                        PreBtnName: 'Array | Functions',
+                        PreBtnPath: '/docs/component-list/data-structure/array/functions',
+                        NextBtnName: 'Set | Basic Usage',
+                        NextBtnPath: '/docs/component-list/data-structure/set/basic',
+                        childrenNode: [
+                            {
+                                name: "Overview",
+                                fullPath: '/docs/component-list/data-structure/set',
+                                markdownPath: '/docs/component-list/data-structure/set/overview.md',
+                                PreBtnName: 'Array | Functions',
+                                PreBtnPath: '/docs/component-list/data-structure/array/functions',
+                                NextBtnName: 'Set | Basic Usage',
+                                NextBtnPath: '/docs/component-list/data-structure/set/basic',
+                            },
+                            {
+                                name: "Basic Usage",
+                                fullPath: '/docs/component-list/data-structure/set/basic',
+                                markdownPath: '/docs/component-list/data-structure/set/basic.md',
+                                PreBtnName: 'Set | Overview',
+                                PreBtnPath: '/docs/component-list/data-structure/set',
+                                NextBtnName: 'Set | Benchmark',
+                                NextBtnPath: '/docs/component-list/data-structure/set/benchmark',
+                            },
+                            {
+                                name: "Benchmark",
+                                fullPath: '/docs/component-list/data-structure/set/benchmark',
+                                markdownPath: '/docs/component-list/data-structure/set/benchmark.md',
+                                PreBtnName: 'Set | Basic Usage',
+                                PreBtnPath: '/docs/component-list/data-structure/set/basic',
+                                NextBtnName: 'Set | Functions',
+                                NextBtnPath: '/docs/component-list/data-structure/set/functions',
+                            },
+                            {
+                                name: "Functions",
+                                fullPath: '/docs/component-list/data-structure/set/functions',
+                                markdownPath: '/docs/component-list/data-structure/set/functions.md',
+                                PreBtnName: 'Set | Benchmark',
+                                PreBtnPath: '/docs/component-list/data-structure/set/benchmark',
+                                NextBtnName: 'LinkList | glist',
+                                NextBtnPath: '/docs/component-list/data-structure/linklist',
+                            }
+                        ]
                     }
                 ]
             }

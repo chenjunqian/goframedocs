@@ -1508,7 +1508,7 @@ export const routerNodeTree: DocsRouterNode[] = [
             },
             {
                 name: "Data Structure",
-                fullPath: '/docs/component-list/data-structure/dict',
+                fullPath: '/docs/component-list/data-structure',
                 markdownPath: '/docs/component-list/data-structure/dict/overview.md',
                 PreBtnName: 'Component List | Overview',
                 PreBtnPath: '/docs/component-list',
@@ -1517,7 +1517,7 @@ export const routerNodeTree: DocsRouterNode[] = [
                 childrenNode: [
                     {
                         name: "Dictionary - gmap",
-                        fullPath: '/docs/component-list/data-structure/dict',
+                        fullPath: '/docs/component-list/data-structure',
                         markdownPath: '/docs/component-list/data-structure/dict/overview.md',
                         PreBtnName: 'Component List | Overview',
                         PreBtnPath: '/docs/component-list',
@@ -1559,6 +1559,44 @@ export const routerNodeTree: DocsRouterNode[] = [
                                 PreBtnPath: '/docs/component-list/data-structure/dict/benchmark',
                                 NextBtnName: 'Array | garray',
                                 NextBtnPath: '/docs/component-list/data-structure/array',
+                            }
+                        ]
+                    },
+                    {
+                        name: "Array - garray",
+                        fullPath: '/docs/component-list/data-structure/array',
+                        markdownPath: '/docs/component-list/data-structure/array/overview.md',
+                        PreBtnName: 'Dictionary | Functions',
+                        PreBtnPath: '/docs/component-list/data-structure/dict/functions',
+                        NextBtnName: 'Array | Basic Usage',
+                        NextBtnPath: '/docs/component-list/data-structure/array/basic',
+                        childrenNode: [
+                            {
+                                name: "Overview",
+                                fullPath: '/docs/component-list/data-structure/array',
+                                markdownPath: '/docs/component-list/data-structure/array/overview.md',
+                                PreBtnName: 'Dictionary | Functions',
+                                PreBtnPath: '/docs/component-list/data-structure/dict/functions',
+                                NextBtnName: 'Array | Basic Usage',
+                                NextBtnPath: '/docs/component-list/data-structure/array/basic',
+                            },
+                            {
+                                name: "Basic Usage",
+                                fullPath: '/docs/component-list/data-structure/array/basic',
+                                markdownPath: '/docs/component-list/data-structure/array/basic.md',
+                                PreBtnName: 'Array | Overview',
+                                PreBtnPath: '/docs/component-list/data-structure/array',
+                                NextBtnName: 'Array | Functions',
+                                NextBtnPath: '/docs/component-list/data-structure/array/functions',
+                            },
+                            {
+                                name: "Functions",
+                                fullPath: '/docs/component-list/data-structure/array/functions',
+                                markdownPath: '/docs/component-list/data-structure/array/functions.md',
+                                PreBtnName: 'Array | Basic Usage',
+                                PreBtnPath: '/docs/component-list/data-structure/array/basic',
+                                NextBtnName: 'Set | gset',
+                                NextBtnPath: '/docs/component-list/data-structure/array/benchmark',
                             }
                         ]
                     }

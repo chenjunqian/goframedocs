@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { siteConfig } from "../config/site";
+import { Analytics } from "@vercel/analytics/react"
 
 export const metadata: Metadata = {
     title: siteConfig.name,
@@ -25,6 +26,7 @@ export default function RootLayout({
                 <div className="relative flex min-h-screen flex-col">
                     <div className="flex-1">{children}</div>
                 </div>
+                <Analytics />
             </body>
         </html>
     );

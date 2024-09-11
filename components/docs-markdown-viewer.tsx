@@ -10,7 +10,7 @@ export function DocsMarkdownViewer({ children }: { children: string }) {
 
     return (
         <Markdown
-            className="lg:prose prose-base lg:max-w-3xl"
+            className="lg:prose prose-base lg:max-w-3xl overflow-x-hidden"
             components={{
                 code(props) {
                     const { children, className } = props

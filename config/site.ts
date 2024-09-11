@@ -1513,7 +1513,7 @@ export const routerNodeTree: DocsRouterNode[] = [
                 PreBtnName: 'Component List | Overview',
                 PreBtnPath: '/docs/component-list',
                 NextBtnName: 'gmap | Basic',
-                NextBtnPath: '/docs/component-list/data-structure/gmap/basic',
+                NextBtnPath: '/docs/component-list/data-structure/dict/basic',
                 childrenNode: [
                     {
                         name: "Dictionary - gmap",
@@ -1522,7 +1522,7 @@ export const routerNodeTree: DocsRouterNode[] = [
                         PreBtnName: 'Component List | Overview',
                         PreBtnPath: '/docs/component-list',
                         NextBtnName: 'gmap | Basic',
-                        NextBtnPath: '/docs/component-list/data-structure/gmap/basic',
+                        NextBtnPath: '/docs/component-list/data-structure/dict/basic',
                         childrenNode: [
                             {
                                 name: "Overview",

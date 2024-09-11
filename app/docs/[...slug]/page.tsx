@@ -4,13 +4,13 @@ import { DocsMarkdownViewer } from "@/components/docs-markdown-viewer";
 import { DocsPreNextBtns } from "@/components/docs-pre-next-btns";
 import { routerNodeTree } from "@/config/site";
 import { DocsRouterNode } from "@/config/types";
-import { promises as fs } from "fs";
+import { headers } from 'next/headers';
 
 
 export default async function Page({ params }: { params: { slug: string[] } }) {
 
     const slugs = params.slug;
-    const path = "/docs/" + slugs.join("/");
+    const pathName = "/docs/" + slugs.join("/");
 
     function findRouterNodeByPath(path: string, routerNode: DocsRouterNode[]): DocsRouterNode | undefined {
         for (const node of routerNode) {
@@ -27,12 +27,13 @@ export default async function Page({ params }: { params: { slug: string[] } }) {
         }
     }
 
-    const routerInfo = findRouterNodeByPath(path, routerNodeTree);
-
-    const introductionMD = await fs.readFile(process.cwd() + routerInfo?.markdownPath, "utf-8");
-
+    const routerInfo = findRouterNodeByPath(pathName, routerNodeTree);
+    const headersList = headers();
+    const host = headersList.get('host');
+    const protocol = headers().get('x-forwarded-proto') || 'http';
+    const mdUrl = protocol + "://" + host + (routerInfo?.markdownPath || "");
+    const introductionMD = await fetch(mdUrl).then(res => res.text());
     const markdownHeadings = getMarkdownHeadings(introductionMD);
-    console.log(markdownHeadings);
 
     return (
         <DocsDrawer markdownHeadings={markdownHeadings}>

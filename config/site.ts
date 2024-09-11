@@ -61,6 +61,15 @@ export const routerNodeTree: DocsRouterNode[] = [
                 PreBtnPath: '/docs/startup',
                 NextBtnName: 'Example',
                 NextBtnPath: '/docs/example',
+            },
+            {
+                name: 'Example',
+                fullPath: '/docs/example',
+                markdownPath: '/docs/quick-start/example.md',
+                PreBtnName: 'Configuration',
+                PreBtnPath: '/docs/configuration',
+                NextBtnName: 'Core Component ⭐️',
+                NextBtnPath: '/docs/core-component',
             }
         ]
     },

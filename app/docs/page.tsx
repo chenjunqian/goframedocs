@@ -1,12 +1,16 @@
 import { DocsDrawer } from "@/components/docs-drawer";
 import { DocsMarkdownViewer } from "@/components/docs-markdown-viewer";
 import { DocsPreNextBtns } from "@/components/docs-pre-next-btns";
-import { promises as fs } from "fs";
+import { headers } from "next/headers";
 
 
 export default async function Page({params}: {params: {slug: string[]}}) {
 
-    const introductionMD = await fs.readFile(process.cwd() + "/docs/introduction.md", "utf-8");
+    const headersList = headers();
+    const host = headersList.get('host');
+    const protocol = headers().get('x-forwarded-proto') || 'http';
+    const mdUrl = protocol + "://" + host + "/docs/introduction.md";
+    const introductionMD = await fetch(mdUrl).then(res => res.text());
 
     return (
         <DocsDrawer>

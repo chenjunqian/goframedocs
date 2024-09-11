@@ -1596,7 +1596,7 @@ export const routerNodeTree: DocsRouterNode[] = [
                                 PreBtnName: 'Array | Basic Usage',
                                 PreBtnPath: '/docs/component-list/data-structure/array/basic',
                                 NextBtnName: 'Set | gset',
-                                NextBtnPath: '/docs/component-list/data-structure/array/benchmark',
+                                NextBtnPath: '/docs/component-list/data-structure/set',
                             }
                         ]
                     },

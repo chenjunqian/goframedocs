@@ -1693,6 +1693,53 @@ export const routerNodeTree: DocsRouterNode[] = [
                                 NextBtnPath: '/docs/component-list/data-structure/generic-type',
                             }
                         ]
+                    },
+                    {
+                        name: "Generic Type - gvar",
+                        fullPath: '/docs/component-list/data-structure/generic-type',
+                        markdownPath: '/docs/component-list/data-structure/generic-type/overview.md',
+                        PreBtnName: 'LinkList | Benchmark',
+                        PreBtnPath: '/docs/component-list/data-structure/linklist/benchmark',
+                        NextBtnName: 'Generic Type | Basic Usage',
+                        NextBtnPath: '/docs/component-list/data-structure/generic-type/basic',
+                        childrenNode: [
+                            {
+                                name: "Overview",
+                                fullPath: '/docs/component-list/data-structure/generic-type',
+                                markdownPath: '/docs/component-list/data-structure/generic-type/overview.md',
+                                PreBtnName: 'LinkList | Benchmark',
+                                PreBtnPath: '/docs/component-list/data-structure/linklist/benchmark',
+                                NextBtnName: 'Generic Type | Basic Usage',
+                                NextBtnPath: '/docs/component-list/data-structure/generic-type/basic',
+                            },
+                            {
+                                name: "Basic Usage",
+                                fullPath: '/docs/component-list/data-structure/generic-type/basic',
+                                markdownPath: '/docs/component-list/data-structure/generic-type/basic.md',
+                                PreBtnName: 'Generic Type | Overview',
+                                PreBtnPath: '/docs/component-list/data-structure/generic-type',
+                                NextBtnName: 'Generic Type | Functions',
+                                NextBtnPath: '/docs/component-list/data-structure/generic-type/functions',
+                            },
+                            {
+                                name: "Functions",
+                                fullPath: '/docs/component-list/data-structure/generic-type/functions',
+                                markdownPath: '/docs/component-list/data-structure/generic-type/functions.md',
+                                PreBtnName: 'Generic Type | Basic Usage',
+                                PreBtnPath: '/docs/component-list/data-structure/generic-type/basic',
+                                NextBtnName: 'Generic Type | Notes',
+                                NextBtnPath: '/docs/component-list/data-structure/generic-type/notes',
+                            },
+                            {
+                                name: "Notes",
+                                fullPath: '/docs/component-list/data-structure/generic-type/notes',
+                                markdownPath: '/docs/component-list/data-structure/generic-type/notes.md',
+                                PreBtnName: 'Generic Type | Functions',
+                                PreBtnPath: '/docs/component-list/data-structure/generic-type/functions',
+                                NextBtnName: 'Safty Type | gtype',
+                                NextBtnPath: '/docs/component-list/data-structure/generic-type/safety-type',
+                            }
+                        ]
                     }
                 ]
             }

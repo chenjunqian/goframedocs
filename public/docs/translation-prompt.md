@@ -1,18 +1,20 @@
-请根据以下内容或者网站链接的中文技术文档进行翻译，确保翻译内容全面，包括所有章节、段落和代码注释。翻译后，请将文档内容转换为Markdown格式，以提升可读性和方便后续编辑。文档是关于Golang Web Framework Goframe的技术说明，翻译时请使用简洁、易懂的英文词汇，以确保海外用户易于理解。如果文档内容较长，请分批进行翻译，并确保每批次的翻译内容是完整且连贯的。
+# Goframe Documentation Translation Prompt
 
-请注意，Markdown格式应包括但不限于以下元素：
+Please translate the following content or the Chinese technical documentation from the website link, ensuring the translation is comprehensive and includes all sections, paragraphs, and code comments. After translating, convert the document content into Markdown format to improve readability and facilitate future editing. The document is a technical guide about the Golang Web Framework Goframe. When translating, use simple and easy-to-understand English vocabulary to ensure it is accessible for overseas users. If the document is lengthy, please translate it in batches, and ensure each batch is complete and coherent.
 
-- 标题和子标题（使用 # 来表示不同级别的标题）
-- 标题和子标题都不允许有这些符号: ` , . ( ) -
-- 代码块（使用三个反引号 ``` 和语言标识来表示）
-- 列表（有序或无序）
-- 链接（使用标准的 Markdown 链接格式）
-- 图片（如果文档中包含图片，请确保图片也被转换为Markdown格式）
+Please note that the Markdown format should include, but is not limited to, the following elements:
 
-在翻译过程中，如果遇到专业术语或特定概念，可以考虑添加简短的解释或脚注，以帮助读者更好地理解。
+- Headings and subheadings (use # to represent different levels of headings)
+- Headings and subheadings should not contain these symbols: `, ., (, ), -, /, if it has, please remove these symbols
+- Code blocks (use three backticks ``` and a language identifier)
+- Lists (ordered or unordered)
+- Links (use standard Markdown link format)
+- Images (if the document contains images, ensure they are also converted to Markdown format)
 
-如果翻译过程中需要进一步的澄清或确认，请随时与我沟通，以确保翻译的准确性和一致性。
+During translation, if you encounter technical terms or specific concepts, consider adding brief explanations or footnotes to help readers better understand.
 
-请开始翻译工作，并在完成每个部分后，提供Markdown格式的翻译结果供我审核。
+If you need further clarification or confirmation during the translation process, please feel free to communicate with me to ensure accuracy and consistency.
+
+Please begin the translation work and provide the Markdown-formatted results for each section upon completion for my review.
 
 ---

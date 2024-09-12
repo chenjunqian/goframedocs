@@ -5,7 +5,7 @@ Please translate the following content or the Chinese technical documentation fr
 Please note that the Markdown format should include, but is not limited to, the following elements:
 
 - Headings and subheadings (use # to represent different levels of headings)
-- Headings and subheadings should not contain these symbols: `, ., (, ), -
+- Headings and subheadings should not contain these symbols: `, ., (, ), -, /, if it has, please remove these symbols
 - Code blocks (use three backticks ``` and a language identifier)
 - Lists (ordered or unordered)
 - Links (use standard Markdown link format)

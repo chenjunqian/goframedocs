@@ -1655,6 +1655,44 @@ export const routerNodeTree: DocsRouterNode[] = [
                                 NextBtnPath: '/docs/component-list/data-structure/linklist',
                             }
                         ]
+                    },
+                    {
+                        name: "LinkList - glist",
+                        fullPath: '/docs/component-list/data-structure/linklist',
+                        markdownPath: '/docs/component-list/data-structure/linklist/overview.md',
+                        PreBtnName: 'Set | Functions',
+                        PreBtnPath: '/docs/component-list/data-structure/set/functions',
+                        NextBtnName: 'LinkList | Basic Usage',
+                        NextBtnPath: '/docs/component-list/data-structure/linklist/basic',
+                        childrenNode: [
+                            {
+                                name: "Overview",
+                                fullPath: '/docs/component-list/data-structure/linklist',
+                                markdownPath: '/docs/component-list/data-structure/linklist/overview.md',
+                                PreBtnName: 'Set | Functions',
+                                PreBtnPath: '/docs/component-list/data-structure/set/functions',
+                                NextBtnName: 'LinkList | Basic Usage',
+                                NextBtnPath: '/docs/component-list/data-structure/linklist/basic',
+                            },
+                            {
+                                name: "Basic Usage",
+                                fullPath: '/docs/component-list/data-structure/linklist/basic',
+                                markdownPath: '/docs/component-list/data-structure/linklist/basic.md',
+                                PreBtnName: 'LinkList | Overview',
+                                PreBtnPath: '/docs/component-list/data-structure/linklist',
+                                NextBtnName: 'LinkList | Benchmark',
+                                NextBtnPath: '/docs/component-list/data-structure/linklist/benchmark',
+                            },
+                            {
+                                name: "Benchmark",
+                                fullPath: '/docs/component-list/data-structure/linklist/benchmark',
+                                markdownPath: '/docs/component-list/data-structure/linklist/benchmark.md',
+                                PreBtnName: 'LinkList | Basic Usage',
+                                PreBtnPath: '/docs/component-list/data-structure/linklist/basic',
+                                NextBtnName: 'Generic Type - gvar',
+                                NextBtnPath: '/docs/component-list/data-structure/generic-type',
+                            }
+                        ]
                     }
                 ]
             }

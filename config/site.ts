@@ -1737,7 +1737,45 @@ export const routerNodeTree: DocsRouterNode[] = [
                                 PreBtnName: 'Generic Type | Functions',
                                 PreBtnPath: '/docs/component-list/data-structure/generic-type/functions',
                                 NextBtnName: 'Safty Type | gtype',
-                                NextBtnPath: '/docs/component-list/data-structure/generic-type/safety-type',
+                                NextBtnPath: '/docs/component-list/data-structure/safe-type',
+                            }
+                        ]
+                    },
+                    {
+                        name: "Safty Type - gtype",
+                        fullPath: '/docs/component-list/data-structure/safe-type',
+                        markdownPath: '/docs/component-list/data-structure/safe-type/overview.md',
+                        PreBtnName: 'Generic Type | Notes',
+                        PreBtnPath: '/docs/component-list/data-structure/generic-type/notes',
+                        NextBtnName: 'Safty Type | Basic Usage',
+                        NextBtnPath: '/docs/component-list/data-structure/safe-type/basic',
+                        childrenNode: [
+                            {
+                                name: "Overview",
+                                fullPath: '/docs/component-list/data-structure/safe-type',
+                                markdownPath: '/docs/component-list/data-structure/safe-type/overview.md',
+                                PreBtnName: 'Generic Type | Notes',
+                                PreBtnPath: '/docs/component-list/data-structure/generic-type/notes',
+                                NextBtnName: 'Safty Type | Basic Usage',
+                                NextBtnPath: '/docs/component-list/data-structure/safe-type/basic',
+                            },
+                            {
+                                name: "Basic Usage",
+                                fullPath: '/docs/component-list/data-structure/safe-type/basic',
+                                markdownPath: '/docs/component-list/data-structure/safe-type/basic.md',
+                                PreBtnName: 'Safty Type | Overview',
+                                PreBtnPath: '/docs/component-list/data-structure/gsafe-type',
+                                NextBtnName: 'Safty Type | Benchmark',
+                                NextBtnPath: '/docs/component-list/data-structure/safe-type/benchmark',
+                            },
+                            {
+                                name: "Benchmark",
+                                fullPath: '/docs/component-list/data-structure/safe-type/benchmark',
+                                markdownPath: '/docs/component-list/data-structure/safe-type/benchmark.md',
+                                PreBtnName: 'Safty Type | Basic Usage',
+                                PreBtnPath: '/docs/component-list/data-structure/safe-type/basic',
+                                NextBtnName: 'Queue Type | Overview',
+                                NextBtnPath: '/docs/component-list/data-structure/queue-type',
                             }
                         ]
                     }

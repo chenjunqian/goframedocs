@@ -1778,6 +1778,44 @@ export const routerNodeTree: DocsRouterNode[] = [
                                 NextBtnPath: '/docs/component-list/data-structure/queue-type',
                             }
                         ]
+                    },
+                    {
+                        name: "Queue Type - gqueue",
+                        fullPath: '/docs/component-list/data-structure/queue-type',
+                        markdownPath: '/docs/component-list/data-structure/queue-type/overview.md',
+                        PreBtnName: 'Safty Type | Benchmark',
+                        PreBtnPath: '/docs/component-list/data-structure/safe-type/benchmark',
+                        NextBtnName: 'Queue Type | Basic Usage',
+                        NextBtnPath: '/docs/component-list/data-structure/queue-type/basic',
+                        childrenNode: [
+                            {
+                                name: "Overview",
+                                fullPath: '/docs/component-list/data-structure/queue-type',
+                                markdownPath: '/docs/component-list/data-structure/queue-type/overview.md',
+                                PreBtnName: 'Safty Type | Benchmark',
+                                PreBtnPath: '/docs/component-list/data-structure/safe-type/benchmark',
+                                NextBtnName: 'Queue Type | Basic Usage',
+                                NextBtnPath: '/docs/component-list/data-structure/queue-type/basic',
+                            },
+                            {
+                                name: "Basic Usage",
+                                fullPath: '/docs/component-list/data-structure/queue-type/basic',
+                                markdownPath: '/docs/component-list/data-structure/queue-type/basic.md',
+                                PreBtnName: 'Queue Type | Overview',
+                                PreBtnPath: '/docs/component-list/data-structure/queue-type',
+                                NextBtnName: 'Queue Type | Benchmark',
+                                NextBtnPath: '/docs/component-list/data-structure/queue-type/benchmark',
+                            },
+                            {
+                                name: "Benchmark",
+                                fullPath: '/docs/component-list/data-structure/queue-type/benchmark',
+                                markdownPath: '/docs/component-list/data-structure/queue-type/benchmark.md',
+                                PreBtnName: 'Queue Type | Basic Usage',
+                                PreBtnPath: '/docs/component-list/data-structure/queue-type/basic',
+                                NextBtnName: 'Tree Type | Overview',
+                                NextBtnPath: '/docs/component-list/data-structure/tree-type',
+                            }
+                        ]
                     }
                 ]
             }

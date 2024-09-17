@@ -3,10 +3,10 @@ export type DocsRouterInfo = {
     name?: string
     fullPath: string
     markdownPath?: string
-    PreBtnName?: string
-    PreBtnPath?: string
-    NextBtnName?: string
-    NextBtnPath?: string
+    preBtnName?: string
+    preBtnPath?: string
+    nextBtnName?: string
+    nextBtnPath?: string
 }
 
 export type DocsRouterInfoDict = {
@@ -17,9 +17,9 @@ export type DocsRouterNode = {
     name: string
     fullPath: string
     markdownPath?: string
-    PreBtnName?: string
-    PreBtnPath?: string
-    NextBtnName?: string
-    NextBtnPath?: string
+    preBtnName?: string
+    preBtnPath?: string
+    nextBtnName?: string
+    nextBtnPath?: string
     childrenNode?: DocsRouterNode[]
 }

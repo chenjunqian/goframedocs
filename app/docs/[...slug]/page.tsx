@@ -46,7 +46,7 @@ export default async function Page({ params }: { params: { slug: string[] } }) {
                     <DocsMarkdownViewer>{introductionMD}</DocsMarkdownViewer>
                     <MarkdownHeadingNavigator headings={markdownHeadings} className="hidden xl:block" />
                 </div>
-                <DocsPreNextBtns preName={routerInfo?.PreBtnName} prePath={routerInfo?.PreBtnPath} nextName={routerInfo?.NextBtnName} nextPath={routerInfo?.NextBtnPath} />
+                <DocsPreNextBtns preName={routerInfo?.preBtnName} prePath={routerInfo?.preBtnPath} nextName={routerInfo?.nextBtnName} nextPath={routerInfo?.nextBtnPath} />
             </div>
         </DocsDrawer>
     )

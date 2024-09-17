@@ -1816,6 +1816,44 @@ export const routerNodeTree: DocsRouterNode[] = [
                                 NextBtnPath: '/docs/component-list/data-structure/tree-type',
                             }
                         ]
+                    },
+                    {
+                        name: "Tree Type - gtree",
+                        fullPath: '/docs/component-list/data-structure/tree-type',
+                        markdownPath: '/docs/component-list/data-structure/tree-type/overview.md',
+                        PreBtnName: 'Queue Type | Benchmark',
+                        PreBtnPath: '/docs/component-list/data-structure/queue-type/benchmark',
+                        NextBtnName: 'Tree Type | Basic Usage',
+                        NextBtnPath: '/docs/component-list/data-structure/tree-type/basic',
+                        childrenNode: [
+                            {
+                                name: "Overview",
+                                fullPath: '/docs/component-list/data-structure/tree-type',
+                                markdownPath: '/docs/component-list/data-structure/tree-type/overview.md',
+                                PreBtnName: 'Queue Type | Benchmark',
+                                PreBtnPath: '/docs/component-list/data-structure/queue-type/benchmark',
+                                NextBtnName: 'Tree Type | Basic Usage',
+                                NextBtnPath: '/docs/component-list/data-structure/tree-type/basic',
+                            },
+                            {
+                                name: "Basic Usage",
+                                fullPath: '/docs/component-list/data-structure/tree-type/basic',
+                                markdownPath: '/docs/component-list/data-structure/tree-type/basic.md',
+                                PreBtnName: 'Tree Type | Overview',
+                                PreBtnPath: '/docs/component-list/data-structure/tree-type',
+                                NextBtnName: 'Tree Type | Functions',
+                                NextBtnPath: '/docs/component-list/data-structure/tree-type/functions',
+                            },
+                            {
+                                name: "Functions",
+                                fullPath: '/docs/component-list/data-structure/tree-type/functions',
+                                markdownPath: '/docs/component-list/data-structure/tree-type/functions.md',
+                                PreBtnName: 'Tree Type | Basic Usage',
+                                PreBtnPath: '/docs/component-list/data-structure/tree-type/basic',
+                                NextBtnName: 'Object Reues | gpool',
+                                NextBtnPath: '/docs/component-list/data-structure/object-reuse',
+                            }
+                        ]
                     }
                 ]
             }

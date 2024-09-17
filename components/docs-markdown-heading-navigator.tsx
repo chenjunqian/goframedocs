@@ -17,7 +17,7 @@ export function getMarkdownHeadings(md: string): MarkdownHeading[] {
         if (headingText.includes("`")) {
             continue;
         }
-        const slug = "#" + headingText.replace(/ /g, "-").toLocaleLowerCase();
+        const slug = "#" + headingText.replace(/ /g, "-").replace(/[()\.&]/g, "").toLocaleLowerCase();
         let markdownHeading: MarkdownHeading = {
             text: headingText,
             level: headingLevel,

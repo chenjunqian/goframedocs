@@ -1988,6 +1988,15 @@ export const routerNodeTree: DocsRouterNode[] = [
                         preBtnPath: '/docs/component-list/system-related/memory-lock',
                         nextBtnName: 'Context - gctx',
                         nextBtnPath: '/docs/component-list/system-related/context',
+                    },
+                    {
+                        name: "Context - gctx",
+                        fullPath: '/docs/component-list/system-related/context',
+                        markdownPath: '/docs/component-list/system-related/context.md',
+                        preBtnName: 'Mutex Lock - gmlock',
+                        preBtnPath: '/docs/component-list/system-related/mutex-lock',
+                        nextBtnName: 'Command - gcmd',
+                        nextBtnPath: '/docs/component-list/system-related/command',
                     }
                 ]
             }

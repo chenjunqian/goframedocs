@@ -5,6 +5,7 @@ import { DocsPreNextBtns } from "@/components/docs-pre-next-btns";
 import { routerNodeTree } from "@/config/site";
 import { DocsRouterNode } from "@/config/types";
 import { headers } from 'next/headers';
+import { redirect } from 'next/navigation';
 
 
 export default async function Page({ params }: { params: { slug: string[] } }) {
@@ -31,7 +32,10 @@ export default async function Page({ params }: { params: { slug: string[] } }) {
     const headersList = headers();
     const host = headersList.get('host');
     const protocol = headers().get('x-forwarded-proto') || 'http';
-    const mdUrl = protocol + "://" + host + (routerInfo?.markdownPath || "");
+    if (!routerInfo || !routerInfo.markdownPath || routerInfo.markdownPath === "") {
+        redirect("/404")
+    }
+    const mdUrl = protocol + "://" + host + (routerInfo?.markdownPath);
     const introductionMD = await fetch(mdUrl).then(res => res.text());
     const markdownHeadings = getMarkdownHeadings(introductionMD);
 
@@ -42,7 +46,7 @@ export default async function Page({ params }: { params: { slug: string[] } }) {
                     <DocsMarkdownViewer>{introductionMD}</DocsMarkdownViewer>
                     <MarkdownHeadingNavigator headings={markdownHeadings} className="hidden xl:block" />
                 </div>
-                <DocsPreNextBtns preName={routerInfo?.PreBtnName} prePath={routerInfo?.PreBtnPath} nextName={routerInfo?.NextBtnName} nextPath={routerInfo?.NextBtnPath} />
+                <DocsPreNextBtns preName={routerInfo?.preBtnName} prePath={routerInfo?.preBtnPath} nextName={routerInfo?.nextBtnName} nextPath={routerInfo?.nextBtnPath} />
             </div>
         </DocsDrawer>
     )

@@ -10,7 +10,7 @@ const config = {
   prefix: "",
   plugins: [require("tailwindcss-animate"), require("@tailwindcss/typography"), require("daisyui")],
   daisyui: {
-    themes: ["dracula"]
+    themes: ["light"]
   }
 } satisfies Config
 

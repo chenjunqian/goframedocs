@@ -1979,6 +1979,15 @@ export const routerNodeTree: DocsRouterNode[] = [
                         preBtnPath: '/docs/component-list/system-related/timer/basic',
                         nextBtnName: 'Mutex Lock - gmlock',
                         nextBtnPath: '/docs/component-list/system-related/mutex-lock',
+                    },
+                    {
+                        name: "Mutex Lock - gmlock",
+                        fullPath: '/docs/component-list/system-related/mutex-lock',
+                        markdownPath: '/docs/component-list/system-related/mutex-lock.md',
+                        preBtnName: 'Memory Lock - gmlock',
+                        preBtnPath: '/docs/component-list/system-related/memory-lock',
+                        nextBtnName: 'Context - gctx',
+                        nextBtnPath: '/docs/component-list/system-related/context',
                     }
                 ]
             }

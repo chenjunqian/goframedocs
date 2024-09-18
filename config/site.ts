@@ -1967,9 +1967,18 @@ export const routerNodeTree: DocsRouterNode[] = [
                                 preBtnName: 'Timer - Basic Usage',
                                 preBtnPath: '/docs/component-list/system-related/timer/basic',
                                 nextBtnName: 'Lock - gmlock',
-                                nextBtnPath: '/docs/component-list/system-related/lock/gmlock',
+                                nextBtnPath: '/docs/component-list/system-related/memory-lock',
                             }
                         ]
+                    },
+                    {
+                        name: "Memory Lock - gmlock",
+                        fullPath: '/docs/component-list/system-related/memory-lock',
+                        markdownPath: '/docs/component-list/system-related/memory-lock.md',
+                        preBtnName: 'Timer - Basic Usage',
+                        preBtnPath: '/docs/component-list/system-related/timer/basic',
+                        nextBtnName: 'Mutex Lock - gmlock',
+                        nextBtnPath: '/docs/component-list/system-related/mutex-lock',
                     }
                 ]
             }

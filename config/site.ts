@@ -1854,6 +1854,35 @@ export const routerNodeTree: DocsRouterNode[] = [
                                 nextBtnPath: '/docs/component-list/data-structure/object-reuse',
                             }
                         ]
+                    },
+                    {
+                        name: "Object Reuse - gpool",
+                        fullPath: '/docs/component-list/data-structure/object-reuse',
+                        markdownPath: '/docs/component-list/data-structure/object-reuse/overview.md',
+                        preBtnName: 'Tree Type | Functions',
+                        preBtnPath: '/docs/component-list/data-structure/tree-type/functions',
+                        nextBtnName: 'Object Reuse | Basic Usage',
+                        nextBtnPath: '/docs/component-list/data-structure/object-reuse/basic',
+                        childrenNode: [
+                            {
+                                name: "Overview",
+                                fullPath: '/docs/component-list/data-structure/object-reuse',
+                                markdownPath: '/docs/component-list/data-structure/object-reuse/overview.md',
+                                preBtnName: 'Tree Type | Functions',
+                                preBtnPath: '/docs/component-list/data-structure/tree-type/functions',
+                                nextBtnName: 'Object Reuse | Basic Usage',
+                                nextBtnPath: '/docs/component-list/data-structure/object-reuse/basic',
+                            },
+                            {
+                                name: "Basic Usage",
+                                fullPath: '/docs/component-list/data-structure/object-reuse/basic',
+                                markdownPath: '/docs/component-list/data-structure/object-reuse/basic.md',
+                                preBtnName: 'Object Reuse | Overview',
+                                preBtnPath: '/docs/component-list/data-structure/object-reuse',
+                                nextBtnName: 'Safe Ring - gring',
+                                nextBtnPath: '/docs/component-list/data-structure/safe-ring',
+                            }
+                        ]
                     }
                 ]
             }

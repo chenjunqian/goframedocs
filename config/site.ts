@@ -1883,6 +1883,44 @@ export const routerNodeTree: DocsRouterNode[] = [
                                 nextBtnPath: '/docs/component-list/data-structure/safe-ring',
                             }
                         ]
+                    },
+                    {
+                        name: "Safe Ring - gring",
+                        fullPath: '/docs/component-list/data-structure/safe-ring',
+                        markdownPath: '/docs/component-list/data-structure/safe-ring/overview.md',
+                        preBtnName: 'Object Reuse | Basic Usage',
+                        preBtnPath: '/docs/component-list/data-structure/object-reuse/basic',
+                        nextBtnName: 'Safe Ring | Basic Usage',
+                        nextBtnPath: '/docs/component-list/data-structure/safe-ring/basic',
+                        childrenNode: [
+                            {
+                                name: "Overview",
+                                fullPath: '/docs/component-list/data-structure/safe-ring',
+                                markdownPath: '/docs/component-list/data-structure/safe-ring/overview.md',
+                                preBtnName: 'Object Reuse | Basic Usage',
+                                preBtnPath: '/docs/component-list/data-structure/object-reuse/basic',
+                                nextBtnName: 'Safe Ring | Basic Usage',
+                                nextBtnPath: '/docs/component-list/data-structure/safe-ring/basic',
+                            },
+                            {
+                                name: "Basic Usage",
+                                fullPath: '/docs/component-list/data-structure/safe-ring/basic',
+                                markdownPath: '/docs/component-list/data-structure/safe-ring/basic.md',
+                                preBtnName: 'Safe Ring | Overview',
+                                preBtnPath: '/docs/component-list/data-structure/safe-ring',
+                                nextBtnName: 'Safe Ring | Functions',
+                                nextBtnPath: '/docs/component-list/data-structure/safe-ring/functions',
+                            },
+                            {
+                                name: "Functions",
+                                fullPath: '/docs/component-list/data-structure/safe-ring/functions',
+                                markdownPath: '/docs/component-list/data-structure/safe-ring/functions.md',
+                                preBtnName: 'Safe Ring | Basic Usage',
+                                preBtnPath: '/docs/component-list/data-structure/safe-ring/basic',
+                                nextBtnName: 'System Related',
+                                nextBtnPath: '/docs/component-list/data-structure/system-related',
+                            }
+                        ]
                     }
                 ]
             }

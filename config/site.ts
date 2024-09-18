@@ -1923,6 +1923,55 @@ export const routerNodeTree: DocsRouterNode[] = [
                         ]
                     }
                 ]
+            },
+            {
+                name: "System Related",
+                fullPath: '/docs/component-list/system-related',
+                markdownPath: '/docs/component-list/system-related/timer/overview.md',
+                preBtnName: 'Safe Ring | Functions',
+                preBtnPath: '/docs/component-list/data-structure/safe-ring/functions',
+                nextBtnName: 'Timer - Basic Usage',
+                nextBtnPath: '/docs/component-list/system-related/timer/basic',
+                childrenNode: [
+                    {
+                        name: "Timer - gtimer",
+                        fullPath: '/docs/component-list/system-related/timer',
+                        markdownPath: '/docs/component-list/system-related/timer/overview.md',
+                        preBtnName: 'Safe Ring | Functions',
+                        preBtnPath: '/docs/component-list/data-structure/safe-ring/functions',
+                        nextBtnName: 'Timer - Basic Usage',
+                        nextBtnPath: '/docs/component-list/system-related/timer/basic',
+                        childrenNode: [
+                            {
+                                name: "Overview",
+                                fullPath: '/docs/component-list/system-related/timer',
+                                markdownPath: '/docs/component-list/system-related/timer/overview.md',
+                                preBtnName: 'Safe Ring | Functions',
+                                preBtnPath: '/docs/component-list/data-structure/safe-ring/functions',
+                                nextBtnName: 'Timer - Basic Usage',
+                                nextBtnPath: '/docs/component-list/system-related/timer/basic',
+                            },
+                            {
+                                name: "Basic Usage",
+                                fullPath: '/docs/component-list/system-related/timer/basic',
+                                markdownPath: '/docs/component-list/system-related/timer/basic.md',
+                                preBtnName: 'Timer - Overview',
+                                preBtnPath: '/docs/component-list/system-related/timer',
+                                nextBtnName: 'Timer - Benchmark',
+                                nextBtnPath: '/docs/component-list/system-related/timer/benchmark',
+                            },
+                            {
+                                name: "Benchmark",
+                                fullPath: '/docs/component-list/system-related/timer/benchmark',
+                                markdownPath: '/docs/component-list/system-related/timer/benchmark.md',
+                                preBtnName: 'Timer - Basic Usage',
+                                preBtnPath: '/docs/component-list/system-related/timer/basic',
+                                nextBtnName: 'Lock - gmlock',
+                                nextBtnPath: '/docs/component-list/system-related/lock/gmlock',
+                            }
+                        ]
+                    }
+                ]
             }
         ]
     },

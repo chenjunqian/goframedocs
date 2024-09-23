@@ -2062,6 +2062,62 @@ export const routerNodeTree: DocsRouterNode[] = [
                                 nextBtnPath: '/docs/component-list/system-related/cron',
                             }
                         ]
+                    },
+                    {
+                        name: "Cron - gcron",
+                        fullPath: '/docs/component-list/system-related/cron',
+                        markdownPath: '/docs/component-list/system-related/cron/overview.md',
+                        preBtnName: 'Time - Functions',
+                        preBtnPath: '/docs/component-list/system-related/time/functions',
+                        nextBtnName: 'Cron - Expression',
+                        nextBtnPath: '/docs/component-list/system-related/cron/express',
+                        childrenNode: [
+                            {
+                                name: "Overview",
+                                fullPath: '/docs/component-list/system-related/cron',
+                                markdownPath: '/docs/component-list/system-related/cron/overview.md',
+                                preBtnName: 'Time - Functions',
+                                preBtnPath: '/docs/component-list/system-related/time/functions',
+                                nextBtnName: 'Cron - Expression',
+                                nextBtnPath: '/docs/component-list/system-related/cron/express',
+                            },
+                            {
+                                name: "Expression",
+                                fullPath: '/docs/component-list/system-related/cron/express',
+                                markdownPath: '/docs/component-list/system-related/cron/express.md',
+                                preBtnName: 'Cron - Overview',
+                                preBtnPath: '/docs/component-list/system-related/cron',
+                                nextBtnName: 'Cron - Basic',
+                                nextBtnPath: '/docs/component-list/system-related/cron/basic',
+                            },
+                            {
+                                name: "Basic",
+                                fullPath: '/docs/component-list/system-related/cron/basic',
+                                markdownPath: '/docs/component-list/system-related/cron/basic.md',
+                                preBtnName: 'Cron - Expression',
+                                preBtnPath: '/docs/component-list/system-related/cron/express',
+                                nextBtnName: 'Cron - Log',
+                                nextBtnPath: '/docs/component-list/system-related/cron/log',
+                            },
+                            {
+                                name: "Log",
+                                fullPath: '/docs/component-list/system-related/cron/log',
+                                markdownPath: '/docs/component-list/system-related/cron/log.md',
+                                preBtnName: 'Cron - Basic',
+                                preBtnPath: '/docs/component-list/system-related/cron/basic',
+                                nextBtnName: 'Cron - gcron&gtimer',
+                                nextBtnPath: '/docs/component-list/system-related/cron/gcronandgtimer',
+                            },
+                            {
+                                name: "gcron&gtimer",
+                                fullPath: '/docs/component-list/system-related/cron/gcronandgtimer',
+                                markdownPath: '/docs/component-list/system-related/cron/gcronandgtimer.md',
+                                preBtnName: 'Cron - Log',
+                                preBtnPath: '/docs/component-list/system-related/cron/log',
+                                nextBtnName: 'Cache - gcache',
+                                nextBtnPath: '/docs/component-list/system-related/cache',
+                            }
+                        ]
                     }
                 ]
             }

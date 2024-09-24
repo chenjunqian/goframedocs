@@ -2114,10 +2114,19 @@ export const routerNodeTree: DocsRouterNode[] = [
                                 markdownPath: '/docs/component-list/system-related/cron/gcronandgtimer.md',
                                 preBtnName: 'Cron - Log',
                                 preBtnPath: '/docs/component-list/system-related/cron/log',
-                                nextBtnName: 'Cache - gcache',
-                                nextBtnPath: '/docs/component-list/system-related/cache',
+                                nextBtnName: 'File - gfile',
+                                nextBtnPath: '/docs/component-list/system-related/file',
                             }
                         ]
+                    },
+                    {
+                        name: "File - gfile",
+                        fullPath: '/docs/component-list/system-related/file',
+                        markdownPath: '/docs/component-list/system-related/file.md',
+                        preBtnName: 'Cron - gcron&gtimer',
+                        preBtnPath: '/docs/component-list/system-related/cron/gcronandgtimer',
+                        nextBtnName: 'Resource - gres',
+                        nextBtnPath: '/docs/component-list/system-related/resource',
                     }
                 ]
             }

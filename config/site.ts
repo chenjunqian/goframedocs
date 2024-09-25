@@ -2127,6 +2127,81 @@ export const routerNodeTree: DocsRouterNode[] = [
                         preBtnPath: '/docs/component-list/system-related/cron/gcronandgtimer',
                         nextBtnName: 'Env - gevn',
                         nextBtnPath: '/docs/component-list/system-related/env',
+                    },
+                    {
+                        name: "Env - gevn",
+                        fullPath: '/docs/component-list/system-related/env',
+                        markdownPath: '/docs/component-list/system-related/env.md',
+                        preBtnName: 'File - gfile',
+                        preBtnPath: '/docs/component-list/system-related/file',
+                        nextBtnName: 'File Monitor - gfsnotify',
+                        nextBtnPath: '/docs/component-list/system-related/gfsnotify',
+                    },
+                    {
+                        name: "File Monitor - gfsnotify",
+                        fullPath: '/docs/component-list/system-related/gfsnotify',
+                        markdownPath: '/docs/component-list/system-related/gfsnotify.md',
+                        preBtnName: 'Env - gevn',
+                        preBtnPath: '/docs/component-list/system-related/env',
+                        nextBtnName: 'Process - Basic',
+                        nextBtnPath: '/docs/component-list/system-related/process/basic',
+
+                    },
+                    {
+                        name: "Process - gproc",
+                        fullPath: '/docs/component-list/system-related/process',
+                        markdownPath: '/docs/component-list/system-related/process/overview.md',
+                        preBtnName: 'File Monitor - gfsnotify',
+                        preBtnPath: '/docs/component-list/system-related/gfsnotify',
+                        nextBtnName: 'Process - Baice',
+                        nextBtnPath: '/docs/component-list/system-related/process/basic',
+                        childrenNode: [
+                            {
+                                name: "Overview",
+                                fullPath: '/docs/component-list/system-related/process',
+                                markdownPath: '/docs/component-list/system-related/process/overview.md',
+                                preBtnName: 'File Monitor - gfsnotify',
+                                preBtnPath: '/docs/component-list/system-related/gfsnotify',
+                                nextBtnName: 'Process - Basic',
+                                nextBtnPath: '/docs/component-list/system-related/process/basic',
+                            },
+                            {
+                                name: "Basic",
+                                fullPath: '/docs/component-list/system-related/process/basic',
+                                markdownPath: '/docs/component-list/system-related/process/basic.md',
+                                preBtnName: 'Process - Overview',
+                                preBtnPath: '/docs/component-list/system-related/process',
+                                nextBtnName: 'Process - Communication',
+                                nextBtnPath: '/docs/component-list/system-related/process/communication',
+                            },
+                            {
+                                name: "Communication",
+                                fullPath: '/docs/component-list/system-related/process/communication',
+                                markdownPath: '/docs/component-list/system-related/process/communication.md',
+                                preBtnName: 'Process - Basic',
+                                preBtnPath: '/docs/component-list/system-related/process/basic',
+                                nextBtnName: 'Process - Listen',
+                                nextBtnPath: '/docs/component-list/system-related/process/listen',
+                            },
+                            {
+                                name: "Listen",
+                                fullPath: '/docs/component-list/system-related/process/listen',
+                                markdownPath: '/docs/component-list/system-related/process/listen.md',
+                                preBtnName: 'Process - Communication',
+                                preBtnPath: '/docs/component-list/system-related/process/communication',
+                                nextBtnName: 'Process - Track',
+                                nextBtnPath: '/docs/component-list/system-related/process/track',
+                            },
+                            {
+                                name: "Track",
+                                fullPath: '/docs/component-list/system-related/process/track',
+                                markdownPath: '/docs/component-list/system-related/process/track.md',
+                                preBtnName: 'Process - Listen',
+                                preBtnPath: '/docs/component-list/system-related/process/listen',
+                                nextBtnName: 'Goroutine - grpool',
+                                nextBtnPath: '/docs/component-list/system-related/goroutine/',
+                            }
+                        ]
                     }
                 ]
             }

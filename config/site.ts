@@ -2202,6 +2202,33 @@ export const routerNodeTree: DocsRouterNode[] = [
                                 nextBtnPath: '/docs/component-list/system-related/goroutine/',
                             }
                         ]
+                    },
+                    {
+                        name: "Goroutine - grpool",
+                        fullPath: '/docs/component-list/system-related/goroutine',
+                        markdownPath: '/docs/component-list/system-related/goroutine.md',
+                        preBtnName: 'Process - Track',
+                        preBtnPath: '/docs/component-list/system-related/process/track',
+                        nextBtnName: 'Build - gbuild',
+                        nextBtnPath: '/docs/component-list/system-related/build',
+                    },
+                    {
+                        name: "Build - gbuild",
+                        fullPath: '/docs/component-list/system-related/build',
+                        markdownPath: '/docs/component-list/system-related/build.md',
+                        preBtnName: 'Goroutine - grpool',
+                        preBtnPath: '/docs/component-list/system-related/goroutine',
+                        nextBtnName: 'Object - gstructs',
+                        nextBtnPath: '/docs/component-list/system-related/object',
+                    },
+                    {
+                        name: "Object - gstructs",
+                        fullPath: '/docs/component-list/system-related/object',
+                        markdownPath: '/docs/component-list/system-related/object.md',
+                        preBtnName: 'Build - gbuild',
+                        preBtnPath: '/docs/component-list/system-related/build',
+                        nextBtnName: 'String',
+                        nextBtnPath: '/docs/component-list/system-related/string',
                     }
                 ]
             }

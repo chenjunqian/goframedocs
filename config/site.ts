@@ -2260,6 +2260,100 @@ export const routerNodeTree: DocsRouterNode[] = [
                         nextBtnPath: '/docs/component-list/encodedecode',
                     }
                 ]
+            },
+            {
+                name: "Encode&Decode",
+                fullPath: '/docs/component-list/encodedecode',
+                markdownPath: '/docs/component-list/encodedecode/json/overview.md',
+                preBtnName: 'String - Regex',
+                preBtnPath: '/docs/component-list/string/regex',
+                nextBtnName: 'Json - gjson',
+                nextBtnPath: '/docs/component-list/encodedecode/json',
+                childrenNode: [
+                    {
+                        name: "Json - gjson",
+                        fullPath: '/docs/component-list/encodedecode/json',
+                        markdownPath: '/docs/component-list/encodedecode/json/overview.md',
+                        preBtnName: 'Regex - gregex',
+                        preBtnPath: '/docs/component-list/string/regex',
+                        nextBtnName: 'Json - Creation',
+                        nextBtnPath: '/docs/component-list/encodedecode/json/creation',
+                        childrenNode: [
+                            {
+                                name: "Overview",
+                                fullPath: '/docs/component-list/encodedecode/json',
+                                markdownPath: '/docs/component-list/encodedecode/json/overview.md',
+                                preBtnName: 'Regex - gregex',
+                                preBtnPath: '/docs/component-list/string/regex',
+                                nextBtnName: 'Json - Creation',
+                                nextBtnPath: '/docs/component-list/encodedecode/json/creation',
+                            },
+                            {
+                                name: "Creation",
+                                fullPath: '/docs/component-list/encodedecode/json/creation',
+                                markdownPath: '/docs/component-list/encodedecode/json/creation.md',
+                                preBtnName: 'Json - gjson',
+                                preBtnPath: '/docs/component-list/encodedecode/json',
+                                nextBtnName: 'Json - Hierarchy',
+                                nextBtnPath: '/docs/component-list/encodedecode/json/hierarchy',
+                            },
+                            {
+                                name: "Hierarchy",
+                                fullPath: '/docs/component-list/encodedecode/json/hierarchy',
+                                markdownPath: '/docs/component-list/encodedecode/json/hierarchy.md',
+                                preBtnName: 'Json - Creation',
+                                preBtnPath: '/docs/component-list/encodedecode/json/creation',
+                                nextBtnName: 'Json - Struct Convert',
+                                nextBtnPath: '/docs/component-list/encodedecode/json/struct-convert',
+                            },
+                            {
+                                name: "Struct Convert",
+                                fullPath: '/docs/component-list/encodedecode/json/struct-convert',
+                                markdownPath: '/docs/component-list/encodedecode/json/struct-convert.md',
+                                preBtnName: 'Json - Hierarchy',
+                                preBtnPath: '/docs/component-list/encodedecode/json/hierarchy',
+                                nextBtnName: 'Json - Dynamic Creation',
+                                nextBtnPath: '/docs/component-list/encodedecode/json/dynamic-creation',
+                            },
+                            {
+                                name: "Dynamic Creation",
+                                fullPath: '/docs/component-list/encodedecode/json/dynamic-creation',
+                                markdownPath: '/docs/component-list/encodedecode/json/dynamic-creation.md',
+                                preBtnName: 'Json - Struct Convert',
+                                preBtnPath: '/docs/component-list/encodedecode/json/struct-convert',
+                                nextBtnName: 'Json - Format Convert',
+                                nextBtnPath: '/docs/component-list/encodedecode/json/format-convert',
+                            },
+                            {
+                                name: "Format Convert",
+                                fullPath: '/docs/component-list/encodedecode/json/format-convert',
+                                markdownPath: '/docs/component-list/encodedecode/json/format-convert.md',
+                                preBtnName: 'Json - Dynamic Creation',
+                                preBtnPath: '/docs/component-list/encodedecode/json/dynamic-creation',
+                                nextBtnName: 'Json - Functions',
+                                nextBtnPath: '/docs/component-list/encodedecode/json/functions',
+                            },
+                            {
+                                name: "Functions",
+                                fullPath: '/docs/component-list/encodedecode/json/functions',
+                                markdownPath: '/docs/component-list/encodedecode/json/functions.md',
+                                preBtnName: 'Json - Format Convert',
+                                preBtnPath: '/docs/component-list/encodedecode/json/format-convert',
+                                nextBtnName: 'Json - FAQ',
+                                nextBtnPath: '/docs/component-list/encodedecode/json/faq',
+                            },
+                            {
+                                name: "FAQ",
+                                fullPath: '/docs/component-list/encodedecode/json/faq',
+                                markdownPath: '/docs/component-list/encodedecode/json/faq.md',
+                                preBtnName: 'Json - Functions',
+                                preBtnPath: '/docs/component-list/encodedecode/json/functions',
+                                nextBtnName: 'Binary - gbinary',
+                                nextBtnPath: '/docs/component-list/encodedecode/binary',
+                            }
+                        ]
+                    }
+                ]
             }
         ]
     },

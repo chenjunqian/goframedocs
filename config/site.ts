@@ -2231,6 +2231,35 @@ export const routerNodeTree: DocsRouterNode[] = [
                         nextBtnPath: '/docs/component-list/system-related/string',
                     }
                 ]
+            },
+            {
+                name: "String",
+                fullPath: '/docs/component-list/string',
+                markdownPath: '/docs/component-list/string/gstr.md',
+                preBtnName: 'Object - gstructs',
+                preBtnPath: '/docs/component-list/system-related/object',
+                nextBtnName: 'Regex - gregex',
+                nextBtnPath: '/docs/component-list/string/regex',
+                childrenNode: [
+                    {
+                        name: "gstr",
+                        fullPath: '/docs/component-list/string/gstr',
+                        markdownPath: '/docs/component-list/string/gstr.md',
+                        preBtnName: 'Object - gstructs',
+                        preBtnPath: '/docs/component-list/system-related/object',
+                        nextBtnName: 'String - gregex',
+                        nextBtnPath: '/docs/component-list/string/regex',
+                    },
+                    {
+                        name: "Regex - gregex",
+                        fullPath: '/docs/component-list/string/regex',
+                        markdownPath: '/docs/component-list/string/regex.md',
+                        preBtnName: 'String - gstr',
+                        preBtnPath: '/docs/component-list/string/gstr',
+                        nextBtnName: 'Encode&Decode',
+                        nextBtnPath: '/docs/component-list/encodedecode',
+                    }
+                ]
             }
         ]
     },

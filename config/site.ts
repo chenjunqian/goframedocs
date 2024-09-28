@@ -2352,6 +2352,15 @@ export const routerNodeTree: DocsRouterNode[] = [
                                 nextBtnPath: '/docs/component-list/encodedecode/binary',
                             }
                         ]
+                    },
+                    {
+                        name: "Binary - gbinary",
+                        fullPath: '/docs/component-list/encodedecode/binary',
+                        markdownPath: '/docs/component-list/encodedecode/binary.md',
+                        preBtnName: 'Json - gjson',
+                        preBtnPath: '/docs/component-list/encodedecode/json',
+                        nextBtnName: 'Base64 - gbase64',
+                        nextBtnPath: '/docs/component-list/encodedecode/base64',
                     }
                 ]
             }

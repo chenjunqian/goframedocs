@@ -2453,6 +2453,62 @@ export const routerNodeTree: DocsRouterNode[] = [
                         nextBtnPath: '/docs/component-list/encodedecode/encrypt/md5',
                     }
                 ]
+            },
+            {
+                name: "Encrypt",
+                fullPath: '/docs/component-list/encrypt',
+                markdownPath: '/docs/component-list/encrypt/md5.md',
+                preBtnName: 'Compress - gcompress',
+                preBtnPath: '/docs/component-list/encodedecode/compress',
+                nextBtnName: 'AES - gaes',
+                nextBtnPath: '/docs/component-list/encrypt/aes',
+                childrenNode: [
+                    {
+                        name: "MD5 - gmd5",
+                        fullPath: '/docs/component-list/encrypt/md5',
+                        markdownPath: '/docs/component-list/encrypt/md5.md',
+                        preBtnName: 'Compress - gcompress',
+                        preBtnPath: '/docs/component-list/encodedecode/compress',
+                        nextBtnName: 'AES - gaes',
+                        nextBtnPath: '/docs/component-list/encrypt/aes',
+                    },
+                    {
+                        name: "AES - gaes",
+                        fullPath: '/docs/component-list/encrypt/aes',
+                        markdownPath: '/docs/component-list/encrypt/aes.md',
+                        preBtnName: 'MD5 - gmd5',
+                        preBtnPath: '/docs/component-list/encrypt/md5',
+                        nextBtnName: 'DES - gdes',
+                        nextBtnPath: '/docs/component-list/encrypt/des',
+                    },
+                    {
+                        name: "DES - gdes",
+                        fullPath: '/docs/component-list/encrypt/des',
+                        markdownPath: '/docs/component-list/encrypt/des.md',
+                        preBtnName: 'AES - gaes',
+                        preBtnPath: '/docs/component-list/encrypt/aes',
+                        nextBtnName: 'SHA1 - gsha1',
+                        nextBtnPath: '/docs/component-list/encrypt/sha1',
+                    },
+                    {
+                        name: "SHA1 - gsha1",
+                        fullPath: '/docs/component-list/encrypt/sha1',
+                        markdownPath: '/docs/component-list/encrypt/sha1.md',
+                        preBtnName: 'DES - gdes',
+                        preBtnPath: '/docs/component-list/encrypt/des',
+                        nextBtnName: 'CRC32 - gcrc32',
+                        nextBtnPath: '/docs/component-list/encrypt/crc32',
+                    },
+                    {
+                        name: "CRC32 - gcrc32",
+                        fullPath: '/docs/component-list/encrypt/crc32',
+                        markdownPath: '/docs/component-list/encrypt/crc32.md',
+                        preBtnName: 'SHA1 - gsha1',
+                        preBtnPath: '/docs/component-list/encrypt/sha1',
+                        nextBtnName: 'Utils',
+                        nextBtnPath: '/docs/component-list/utils',
+                    }
+                ]
             }
         ]
     },

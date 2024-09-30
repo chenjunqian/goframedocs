@@ -2556,6 +2556,24 @@ export const routerNodeTree: DocsRouterNode[] = [
                         nextBtnPath: '/docs/component-list/unit-test',
                     }
                 ]
+            },
+            {
+                name: "Unit Test",
+                fullPath: '/docs/component-list/unit-test',
+                markdownPath: '/docs/component-list/unit-test.md',
+                preBtnName: 'Utils - Functions',
+                preBtnPath: '/docs/component-list/utils/functions',
+                nextBtnName: 'Debug',
+                nextBtnPath: '/docs/component-list/debug',
+            },
+            {
+                name: "Debug",
+                fullPath: '/docs/component-list/debug',
+                markdownPath: '/docs/component-list/debug.md',
+                preBtnName: 'Unit Test',
+                preBtnPath: '/docs/component-list/unit-test',
+                nextBtnName: 'Deploy',
+                nextBtnPath: '/docs/component-list/deploy',
             }
         ]
     },

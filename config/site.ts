@@ -2509,6 +2509,53 @@ export const routerNodeTree: DocsRouterNode[] = [
                         nextBtnPath: '/docs/component-list/utils',
                     }
                 ]
+            },
+            {
+                name: "Utils",
+                fullPath: '/docs/component-list/utils',
+                markdownPath: '/docs/component-list/utils/rand.md',
+                preBtnName: 'Encrypt - CRC32',
+                preBtnPath: '/docs/component-list/encrypt/crc32',
+                nextBtnName: 'Utils - UID',
+                nextBtnPath: '/docs/component-list/utils/uid',
+                childrenNode: [
+                    {
+                        name: "Rand - grand",
+                        fullPath: '/docs/component-list/utils/rand',
+                        markdownPath: '/docs/component-list/utils/rand.md',
+                        preBtnName: 'Encrypt - CRC32',
+                        preBtnPath: '/docs/component-list/encrypt/crc32',
+                        nextBtnName: 'Utils - UID',
+                        nextBtnPath: '/docs/component-list/utils/uid',
+                    },
+                    {
+                        name: "UID - guid",
+                        fullPath: '/docs/component-list/utils/uid',
+                        markdownPath: '/docs/component-list/utils/uid.md',
+                        preBtnName: 'Rand - grand',
+                        preBtnPath: '/docs/component-list/utils/rand',
+                        nextBtnName: 'Utils - Meta',
+                        nextBtnPath: '/docs/component-list/utils/meta',
+                    },
+                    {
+                        name: "Meta - gmeta",
+                        fullPath: '/docs/component-list/utils/meta',
+                        markdownPath: '/docs/component-list/utils/meta.md',
+                        preBtnName: 'UID - guid',
+                        preBtnPath: '/docs/component-list/utils/uid',
+                        nextBtnName: 'Utils - Functions',
+                        nextBtnPath: '/docs/component-list/utils/functions',
+                    },
+                    {
+                        name: "Functions",
+                        fullPath: '/docs/component-list/utils/functions',
+                        markdownPath: '/docs/component-list/utils/functions.md',
+                        preBtnName: 'Meta - gmeta',
+                        preBtnPath: '/docs/component-list/utils/meta',
+                        nextBtnName: 'Unit Test',
+                        nextBtnPath: '/docs/component-list/unit-test',
+                    }
+                ]
             }
         ]
     },

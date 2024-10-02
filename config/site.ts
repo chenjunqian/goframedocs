@@ -2702,8 +2702,8 @@ export const routerNodeTree: DocsRouterNode[] = [
                 markdownPath: '/docs/microservice/interceptor.md',
                 preBtnName: 'Server Config',
                 preBtnPath: '/docs/microservice/server-config',
-                nextBtnName: 'Microservice - Registery',
-                nextBtnPath: '/docs/microservice/registery',
+                nextBtnName: 'Microservice - registry',
+                nextBtnPath: '/docs/microservice/registry',
             },
             {
                 name: "Registry",
@@ -2718,8 +2718,8 @@ export const routerNodeTree: DocsRouterNode[] = [
                 name: "Load Balance",
                 fullPath: '/docs/microservice/load-balance',
                 markdownPath: '/docs/microservice/load-balance.md',
-                preBtnName: 'Registery',
-                preBtnPath: '/docs/microservice/registery',
+                preBtnName: 'registry',
+                preBtnPath: '/docs/microservice/registry',
                 nextBtnName: 'Microservice - Config Management',
                 nextBtnPath: '/docs/microservice/config-management',
             },
@@ -2731,6 +2731,140 @@ export const routerNodeTree: DocsRouterNode[] = [
                 preBtnPath: '/docs/microservice/load-balance',
                 nextBtnName: 'Web Development',
                 nextBtnPath: '/docs/web-development',
+            }
+        ]
+    },
+    {
+        name: "Web Development",
+        fullPath: '/docs/web-development',
+        markdownPath: '/docs/web-development/overview.md',
+        preBtnName: 'Microservice - Config Management',
+        preBtnPath: '/docs/microservice/config-management',
+        nextBtnName: 'Web Development - Router',
+        nextBtnPath: '/docs/web-development/router',
+        childrenNode: [
+            {
+                name: "Overview",
+                fullPath: '/docs/web-development',
+                markdownPath: '/docs/web-development/overview.md',
+                preBtnName: 'Microservice - Config Management',
+                preBtnPath: '/docs/microservice/config-management',
+                nextBtnName: 'Web Development - Router',
+                nextBtnPath: '/docs/web-development/router',
+            },
+            {
+                name: "Router",
+                fullPath: '/docs/web-development/router',
+                markdownPath: '/docs/web-development/router/rule.md',
+                preBtnName: 'Overview',
+                preBtnPath: '/docs/web-development/overview',
+                nextBtnName: 'Router - Registration',
+                nextBtnPath: '/docs/web-development/router/registry',
+                childrenNode: [
+                    {
+                        name: "Rule",
+                        fullPath: '/docs/web-development/router/rule',
+                        markdownPath: '/docs/web-development/router/rule.md',
+                        preBtnName: 'Web Development - Overview',
+                        preBtnPath: '/docs/web-development/router',
+                        nextBtnName: 'Router - Registration',
+                        nextBtnPath: '/docs/web-development/router/registry',
+                    },
+                    {
+                        name: "Registration",
+                        fullPath: '/docs/web-development/router/registry',
+                        markdownPath: '/docs/web-development/router/registry/overview.md',
+                        preBtnName: 'Router - Rule',
+                        preBtnPath: '/docs/web-development/router/rule',
+                        nextBtnName: 'Registration - Function',
+                        nextBtnPath: '/docs/web-development/router/registry/function',
+                        childrenNode: [
+                            {
+                                name: "Overview",
+                                fullPath: '/docs/web-development/router/registry',
+                                markdownPath: '/docs/web-development/router/registry/overview.md',
+                                preBtnName: 'Router - Registration',
+                                preBtnPath: '/docs/web-development/router/registry',
+                                nextBtnName: 'Registration - Function',
+                                nextBtnPath: '/docs/web-development/router/registry/function',
+                            },
+                            {
+                                name: "Function Registration",
+                                fullPath: '/docs/web-development/router/registry/function',
+                                markdownPath: '/docs/web-development/router/registry/function.md',
+                                preBtnName: 'Registration - Overview',
+                                preBtnPath: '/docs/web-development/router/registry/function',
+                                nextBtnName: 'Router - Object Registration',
+                                nextBtnPath: '/docs/web-development/router/registry',
+                            },
+                            {
+                                name: "Object Registration",
+                                fullPath: '/docs/web-development/router/registry/object',
+                                markdownPath: '/docs/web-development/router/registry/object.md',
+                                preBtnName: 'Registration - Function Registration',
+                                preBtnPath: '/docs/web-development/router/registry/function',
+                                nextBtnName: 'Router - Group',
+                                nextBtnPath: '/docs/web-development/router/registry/group',
+                            },
+                            {
+                                name: "Group",
+                                fullPath: '/docs/web-development/router/registry/group',
+                                markdownPath: '/docs/web-development/router/registry/group.md',
+                                preBtnName: 'Router - Object Registration',
+                                preBtnPath: '/docs/web-development/router/registry/object',
+                                nextBtnName: 'Router - Standard',
+                                nextBtnPath: '/docs/web-development/router/registry/standard',
+                            },
+                            {
+                                name: "Standard",
+                                fullPath: '/docs/web-development/router/registry/standard',
+                                markdownPath: '/docs/web-development/router/registry/standard/overview.md',
+                                preBtnName: 'Router - Group',
+                                preBtnPath: '/docs/web-development/router/registry/group',
+                                nextBtnName: 'Router - Example',
+                                nextBtnPath: '/docs/web-development/router/registry/standard/example',
+                                childrenNode: [
+                                    {
+                                        name: "Overview",
+                                        fullPath: '/docs/web-development/router/registry/standard',
+                                        markdownPath: '/docs/web-development/router/registry/standard/overview.md',
+                                        preBtnName: 'Router - Standard',
+                                        preBtnPath: '/docs/web-development/router/registry/standard',
+                                        nextBtnName: 'Router - Example',
+                                        nextBtnPath: '/docs/web-development/router/registry/standard/example',
+                                    },
+                                    {
+                                        name: "Example",
+                                        fullPath: '/docs/web-development/router/registry/standard/example',
+                                        markdownPath: '/docs/web-development/router/registry/standard/example.md',
+                                        preBtnName: 'Router - Standard',
+                                        preBtnPath: '/docs/web-development/router/registry/standard',
+                                        nextBtnName: 'Router - How to Use',
+                                        nextBtnPath: '/docs/web-development/router/registry/standard/how-to-use',
+                                    },
+                                    {
+                                        name: "How to Use",
+                                        fullPath: '/docs/web-development/router/registry/standard/how-to-use',
+                                        markdownPath: '/docs/web-development/router/registry/standard/how-to-use.md',
+                                        preBtnName: 'Router - Example',
+                                        preBtnPath: '/docs/web-development/router/registry/standard/example',
+                                        nextBtnName: 'Router - FAQ',
+                                        nextBtnPath: '/docs/web-development/router/registry/standard/faq',
+                                    },
+                                    {
+                                        name: "FAQ",
+                                        fullPath: '/docs/web-development/router/registry/standard/faq',
+                                        markdownPath: '/docs/web-development/router/registry/standard/faq.md',
+                                        preBtnName: 'Router - How to Use',
+                                        preBtnPath: '/docs/web-development/router/registry/standard/how-to-use',
+                                        nextBtnName: 'Router - Interceptor',
+                                        nextBtnPath: '/docs/web-development/router/interceptor',
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
             }
         ]
     },

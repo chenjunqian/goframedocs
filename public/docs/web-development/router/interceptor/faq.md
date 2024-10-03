@@ -1,4 +1,4 @@
-# Middleware/Interceptor - Common Questions
+# Router Interceptor - Common Questions
 
 ## How to Modify Request Parameters via Middleware
 

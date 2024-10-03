@@ -1,4 +1,4 @@
-# Router Middleware/Interceptor - Usage Examples
+# Router Interceptor - Usage Examples
 
 ## Allowing Cross-Origin Requests
 

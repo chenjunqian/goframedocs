@@ -1,4 +1,4 @@
-# Router Middleware/Interceptor - Overview
+# Router Interceptor - Overview
 
 `GoFrame` provides an elegant middleware request control mechanism, which is also a mainstream way of request process control provided by `WebServers`. Middleware design can offer a more flexible and powerful plugin mechanism for `WebServers`. The classic middleware onion model:
 

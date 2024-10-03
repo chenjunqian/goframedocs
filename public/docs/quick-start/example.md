@@ -31,7 +31,7 @@ type SignInRes struct{}
 
 ### 2. Router
 
-Routers are registered in the `internal/cmd` package, in this project use group router as example. Part of the router with auth middleware, for more detail you can check the source code. About more detail of the middleware, please refer to [Router Management - Middleware/Interceptor](https://temperory.net)
+Routers are registered in the `internal/cmd` package, in this project use group router as example. Part of the router with auth middleware, for more detail you can check the source code. About more detail of the middleware, please refer to [Router Management - Interceptor](/docs/web-development/router/interceptor/))
 
 ```go
 package cmd

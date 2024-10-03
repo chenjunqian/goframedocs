@@ -2863,6 +2863,44 @@ export const routerNodeTree: DocsRouterNode[] = [
                                 ]
                             }
                         ]
+                    },
+                    {
+                        name: "Interceptor",
+                        fullPath: '/docs/web-development/router/interceptor',
+                        markdownPath: '/docs/web-development/router/interceptor/overview.md',
+                        preBtnName: 'Router Standard - FAQ',
+                        preBtnPath: '/docs/web-development/router/registry/standard/faq',
+                        nextBtnName: 'Router Interceptor - Example',
+                        nextBtnPath: '/docs/web-development/router/interceptor/example',
+                        childrenNode: [
+                            {
+                                name: "Overview",
+                                fullPath: '/docs/web-development/router/interceptor',
+                                markdownPath: '/docs/web-development/router/interceptor/overview.md',
+                                preBtnName: 'Router - Interceptor',
+                                preBtnPath: '/docs/web-development/router/interceptor',
+                                nextBtnName: 'Router Interceptor - Example',
+                                nextBtnPath: '/docs/web-development/router/interceptor/example',
+                            },
+                            {
+                                name: "Example",
+                                fullPath: '/docs/web-development/router/interceptor/example',
+                                markdownPath: '/docs/web-development/router/interceptor/example.md',
+                                preBtnName: 'Router Interceptor - Overview',
+                                preBtnPath: '/docs/web-development/router/interceptor',
+                                nextBtnName: 'Router Interceptor - FAQ',
+                                nextBtnPath: '/docs/web-development/router/interceptor/faq',
+                            },
+                            {
+                                name: "FAQ",
+                                fullPath: '/docs/web-development/router/interceptor/faq',
+                                markdownPath: '/docs/web-development/router/interceptor/faq.md',
+                                preBtnName: 'Router Interceptor - Example',
+                                preBtnPath: '/docs/web-development/router/interceptor/example',
+                                nextBtnName: 'Interface documentation',
+                                nextBtnPath: '/docs/web-development/interface-doc',
+                            }
+                        ]
                     }
                 ]
             }

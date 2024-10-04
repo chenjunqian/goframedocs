@@ -2897,10 +2897,48 @@ export const routerNodeTree: DocsRouterNode[] = [
                                 markdownPath: '/docs/web-development/router/interceptor/faq.md',
                                 preBtnName: 'Router Interceptor - Example',
                                 preBtnPath: '/docs/web-development/router/interceptor/example',
-                                nextBtnName: 'Interface documentation',
-                                nextBtnPath: '/docs/web-development/interface-doc',
+                                nextBtnName: 'API Documentation',
+                                nextBtnPath: '/docs/web-development/api-doc',
                             }
                         ]
+                    },
+                ]
+            },
+            {
+                name: "API documentation",
+                fullPath: '/docs/web-development/api-doc',
+                markdownPath: '/docs/web-development/api-doc/overview.md',
+                preBtnName: 'Router - Interceptor',
+                preBtnPath: '/docs/web-development/router/interceptor',
+                nextBtnName: 'OpenAPI V3',
+                nextBtnPath: '/docs/web-development/api-doc/openapi',
+                childrenNode: [
+                    {
+                        name: "Overview",
+                        fullPath: '/docs/web-development/api-doc',
+                        markdownPath: '/docs/web-development/api-doc/overview.md',
+                        preBtnName: 'API documentation',
+                        preBtnPath: '/docs/web-development/api-doc',
+                        nextBtnName: 'OpenAPI V3',
+                        nextBtnPath: '/docs/web-development/api-doc/openapi',
+                    },
+                    {
+                        name: "OpenAPI V3",
+                        fullPath: '/docs/web-development/api-doc/openapi',
+                        markdownPath: '/docs/web-development/api-doc/openapi.md',
+                        preBtnName: 'API documentation',
+                        preBtnPath: '/docs/web-development/api-doc',
+                        nextBtnName: 'Customized UI',
+                        nextBtnPath: '/docs/web-development/api-doc/customized-ui',
+                    },
+                    {
+                        name: "Customized UI",
+                        fullPath: '/docs/web-development/api-doc/customized-ui',
+                        markdownPath: '/docs/web-development/api-doc/customized-ui.md',
+                        preBtnName: 'OpenAPI V3',
+                        preBtnPath: '/docs/web-development/api-doc/openapi',
+                        nextBtnName: 'Request',
+                        nextBtnPath: '/docs/web-development/request',
                     }
                 ]
             }

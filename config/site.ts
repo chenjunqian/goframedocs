@@ -3107,6 +3107,53 @@ export const routerNodeTree: DocsRouterNode[] = [
                         nextBtnPath: '/docs/web-development/server-config',
                     }
                 ]
+            },
+            {
+                name: "Server Config",
+                fullPath: '/docs/web-development/server-config',
+                markdownPath: '/docs/web-development/server-config/overview.md',
+                preBtnName: 'Response - Stream',
+                preBtnPath: '/docs/web-development/response/stream',
+                nextBtnName: 'Server Config - Config File',
+                nextBtnPath: '/docs/web-development/server-config/config-file',
+                childrenNode: [
+                    {
+                        name: "Overview",
+                        fullPath: '/docs/web-development/server-config',
+                        markdownPath: '/docs/web-development/server-config/overview.md',
+                        preBtnName: 'Server Config',
+                        preBtnPath: '/docs/web-development/server-config',
+                        nextBtnName: 'Server Config - Config File',
+                        nextBtnPath: '/docs/web-development/server-config/config-file',
+                    },
+                    {
+                        name: "Config File",
+                        fullPath: '/docs/web-development/server-config/config-file',
+                        markdownPath: '/docs/web-development/server-config/config-file.md',
+                        preBtnName: 'Server Config - Overview',
+                        preBtnPath: '/docs/web-development/server-config',
+                        nextBtnName: 'Server Config - Template',
+                        nextBtnPath: '/docs/web-development/server-config/template',
+                    },
+                    {
+                        name: "Template",
+                        fullPath: '/docs/web-development/server-config/template',
+                        markdownPath: '/docs/web-development/server-config/template.md',
+                        preBtnName: 'Server Config - Config File',
+                        preBtnPath: '/docs/web-development/server-config/config-file',
+                        nextBtnName: 'Server Config - Functions',
+                        nextBtnPath: '/docs/web-development/server-config/functions',
+                    },
+                    {
+                        name: "Functions",
+                        fullPath: '/docs/web-development/server-config/functions',
+                        markdownPath: '/docs/web-development/server-config/functions.md',
+                        preBtnName: 'Server Config - Template',
+                        preBtnPath: '/docs/web-development/server-config/template',
+                        nextBtnName: 'Cookie',
+                        nextBtnPath: '/docs/web-development/cookie',
+                    }
+                ]
             }
         ]
     },

@@ -3154,6 +3154,15 @@ export const routerNodeTree: DocsRouterNode[] = [
                         nextBtnPath: '/docs/web-development/cookie',
                     }
                 ]
+            },
+            {
+                name: "Cookie",
+                fullPath: '/docs/web-development/cookie',
+                markdownPath: '/docs/web-development/cookie.md',
+                preBtnName: 'Server Config - Functions',
+                preBtnPath: '/docs/web-development/server-config/functions',
+                nextBtnName: 'Session',
+                nextBtnPath: '/docs/web-development/session',
             }
         ]
     },

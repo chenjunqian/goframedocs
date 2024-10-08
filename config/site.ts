@@ -3228,6 +3228,15 @@ export const routerNodeTree: DocsRouterNode[] = [
                         nextBtnPath: '/docs/web-development/error',
                     }
                 ]
+            },
+            {
+                name: "Exception",
+                fullPath: '/docs/web-development/exception',
+                markdownPath: '/docs/web-development/exception.md',
+                preBtnName: 'Session',
+                preBtnPath: '/docs/web-development/session',
+                nextBtnName: 'Http Client',
+                nextBtnPath: '/docs/web-development/http-client',
             }
         ]
     },

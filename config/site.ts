@@ -3356,6 +3356,71 @@ export const routerNodeTree: DocsRouterNode[] = [
                         nextBtnPath: '/docs/web-development/pagination',
                     }
                 ]
+            },
+            {
+                name: "Pagination",
+                fullPath: '/docs/web-development/pagination',
+                markdownPath: '/docs/web-development/pagination.md',
+                preBtnName: 'Http Client - Common Issue',
+                preBtnPath: '/docs/web-development/http-client/common-issue',
+                nextBtnName: 'Pagination - Dynamic',
+                nextBtnPath: '/docs/web-development/pagination/dynamic',
+                childrenNode: [
+                    {
+                        name: "Overview",
+                        fullPath: '/docs/web-development/pagination/overview',
+                        markdownPath: '/docs/web-development/pagination/overview.md',
+                        preBtnName: 'Http Client - Common Issue',
+                        preBtnPath: '/docs/web-development/http-client/common-issue',
+                        nextBtnName: 'Pagination - Dynamic',
+                        nextBtnPath: '/docs/web-development/pagination/dynamic',
+                    },
+                    {
+                        name: "Dynamic",
+                        fullPath: '/docs/web-development/pagination/dynamic',
+                        markdownPath: '/docs/web-development/pagination/dynamic.md',
+                        preBtnName: 'Pagination - Overview',
+                        preBtnPath: '/docs/web-development/pagination/overview',
+                        nextBtnName: 'Pagination - Static',
+                        nextBtnPath: '/docs/web-development/pagination/static',
+                    },
+                    {
+                        name: "Static",
+                        fullPath: '/docs/web-development/pagination/static',
+                        markdownPath: '/docs/web-development/pagination/static.md',
+                        preBtnName: 'Pagination - Dynamic',
+                        preBtnPath: '/docs/web-development/pagination/dynamic',
+                        nextBtnName: 'Pagination - Ajax',
+                        nextBtnPath: '/docs/web-development/pagination/ajax',
+                    },
+                    {
+                        name: "Ajax",
+                        fullPath: '/docs/web-development/pagination/ajax',
+                        markdownPath: '/docs/web-development/pagination/ajax.md',
+                        preBtnName: 'Pagination - Static',
+                        preBtnPath: '/docs/web-development/pagination/static',
+                        nextBtnName: 'Pagination - Url Template',
+                        nextBtnPath: '/docs/web-development/pagination/url-template',
+                    },
+                    {
+                        name: "Url Template",
+                        fullPath: '/docs/web-development/pagination/url-template',
+                        markdownPath: '/docs/web-development/pagination/url-template.md',
+                        preBtnName: 'Pagination - Ajax',
+                        preBtnPath: '/docs/web-development/pagination/ajax',
+                        nextBtnName: 'Pagination - Customized',
+                        nextBtnPath: '/docs/web-development/pagination/customized',
+                    },
+                    {
+                        name: "Customized",
+                        fullPath: '/docs/web-development/pagination/customized',
+                        markdownPath: '/docs/web-development/pagination/customized.md',
+                        preBtnName: 'Pagination - Url Template',
+                        preBtnPath: '/docs/web-development/pagination/url-template',
+                        nextBtnName: 'Advanced',
+                        nextBtnPath: '/docs/web-development/pagination/advanced',
+                    }
+                ]
             }
         ]
     },

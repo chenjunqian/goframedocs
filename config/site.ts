@@ -3540,6 +3540,24 @@ export const routerNodeTree: DocsRouterNode[] = [
                         nextBtnPath: '/docs/web-development/advanced/benchmark',
                     }
                 ]
+            },
+            {
+                name: "Benchmark",
+                fullPath: '/docs/web-development/benchmark',
+                markdownPath: '/docs/web-development/benchmark.md',
+                preBtnName: 'Advanced - HttpServer Monitor',
+                preBtnPath: '/docs/web-development/advanced/httpserver-monitor',
+                nextBtnName: 'FAQ',
+                nextBtnPath: '/docs/web-development/faq',
+            },
+            {
+                name: "FAQ",
+                fullPath: '/docs/web-development/faq',
+                markdownPath: '/docs/web-development/faq.md',
+                preBtnName: 'Benchmark',
+                preBtnPath: '/docs/web-development/benchmark',
+                nextBtnName: 'Network Development',
+                nextBtnPath: '/docs/network-development',
             }
         ]
     },

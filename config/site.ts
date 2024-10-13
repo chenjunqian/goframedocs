@@ -3699,8 +3699,75 @@ export const routerNodeTree: DocsRouterNode[] = [
                 markdownPath: '/docs/network-development/web-socket.md',
                 preBtnName: 'UDP - Utils',
                 preBtnPath: '/docs/network-development/udp-component/utils',
-                nextBtnName: 'Server Observable',
-                nextBtnPath: '/docs/server-observable',
+                nextBtnName: 'Service Observe',
+                nextBtnPath: '/docs/service-observe',
+            }
+        ]
+    },
+    {
+        name: "Service Observe",
+        fullPath: '/docs/service-observe',
+        markdownPath: '/docs/service-observe/overview.md',
+        preBtnName: 'WebSocket',
+        preBtnPath: '/docs/network-development/web-socket',
+        nextBtnName: 'Server Observable - Tracing Track',
+        nextBtnPath: '/docs/service-observe/tracing-track',
+        childrenNode: [
+            {
+                name: "Overview",
+                fullPath: '/docs/service-observe',
+                markdownPath: '/docs/service-observe/overview.md',
+                preBtnName: 'WebSocket',
+                preBtnPath: '/docs/network-development/web-socket',
+                nextBtnName: 'Server Observable - Tracing Track',
+                nextBtnPath: '/docs/service-observe/tracing-track',
+            },
+            {
+                name: "Tracing Track",
+                fullPath: '/docs/service-observe/tracing-track',
+                markdownPath: '/docs/service-observe/tracing-track/overview.md',
+                preBtnName: 'Service Observe',
+                preBtnPath: '/docs/service-observe',
+                nextBtnName: 'Tracing Track - Background',
+                nextBtnPath: '/docs/service-observe/tracing-track/background',
+                childrenNode: [
+                    {
+                        name: "Overview",
+                        fullPath: '/docs/service-observe/tracing-track',
+                        markdownPath: '/docs/service-observe/tracing-track/overview.md',
+                        preBtnName: 'Service Observe',
+                        preBtnPath: '/docs/service-observe',
+                        nextBtnName: 'Tracing Track - Background',
+                        nextBtnPath: '/docs/service-observe/tracing-track/background',
+                    },
+                    {
+                        name: "Background",
+                        fullPath: '/docs/service-observe/tracing-track/background',
+                        markdownPath: '/docs/service-observe/tracing-track/background.md',
+                        preBtnName: 'Tracing Track - Overview',
+                        preBtnPath: '/docs/service-observe/tracing-track',
+                        nextBtnName: 'Tracing Track - Prepare',
+                        nextBtnPath: '/docs/service-observe/tracing-track/prepare',
+                    },
+                    {
+                        name: "Prepare",
+                        fullPath: '/docs/service-observe/tracing-track/prepare',
+                        markdownPath: '/docs/service-observe/tracing-track/prepare.md',
+                        preBtnName: 'Tracing Track - Background',
+                        preBtnPath: '/docs/service-observe/tracing-track/background',
+                        nextBtnName: 'Tracing Track - Basic Example',
+                        nextBtnPath: '/docs/service-observe/tracing-track/basic-example',
+                    },
+                    {
+                        name: "Basic Example",
+                        fullPath: '/docs/service-observe/tracing-track/basic-example',
+                        markdownPath: '/docs/service-observe/tracing-track/basic-example.md',
+                        preBtnName: 'Tracing Track - Prepare',
+                        preBtnPath: '/docs/service-observe/tracing-track/prepare',
+                        nextBtnName: 'Tracing Track - Http Example',
+                        nextBtnPath: '/docs/service-observe/tracing-track/http-example',
+                    }
+                ]
             }
         ]
     },

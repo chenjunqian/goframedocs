@@ -3654,6 +3654,120 @@ export const routerNodeTree: DocsRouterNode[] = [
                         nextBtnPath: '/docs/network-development/udp-component',
                     }
                 ]
+            },
+            {
+                name: "UDP Component",
+                fullPath: '/docs/network-development/udp-component',
+                markdownPath: '/docs/network-development/udp-component/overview.md',
+                preBtnName: 'TCP Component - Connection Pool',
+                preBtnPath: '/docs/network-development/tcp-component/connection-pool',
+                nextBtnName: 'UDP - Connection Object',
+                nextBtnPath: '/docs/network-development/udp/connection-object',
+                childrenNode: [
+                    {
+                        name: "Overview",
+                        fullPath: '/docs/network-development/udp-component',
+                        markdownPath: '/docs/network-development/udp-component/overview.md',
+                        preBtnName: 'TCP Component - Connection Pool',
+                        preBtnPath: '/docs/network-development/tcp-component/connection-pool',
+                        nextBtnName: 'UDP - Connection Object',
+                        nextBtnPath: '/docs/network-developmentudp-component/connection-object',
+                    },
+                    {
+                        name: "Connection Object",
+                        fullPath: '/docs/network-development/udp-component/connection-object',
+                        markdownPath: '/docs/network-development/udp-component/connection-object.md',
+                        preBtnName: 'UDP Component',
+                        preBtnPath: '/docs/network-development/udp-component/overview',
+                        nextBtnName: 'UDP - Utils',
+                        nextBtnPath: '/docs/network-development/udp-component/utils',
+                    },
+                    {
+                        name: "Utils",
+                        fullPath: '/docs/network-development/udp-component/utils',
+                        markdownPath: '/docs/network-development/udp-component/utils.md',
+                        preBtnName: 'UDP - Connection Object',
+                        preBtnPath: '/docs/network-development/udp-component/connection-object',
+                        nextBtnName: 'WebSocket',
+                        nextBtnPath: '/docs/network-development/web-socket',
+                    }
+                ]
+            },
+            {
+                name: "WebSocket",
+                fullPath: '/docs/network-development/web-socket',
+                markdownPath: '/docs/network-development/web-socket.md',
+                preBtnName: 'UDP - Utils',
+                preBtnPath: '/docs/network-development/udp-component/utils',
+                nextBtnName: 'Service Observe',
+                nextBtnPath: '/docs/service-observe',
+            }
+        ]
+    },
+    {
+        name: "Service Observe",
+        fullPath: '/docs/service-observe',
+        markdownPath: '/docs/service-observe/overview.md',
+        preBtnName: 'WebSocket',
+        preBtnPath: '/docs/network-development/web-socket',
+        nextBtnName: 'Server Observable - Tracing Track',
+        nextBtnPath: '/docs/service-observe/tracing-track',
+        childrenNode: [
+            {
+                name: "Overview",
+                fullPath: '/docs/service-observe',
+                markdownPath: '/docs/service-observe/overview.md',
+                preBtnName: 'WebSocket',
+                preBtnPath: '/docs/network-development/web-socket',
+                nextBtnName: 'Server Observable - Tracing Track',
+                nextBtnPath: '/docs/service-observe/tracing-track',
+            },
+            {
+                name: "Tracing Track",
+                fullPath: '/docs/service-observe/tracing-track',
+                markdownPath: '/docs/service-observe/tracing-track/overview.md',
+                preBtnName: 'Service Observe',
+                preBtnPath: '/docs/service-observe',
+                nextBtnName: 'Tracing Track - Background',
+                nextBtnPath: '/docs/service-observe/tracing-track/background',
+                childrenNode: [
+                    {
+                        name: "Overview",
+                        fullPath: '/docs/service-observe/tracing-track',
+                        markdownPath: '/docs/service-observe/tracing-track/overview.md',
+                        preBtnName: 'Service Observe',
+                        preBtnPath: '/docs/service-observe',
+                        nextBtnName: 'Tracing Track - Background',
+                        nextBtnPath: '/docs/service-observe/tracing-track/background',
+                    },
+                    {
+                        name: "Background",
+                        fullPath: '/docs/service-observe/tracing-track/background',
+                        markdownPath: '/docs/service-observe/tracing-track/background.md',
+                        preBtnName: 'Tracing Track - Overview',
+                        preBtnPath: '/docs/service-observe/tracing-track',
+                        nextBtnName: 'Tracing Track - Prepare',
+                        nextBtnPath: '/docs/service-observe/tracing-track/prepare',
+                    },
+                    {
+                        name: "Prepare",
+                        fullPath: '/docs/service-observe/tracing-track/prepare',
+                        markdownPath: '/docs/service-observe/tracing-track/prepare.md',
+                        preBtnName: 'Tracing Track - Background',
+                        preBtnPath: '/docs/service-observe/tracing-track/background',
+                        nextBtnName: 'Tracing Track - Basic Example',
+                        nextBtnPath: '/docs/service-observe/tracing-track/basic-example',
+                    },
+                    {
+                        name: "Basic Example",
+                        fullPath: '/docs/service-observe/tracing-track/basic-example',
+                        markdownPath: '/docs/service-observe/tracing-track/basic-example.md',
+                        preBtnName: 'Tracing Track - Prepare',
+                        preBtnPath: '/docs/service-observe/tracing-track/prepare',
+                        nextBtnName: 'Tracing Track - Http Example',
+                        nextBtnPath: '/docs/service-observe/tracing-track/http-example',
+                    }
+                ]
             }
         ]
     },

@@ -3654,6 +3654,53 @@ export const routerNodeTree: DocsRouterNode[] = [
                         nextBtnPath: '/docs/network-development/udp-component',
                     }
                 ]
+            },
+            {
+                name: "UDP Component",
+                fullPath: '/docs/network-development/udp-component',
+                markdownPath: '/docs/network-development/udp-component/overview.md',
+                preBtnName: 'TCP Component - Connection Pool',
+                preBtnPath: '/docs/network-development/tcp-component/connection-pool',
+                nextBtnName: 'UDP - Connection Object',
+                nextBtnPath: '/docs/network-development/udp/connection-object',
+                childrenNode: [
+                    {
+                        name: "Overview",
+                        fullPath: '/docs/network-development/udp-component',
+                        markdownPath: '/docs/network-development/udp-component/overview.md',
+                        preBtnName: 'TCP Component - Connection Pool',
+                        preBtnPath: '/docs/network-development/tcp-component/connection-pool',
+                        nextBtnName: 'UDP - Connection Object',
+                        nextBtnPath: '/docs/network-developmentudp-component/connection-object',
+                    },
+                    {
+                        name: "Connection Object",
+                        fullPath: '/docs/network-development/udp-component/connection-object',
+                        markdownPath: '/docs/network-development/udp-component/connection-object.md',
+                        preBtnName: 'UDP Component',
+                        preBtnPath: '/docs/network-development/udp-component/overview',
+                        nextBtnName: 'UDP - Utils',
+                        nextBtnPath: '/docs/network-development/udp-component/utils',
+                    },
+                    {
+                        name: "Utils",
+                        fullPath: '/docs/network-development/udp-component/utils',
+                        markdownPath: '/docs/network-development/udp-component/utils.md',
+                        preBtnName: 'UDP - Connection Object',
+                        preBtnPath: '/docs/network-development/udp-component/connection-object',
+                        nextBtnName: 'WebSocket',
+                        nextBtnPath: '/docs/network-development/web-socket',
+                    }
+                ]
+            },
+            {
+                name: "WebSocket",
+                fullPath: '/docs/network-development/web-socket',
+                markdownPath: '/docs/network-development/web-socket.md',
+                preBtnName: 'UDP - Utils',
+                preBtnPath: '/docs/network-development/udp-component/utils',
+                nextBtnName: 'Server Observable',
+                nextBtnPath: '/docs/server-observable',
             }
         ]
     },

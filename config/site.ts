@@ -3766,6 +3766,62 @@ export const routerNodeTree: DocsRouterNode[] = [
                         preBtnPath: '/docs/service-observe/tracing-track/prepare',
                         nextBtnName: 'Tracing Track - Http Example',
                         nextBtnPath: '/docs/service-observe/tracing-track/http-example',
+                    },
+                    {
+                        name: "Http Example",
+                        fullPath: '/docs/service-observe/tracing-track/http-example',
+                        markdownPath: '/docs/service-observe/tracing-track/http-example/overview.md',
+                        preBtnName: 'Tracing Track - Basic Example',
+                        preBtnPath: '/docs/service-observe/tracing-track/basic-example',
+                        nextBtnName: 'Http Example - Baggage',
+                        nextBtnPath: '/docs/service-observe/tracing-track/http-example/baggage',
+                        childrenNode: [
+                            {
+                                name: "Overview",
+                                fullPath: '/docs/service-observe/tracing-track/http-example',
+                                markdownPath: '/docs/service-observe/tracing-track/http-example/overview.md',
+                                preBtnName: 'Tracing Track - Basic Example',
+                                preBtnPath: '/docs/service-observe/tracing-track/basic-example',
+                                nextBtnName: 'Http Example - Baggage',
+                                nextBtnPath: '/docs/service-observe/tracing-track/http-example/baggage',
+                            },
+                            {
+                                name: "Baggage",
+                                fullPath: '/docs/service-observe/tracing-track/http-example/baggage',
+                                markdownPath: '/docs/service-observe/tracing-track/http-example/baggage.md',
+                                preBtnName: 'Http Example',
+                                preBtnPath: '/docs/service-observe/tracing-track/http-example',
+                                nextBtnName: 'Http Example - Data Operation',
+                                nextBtnPath: '/docs/service-observe/tracing-track/http-example/data-operation',
+                            },
+                            {
+                                name: "Data Operation",
+                                fullPath: '/docs/service-observe/tracing-track/http-example/data-operation',
+                                markdownPath: '/docs/service-observe/tracing-track/http-example/data-operation.md',
+                                preBtnName: 'Http Example - Baggage',
+                                preBtnPath: '/docs/service-observe/tracing-track/http-example/baggage',
+                                nextBtnName: 'Tracing Track - GRPC Example',
+                                nextBtnPath: '/docs/service-observe/tracing-track/grpc-example',
+                            }
+                        ]
+                    },
+                    {
+                        name: "gRPC Example",
+                        fullPath: '/docs/service-observe/tracing-track/grpc-example',
+                        markdownPath: '/docs/service-observe/tracing-track/grpc-example.md',
+                        preBtnName: 'Tracing Track - Http Example',
+                        preBtnPath: '/docs/service-observe/tracing-track/http-example',
+                        nextBtnName: 'Tracing Track - Best Practice',
+                        nextBtnPath: '/docs/service-observe/tracing-track/best-practice',
+                    },
+                    {
+                        name: "Best Practice",
+                        fullPath: '/docs/service-observe/tracing-track/best-practice',
+                        markdownPath: '/docs/service-observe/tracing-track/best-practice.md',
+                        preBtnName: 'Tracing Track - gRPC Example',
+                        preBtnPath: '/docs/service-observe/tracing-track/grpc-example',
+                        nextBtnName: 'Tracing Track - Warning',
+                        nextBtnPath: '/docs/service-observe/tracing-track/waring',
                     }
                 ]
             }

@@ -20,7 +20,7 @@ The interface files, which are generated from compiling the `.proto` files, are 
 
 ### Generating Data Table Structures
 
-We can use the command `gf gen pbentity` or `make pbentity` to automatically generate corresponding protobuf protocol files based on the database table structures. For more details, please refer to the section: [PB-gen pbentity](/docs/development-tools/codegen/pb-gen).
+We can use the command `gf gen pbentity` or `make pbentity` to automatically generate corresponding protobuf protocol files based on the database table structures. For more details, please refer to the section: [PB-gen pbentity](/docs/development-tools/codegen/gen-pbentity).
 
 ### Compiling proto Files
 
